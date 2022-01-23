@@ -10,7 +10,8 @@ module.exports = {
         options: {
           name: `guides`,
           path: `${__dirname}/guides`,
-        }
+        },
       },
+      "gatsby-plugin-mdx",
     ],
 }
