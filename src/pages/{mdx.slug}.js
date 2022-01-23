@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 const GuidePost = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.state}>
+      <p>{data.mdx.frontmatter.highpoint}</p>
+      <p>Rank: {data.mdx.frontmatter.rank_elevation}</p>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
@@ -18,6 +20,8 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         state
+        highpoint
+        rank_elevation
       }
       body
     }
