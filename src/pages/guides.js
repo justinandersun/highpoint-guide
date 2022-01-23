@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const GuidesPage = ({ data }) => {
@@ -9,10 +8,9 @@ const GuidesPage = ({ data }) => {
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
-            <h2>{node.frontmatter.highpoint}</h2>
-            <MDXRenderer>
-              {node.body}
-            </MDXRenderer>
+            <Link to={`/${node.slug}`}>
+              {node.frontmatter.state}
+            </Link>
           </article>
         ))
       }
@@ -25,10 +23,10 @@ export const query = graphql`
     allMdx {
       nodes {
         frontmatter {
-          highpoint
+          state
         }
         id
-        body
+        slug
       }
     }
   }
