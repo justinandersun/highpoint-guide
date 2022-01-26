@@ -1,25 +1,54 @@
+@import "../css/main.css";
+
 .container {
-  margin: auto;
-  max-width: 500px;
   font-family: sans-serif;
 }
-.heading {
-  color: rebeccapurple;
+.header {
+  height: 4em;
+  background: #000;
+  color: #fff;
+}
+.left-header, .right-header {
+  width: 50%;
+  padding: 0.5em 0;
+  display: inline-block;
+  float: left;
+}
+.right-header {
+  text-align: right;
+}
+.header-img {
+  height: 2.5em;
+  width: 2.5em;
+  margin-top: 0.25em;
+  margin-left: 1em;
+  display: inline-block;
+  float: left;
+}
+.site-title {
+  font-size: 1.75em;
+  font-family: Explore, sans-serif;
+  margin-left: 0.5em;
+  display: inline-block;
+  float: left;
 }
 .nav-links {
   display: flex;
   list-style: none;
-  padding-left: 0;
+  float: right;
+  margin: 1em;
 }
 .nav-link-item {
-  padding-right: 2rem;
+  padding: 0 1rem;
 }
 .nav-link-text {
-  color: black;
+  color: #fff;
+  text-decoration: none;
 }
-.site-title {
-  font-size: 3rem;
-  color: gray;
-  font-weight: 700;
-  margin: 3rem 0;
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
 }
