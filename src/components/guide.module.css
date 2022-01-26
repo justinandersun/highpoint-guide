@@ -1,0 +1,43 @@
+.state-guides {
+  margin: 1em 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.guide-link {
+  background: #eee;
+  display: inline-block;
+  float: left;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 0.1em solid #000;
+}
+/* Guide Page Template */
+.guide-page {
+  width: 80%;
+  margin: 1em 10%;
+}
+.guide-title {
+  font-family: Explore, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+.guide-state {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.guide-metadata {
+  font-size: 1em;
+  line-height: 2em;
+}
+.guide-body h2 {
+  font-size: 1.2em;
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+  background: #000;
+  color: #fff;
+}

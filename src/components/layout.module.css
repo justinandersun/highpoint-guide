@@ -52,3 +52,8 @@
   padding: 2em 0;
   width: 100%;
 }
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0.1em #fff solid;
+}
