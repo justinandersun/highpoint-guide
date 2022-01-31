@@ -1,24 +1,26 @@
 .state-guides {
-  margin: 1em 0;
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 80%;
+  margin: 1em 10%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 .guide-link {
   background: #eee;
-  display: inline-block;
-  float: left;
   color: #000;
+  display: block;
   text-decoration: none;
-  padding: 0.5em;
-  margin: 0.5em;
-  border: 0.1em solid #000;
+  padding: 1em;
 }
 /* Guide Page Template */
 .guide-page {
   width: 80%;
   margin: 1em 10%;
 }
+/* TITLE */
 .guide-title {
   font-family: Explore, sans-serif;
   font-size: 2.5em;
@@ -29,15 +31,49 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
+  margin-bottom: 1.5em;
 }
+/* MASTHEAD */
+.guide-masthead {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 0px;
+}
+.masthead-image { }
+.masthead-metadata { }
+/* METADATA */
 .guide-metadata {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.metadata-cell {
+  padding-bottom: 1.5em;
+}
+.cell-name {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #999;
+  display: inline-block;
+  padding: 0.2em;
+}
+.cell-data {
   font-size: 1em;
-  line-height: 2em;
+  padding: 0.1em;
+}
+
+/* BODY */
+.guide-body {
+  margin: 0 0 5em 0;
 }
 .guide-body h2 {
-  font-size: 1.2em;
-  padding: 0.5em 0;
-  margin: 0.5em 0;
-  background: #000;
-  color: #fff;
+  font-size: 1.5em;
+  margin: 2em 0 0.5em 0;
+  padding: 0.1em 0.5em;
+  background-color: #eee;
+  display: inline-block;
 }

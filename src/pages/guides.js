@@ -23,7 +23,6 @@ const GuidesPage = ({ data }) => {
         ))
       }
       </div>
-      <p>Cool!</p>
     </Layout>
   )
 }

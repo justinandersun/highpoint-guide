@@ -10,3 +10,7 @@
   font-family: "Explore";
   src: url("../fonts/Explore.ttf");
 }
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/UncutSans.otf");
+}
