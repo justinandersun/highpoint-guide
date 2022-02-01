@@ -5,7 +5,7 @@
 }
 .header {
   height: 4em;
-  background: #000;
+  background: var(--primary);
   color: #fff;
 }
 .left-header, .right-header {
@@ -26,8 +26,9 @@
   float: left;
 }
 .site-title {
-  font-size: 1.75em;
-  font-family: Explore, sans-serif;
+  font-size: 1.5em;
+  font-family: UncutSans, sans-serif;
+  margin-top: 0.4em;
   margin-left: 0.5em;
   display: inline-block;
   float: left;
@@ -46,7 +47,7 @@
   text-decoration: none;
 }
 .footer {
-  background: #000;
+  background: var(--primary);
   color: #fff;
   text-align: center;
   padding: 2em 0;

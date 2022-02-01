@@ -41,7 +41,11 @@
   grid-column-gap: 1.5em;
   grid-row-gap: 0px;
 }
-.masthead-image { }
+.masthead-image {
+  width: 100%;
+  height: 25em;
+  overflow: hidden;
+}
 .masthead-metadata { }
 /* METADATA */
 .guide-metadata {

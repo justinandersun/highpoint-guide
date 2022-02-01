@@ -71,7 +71,7 @@ const GuidePost = ({ data }) => {
                 <p className={cellData}>{data.mdx.frontmatter.route_type}</p>
               </div>
               <div className={metadataCell}>
-                <p className={cellName}>Climbing Season</p>
+                <p className={cellName}>Peak Climbing Season</p>
                 <p className={cellData}>{data.mdx.frontmatter.season}</p>
               </div>
             </div>

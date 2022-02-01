@@ -2,9 +2,9 @@
 @import "../css/color.css";
 
 * {
-   margin: 0;
-   padding: 0;
-   font-family: UncutSans, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: UncutSans, sans-serif;
 }
 main {
   min-height: 100vh;
