@@ -1,26 +1,38 @@
+/* Guides Page */
 .state-guides {
   width: 80%;
-  margin: 1em 10%;
+  margin: 1em 10% 5em 10%;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 .guide-link {
-  background: #eee;
+  background: #fff;
   color: #000;
+  font-weight: 800;
   display: block;
   text-decoration: none;
   padding: 1em;
+  font-size: 1.2em;
+  border: 4px solid black;
+  transition: 250ms;
 }
+.guide-link:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 250ms;
+}
+
 /* Guide Page Template */
 .guide-page {
   width: 80%;
   margin: 1em 10%;
 }
-/* TITLE */
+
+/* Title */
 .guide-title {
   font-family: Explore, sans-serif;
   font-size: 2.5em;
@@ -33,7 +45,8 @@
   text-align: center;
   margin-bottom: 1.5em;
 }
-/* MASTHEAD */
+
+/* Masthead */
 .guide-masthead {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,7 +60,8 @@
   overflow: hidden;
 }
 .masthead-metadata { }
-/* METADATA */
+
+/* Metadata */
 .guide-metadata {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -60,24 +74,45 @@
 }
 .cell-name {
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #999;
   display: inline-block;
   padding: 0.2em;
 }
 .cell-data {
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 0.1em;
 }
 
-/* BODY */
+/* Body */
 .guide-body {
-  margin: 0 0 5em 0;
+  margin: 0 0 2em 0;
+  font-size: 1.2em;
 }
-.guide-body h2 {
+.guide-body h2, .guide-footer h2 {
   font-size: 1.5em;
-  margin: 2em 0 0.5em 0;
+  margin: 2em 0 1em 0;
   padding: 0.1em 0.5em;
-  background-color: #eee;
+  background-color: #000;
+  color: #fff;
   display: inline-block;
+}
+
+/* Footer */
+.guide-footer {
+  margin: 0 0 5em 0;
+  font-size: 1.2em;
+}
+.guide-footer-link {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 3px solid black;
+  margin: 0.5em;
+  color: #000;
+  transition: 250ms;
+}
+.guide-footer-link:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 250ms;
 }

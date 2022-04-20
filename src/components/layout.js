@@ -41,7 +41,7 @@ const Layout = ({ pageTitle, children }) => {
           <ul className={navLinks}>
             <li className={navLinkItem}>
               <Link to="/" className={navLinkText}>
-                Map
+                Home
               </Link>
             </li>
             <li className={navLinkItem}>

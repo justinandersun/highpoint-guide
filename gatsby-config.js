@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-      title: `Highpoint Guide`,
+      title: `U.S. Highpoint Guide`,
     },
     plugins: [
       "gatsby-plugin-image",

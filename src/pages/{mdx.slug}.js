@@ -15,6 +15,8 @@ import {
   cellName,
   cellData,
   guideBody,
+  guideFooter,
+  guideFooterLink,
 } from '../components/guide.module.css'
 
 const GuidePost = ({ data }) => {
@@ -82,6 +84,16 @@ const GuidePost = ({ data }) => {
             {data.mdx.body}
           </MDXRenderer>
         </div>
+        <div className={guideFooter}>
+          <h2>Resources</h2>
+          <p>
+            <a className={guideFooterLink} href={data.mdx.frontmatter.wikipedia} target="_blank">Wikipedia</a>
+            <a className={guideFooterLink} href={data.mdx.frontmatter.summitpost} target="_blank">Summitpost</a>
+            <a className={guideFooterLink} href={data.mdx.frontmatter.peakbagger} target="_blank">Peakbagger</a>
+            <a className={guideFooterLink} href={data.mdx.frontmatter.official_info} target="_blank">Official Info</a>
+            <a className={guideFooterLink} href={data.mdx.frontmatter.weather} target="_blank">Weather</a>
+          </p>
+        </div>
       </div>
     </Layout>
   )
@@ -104,6 +116,11 @@ export const query = graphql`
         gain_feet
         route_type
         season
+        wikipedia
+        summitpost
+        peakbagger
+        official_info
+        weather
         hp_image_alt
         hp_image {
           childImageSharp {
