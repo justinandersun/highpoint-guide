@@ -1,0 +1,16 @@
+.home-info {
+  background-color: var(--hill);
+  color: #fff;
+  font-size: 1.2em;
+  padding: 3em 10% 5em 10%;
+}
+.home-infotitle {
+  font-size: 2em;
+  font-family: Explore, sans-serif;
+}
+.home-getstarted {
+  background-color: var(--mountain);
+  color: #fff;
+  font-size: 1.2em;
+  padding: 3em 10% 5em 10%;
+}

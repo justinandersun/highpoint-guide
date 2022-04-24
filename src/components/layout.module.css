@@ -5,7 +5,7 @@
 }
 .header {
   height: 4em;
-  background: var(--hill);
+  background: var(--brown);
   color: #fff;
 }
 .left-header, .right-header {
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 .footer {
-  background: var(--hill);
+  background: var(--brown);
   color: #fff;
   text-align: center;
   padding: 2em 0;

@@ -2,7 +2,11 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import {
-  guideTitle,
+  masthead,
+  mastheadTitle,
+  mastheadSubtitle,
+} from '../components/masthead.module.css'
+import {
   stateGuides,
   guideLink,
 } from '../components/guide.module.css'
@@ -10,7 +14,10 @@ import {
 const GuidesPage = ({ data }) => {
   return (
     <Layout pageTitle="Guides">
-      <h1 className={guideTitle}>Highpoint Guides</h1>
+      <div className={masthead}>
+        <h1 className={mastheadTitle}>Highpoint Guides</h1>
+        <p className={mastheadSubtitle}>A guide for every state.</p>
+      </div>
       <div className={stateGuides}>
       {
         data.allMdx.nodes.map((node) => (

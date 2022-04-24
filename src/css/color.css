@@ -1,12 +1,15 @@
 :root {
+  /* Aubergine */
   --primary: #111c19;
   --secondary: #122b2a;
   --tertiary: #ae9e6c;
   --quatrary: #4f5b3d;
   --quintrary: #303d1f;
+  /* Colorful */
   --sky: #6AB3E0;
   --glacier: #D7EAF3;
   --mountain: #434244;
   --hill: #3B7639;
   --field: #BF9A3A;
+  --brown: #302215;
 }

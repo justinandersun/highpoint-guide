@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import {
   guidePage,
+  guideTitlehead,
   guideTitle,
   guideState,
   guideMasthead,
@@ -24,9 +25,11 @@ const GuidePost = ({ data }) => {
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.state}>
-      <div className={guidePage}>
+      <div className={guideTitlehead}>
         <p className={guideTitle}>{data.mdx.frontmatter.highpoint}</p>
         <p className={guideState}>{data.mdx.frontmatter.state}</p>
+      </div>
+      <div className={guidePage}>
         <div className={guideMasthead}>
           <div className={mastheadImage}>
             <GatsbyImage

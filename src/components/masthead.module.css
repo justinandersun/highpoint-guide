@@ -1,0 +1,16 @@
+.masthead {
+  width: 100%;
+  background-image: url('../images/topo.jpg');
+  background-repeat: repeat;
+  background-color: rgba(4,147,114,0.1);
+  text-align: center;
+  padding: 5em 0 7em 0;
+}
+.masthead-title {
+  font-family: Explore, sans-serif;
+  font-size: 3em;
+  padding: 0.5em;
+}
+.masthead-subtitle {
+  font-size: 1.5em;
+}
