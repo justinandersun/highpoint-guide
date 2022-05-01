@@ -1,15 +1,17 @@
 /* Guides Page */
 .state-guides {
   width: 80%;
-  border-top: 5px dotted var(--brown);
   padding: 2em 10%;
-  margin: 0 0 3em 0;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  background: #16A5C2;
+  background: -webkit-radial-gradient(right, #16A5C2, #ACEA8D);
+  background: -moz-radial-gradient(right, #16A5C2, #ACEA8D);
+  background: radial-gradient(to left, #16A5C2, #ACEA8D);
 }
 .guide-link {
   background: #fff;
@@ -99,9 +101,29 @@
   margin: 0 0 2em 0;
   font-size: 1.2em;
 }
+.guide-disclaimer {
+  padding: 1em;
+  background-color: #eee;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.guide-body p {
+  display: block;
+  padding: 0.5em 0;
+  line-height: 1.3em;
+}
 .guide-body h2, .guide-footer h2 {
   font-size: 1.5em;
-  margin: 2em 0 1em 0;
+  margin: 1em 0 0.5em 0;
+  padding: 0.1em 0.5em;
+  background-color: var(--brown);
+  color: #fff;
+  display: inline-block;
+}
+.guide-body h3 {
+  font-size: 1.2em;
+  margin: 1em 0 0.5em 0;
   padding: 0.1em 0.5em;
   background-color: var(--brown);
   color: #fff;

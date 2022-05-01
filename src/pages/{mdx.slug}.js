@@ -16,6 +16,7 @@ import {
   cellName,
   cellData,
   guideBody,
+  guideDisclaimer,
   guideFooter,
   guideFooterLink,
 } from '../components/guide.module.css'
@@ -83,6 +84,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guideBody}>
+          <p className={guideDisclaimer}><em>This below text is copied from SummitPost. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</em></p>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>
