@@ -11,10 +11,10 @@ import {
 
 const StartPage = () => {
   return (
-    <Layout pageTitle="Getting Started">
+    <Layout pageTitle="Get Started">
     <div className={masthead}>
-      <h1 className={mastheadTitle}>Getting Started</h1>
-      <p className={mastheadSubtitle}>How to climb the fifty highest points.</p>
+      <h1 className={mastheadTitle}>Get Started</h1>
+      <p className={mastheadSubtitle}>How to begin your highpoint adventures</p>
     </div>
     </Layout>
   )

@@ -31,22 +31,29 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       <div className={header}>
         <div className={leftHeader}>
-          <StaticImage className={headerImg}
-            alt="Highpoint Guide Logo"
-            src="../images/logo.png"
-          />
-          <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+          <Link to="/" className={navLinkText}>
+            <StaticImage className={headerImg}
+              alt="Highpoint Guide Logo"
+              src="../images/logo.png"
+            />
+            <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+          </Link>
         </div>
         <nav className={rightHeader}>
           <ul className={navLinks}>
             <li className={navLinkItem}>
-              <Link to="/" className={navLinkText}>
-                Home
+              <Link to="/start" className={navLinkText}>
+                Get Started
               </Link>
             </li>
             <li className={navLinkItem}>
               <Link to="/guides" className={navLinkText}>
                 Guides
+              </Link>
+            </li>
+            <li className={navLinkItem}>
+              <Link to="/rank" className={navLinkText}>
+                Rankings
               </Link>
             </li>
           </ul>
