@@ -56,6 +56,11 @@ const Layout = ({ pageTitle, children }) => {
                 Rankings
               </Link>
             </li>
+            <li className={navLinkItem}>
+              <Link to="/community" className={navLinkText}>
+                Community
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

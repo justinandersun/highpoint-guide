@@ -76,6 +76,27 @@
   background-color: var(--mountain);
 }
 
+.nd,
+.mn,
+.wi,
+.mi,
+.ma,
+.ct,
+.sd,
+.oh,
+.pa,
+.nj,
+.mo,
+.va,
+.md,
+.ar,
+.la,
+.ms,
+.al,
+.ga {
+  background-color: var(--hill);
+}
+
 .ia,
 .il,
 .ii,

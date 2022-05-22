@@ -21,11 +21,11 @@ const IndexPage = () => {
         <p>"Highpointing" is the act of climbing to the highest geographic point in a region.</p>
         <p>Some adventurers highpoint on a global scale, such as climbing the loftiest peak on every continent.</p>
         <p>Other folks highpoint on a local scale, like bagging the tallest point of each county in their state.</p>
-        <p>This guide is built for people interested in climbing to the highest point of each U.S. state (not to be confused with <a href="https://highpointers.org/" target="_blank">The Highpointers Club</a>, a non-profit organization dedicated to the conservation and maintenance of U.S. highpoints).</p>
+        <p>This guide is built for people interested in climbing to the highest point of U.S. states (not to be confused with <a href="https://highpointers.org/" target="_blank">The Highpointers Club</a>, a non-profit organization dedicated to the conservation and maintenance of U.S. highpoints).</p>
       </div>
       <div className={homes.homeHow}>
         <h2 className={homes.homeHeading}>Using this Guide</h2>
-        <p>This guide is built to help climbers achieve their goal of summitting all U.S. highpoints. We share the best routes, gear, logistics, and recommendations to make each highpoint an adventure.</p>
+        <p>Our mission is to help climbers achieve their goal of summitting U.S. highpoints. We share the best routes, gear, logistics, and recommendations to make each highpoint a successful adventure.</p>
         <p>Each state on the map below is colored for its highpoint's geography:</p>
         <div className={homes.howBox}>
           <div className={homes.flat}>Flat</div>
@@ -90,7 +90,6 @@ const IndexPage = () => {
       <div className={homes.homeHow}>
         <p>Tile maps make each state the same size to reduce some bias associated with traditional maps, like the <a href="https://www.tableau.com/about/blog/2017/1/viz-whiz-hex-tile-maps-64713" target="_blank">Alaska effect</a>. Although Alaska contains the largest highpoint (by over 6,000 feet!), it needn't dwarf other states 😊</p>
       </div>
-
     </Layout>
   )
 }

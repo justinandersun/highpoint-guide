@@ -25,9 +25,9 @@
 
 .home-what a, .home-how a {
   text-decoration: none;
-  color: var(--hill);
+  color: var(--sky);
   font-weight: bold;
-  border-bottom: 3px solid var(--hill);
+  border-bottom: 3px solid var(--sky);
   transition: 100ms;
 }
   .home-what a:hover, .home-how a:hover {

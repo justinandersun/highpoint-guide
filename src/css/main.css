@@ -12,3 +12,5 @@ main {
 }
 
 p { max-width: 60ch; margin: auto; }
+
+li { list-style-position: inside; }
