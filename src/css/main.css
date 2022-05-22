@@ -13,4 +13,6 @@ main {
 
 p { max-width: 60ch; margin: auto; }
 
-li { list-style-position: inside; }
+ul, ol { margin-left: 1.5em; }
+
+li { list-style-position: outside; }

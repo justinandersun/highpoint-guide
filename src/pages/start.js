@@ -5,9 +5,7 @@ import {
   mastheadTitle,
   mastheadSubtitle,
 } from '../components/masthead.module.css'
-import {
-  startList
-} from '../components/start.module.css'
+import * as start from '../components/start.module.css'
 
 const StartPage = () => {
   return (
@@ -15,6 +13,9 @@ const StartPage = () => {
     <div className={masthead}>
       <h1 className={mastheadTitle}>Get Started</h1>
       <p className={mastheadSubtitle}>How to begin your highpoint adventures</p>
+    </div>
+    <div>
+
     </div>
     </Layout>
   )
