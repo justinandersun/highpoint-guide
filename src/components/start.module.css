@@ -1,1 +1,53 @@
+.start-body {
+  margin: 2em auto 4em auto;
+  font-size: 1.2em;
+  max-width: 60ch;
+}
 
+.start-section {
+  margin: 1.5em auto;
+  padding-bottom: 2em;
+  border-bottom: 4px dotted var(--brown);
+}
+
+.last-section {
+  border-bottom: none;
+}
+
+.start-section h2 {
+  font-size: 1.5em;
+  margin: 1em 0 0.5em 0;
+  padding: 0.1em 0.5em;
+  background-color: var(--brown);
+  color: #fff;
+  display: inline-block;
+}
+
+.start-section p {
+  display: block;
+  padding: 0.5em 0;
+  line-height: 1.5em;
+}
+
+.start-section ul { list-style-type: square; }
+
+.start-section li { margin: 0.7em 0; }
+
+.start-section a, .start-link {
+  text-decoration: none;
+  color: var(--sky);
+  font-weight: bold;
+  border-bottom: 3px solid var(--sky);
+  transition: 100ms;
+}
+  .start-section a:hover, .start-link:hover {
+    border-bottom: none;
+    transition: 100ms;
+  }
+
+.logo {
+  height: 7em;
+  width: 7em;
+  margin: 1em auto;
+  display: block;
+}
