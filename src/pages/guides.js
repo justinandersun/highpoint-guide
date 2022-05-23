@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import {
   masthead,
@@ -27,59 +27,59 @@ const GuidesPage = ({ data }) => {
         <p>Select a state to access its highpoint guide.</p>
       </div>
       <div className={grid.gridContainer}>
-        <div className={`${grid.state} ${grid.ak}`}><Link className={grid.stateLink} to={`/ak`}>AK</Link></div>
-        <div className={`${grid.state} ${grid.me}`}><Link className={grid.stateLink} to={`/me`}>ME</Link></div>
-        <div className={`${grid.state} ${grid.vt}`}><Link className={grid.stateLink} to={`/vt`}>VT</Link></div>
-        <div className={`${grid.state} ${grid.nh}`}><Link className={grid.stateLink} to={`/nh`}>NH</Link></div>
-        <div className={`${grid.state} ${grid.wa}`}><Link className={grid.stateLink} to={`/wa`}>WA</Link></div>
-        <div className={`${grid.state} ${grid.id}`}><Link className={grid.stateLink} to={`/id`}>ID</Link></div>
-        <div className={`${grid.state} ${grid.mt}`}><Link className={grid.stateLink} to={`/mt`}>MT</Link></div>
-        <div className={`${grid.state} ${grid.nd}`}><Link className={grid.stateLink} to={`/nd`}>ND</Link></div>
-        <div className={`${grid.state} ${grid.mn}`}><Link className={grid.stateLink} to={`/mn`}>MN</Link></div>
-        <div className={`${grid.state} ${grid.wi}`}><Link className={grid.stateLink} to={`/wi`}>WI</Link></div>
-        <div className={`${grid.state} ${grid.mi}`}><Link className={grid.stateLink} to={`/mi`}>MI</Link></div>
-        <div className={`${grid.state} ${grid.ny}`}><Link className={grid.stateLink} to={`/ny`}>NY</Link></div>
-        <div className={`${grid.state} ${grid.ma}`}><Link className={grid.stateLink} to={`/ma`}>MA</Link></div>
-        <div className={`${grid.state} ${grid.ct}`}><Link className={grid.stateLink} to={`/ct`}>CT</Link></div>
-        <div className={`${grid.state} ${grid.ri}`}><Link className={grid.stateLink} to={`/ri`}>RI</Link></div>
-        <div className={`${grid.state} ${grid.or}`}><Link className={grid.stateLink} to={`/or`}>OR</Link></div>
-        <div className={`${grid.state} ${grid.nv}`}><Link className={grid.stateLink} to={`/nv`}>NV</Link></div>
-        <div className={`${grid.state} ${grid.wy}`}><Link className={grid.stateLink} to={`/wy`}>WY</Link></div>
-        <div className={`${grid.state} ${grid.sd}`}><Link className={grid.stateLink} to={`/sd`}>SD</Link></div>
-        <div className={`${grid.state} ${grid.ia}`}><Link className={grid.stateLink} to={`/ia`}>IA</Link></div>
-        <div className={`${grid.state} ${grid.il}`}><Link className={grid.stateLink} to={`/il`}>IL</Link></div>
-        <div className={`${grid.state} ${grid.ii}`}><Link className={grid.stateLink} to={`/in`}>IN</Link></div>
-        <div className={`${grid.state} ${grid.oh}`}><Link className={grid.stateLink} to={`/oh`}>OH</Link></div>
-        <div className={`${grid.state} ${grid.pa}`}><Link className={grid.stateLink} to={`/pa`}>PA</Link></div>
-        <div className={`${grid.state} ${grid.nj}`}><Link className={grid.stateLink} to={`/nj`}>NJ</Link></div>
-        <div className={`${grid.state} ${grid.ca}`}><Link className={grid.stateLink} to={`/ca`}>CA</Link></div>
-        <div className={`${grid.state} ${grid.ut}`}><Link className={grid.stateLink} to={`/ut`}>UT</Link></div>
-        <div className={`${grid.state} ${grid.co}`}><Link className={grid.stateLink} to={`/co`}>CO</Link></div>
-        <div className={`${grid.state} ${grid.ne}`}><Link className={grid.stateLink} to={`/ne`}>NE</Link></div>
-        <div className={`${grid.state} ${grid.mo}`}><Link className={grid.stateLink} to={`/mo`}>MO</Link></div>
-        <div className={`${grid.state} ${grid.ky}`}><Link className={grid.stateLink} to={`/ky`}>KY</Link></div>
-        <div className={`${grid.state} ${grid.wv}`}><Link className={grid.stateLink} to={`/wv`}>WV</Link></div>
-        <div className={`${grid.state} ${grid.va}`}><Link className={grid.stateLink} to={`/va`}>VA</Link></div>
-        <div className={`${grid.state} ${grid.md}`}><Link className={grid.stateLink} to={`/md`}>MD</Link></div>
-        <div className={`${grid.state} ${grid.de}`}><Link className={grid.stateLink} to={`/de`}>DE</Link></div>
-        <div className={`${grid.state} ${grid.az}`}><Link className={grid.stateLink} to={`/az`}>AZ</Link></div>
-        <div className={`${grid.state} ${grid.nm}`}><Link className={grid.stateLink} to={`/nm`}>NM</Link></div>
-        <div className={`${grid.state} ${grid.ks}`}><Link className={grid.stateLink} to={`/ks`}>KS</Link></div>
-        <div className={`${grid.state} ${grid.ar}`}><Link className={grid.stateLink} to={`/ar`}>AR</Link></div>
-        <div className={`${grid.state} ${grid.tn}`}><Link className={grid.stateLink} to={`/tn`}>TN</Link></div>
-        <div className={`${grid.state} ${grid.nc}`}><Link className={grid.stateLink} to={`/nc`}>NC</Link></div>
-        <div className={`${grid.state} ${grid.sc}`}><Link className={grid.stateLink} to={`/sc`}>SC</Link></div>
-        <div className={`${grid.state} ${grid.ok}`}><Link className={grid.stateLink} to={`/ok`}>OK</Link></div>
-        <div className={`${grid.state} ${grid.la}`}><Link className={grid.stateLink} to={`/la`}>LA</Link></div>
-        <div className={`${grid.state} ${grid.ms}`}><Link className={grid.stateLink} to={`/ms`}>MS</Link></div>
-        <div className={`${grid.state} ${grid.al}`}><Link className={grid.stateLink} to={`/al`}>AL</Link></div>
-        <div className={`${grid.state} ${grid.ga}`}><Link className={grid.stateLink} to={`/ga`}>GA</Link></div>
-        <div className={`${grid.state} ${grid.hi}`}><Link className={grid.stateLink} to={`/hi`}>HI</Link></div>
-        <div className={`${grid.state} ${grid.tx}`}><Link className={grid.stateLink} to={`/tx`}>TX</Link></div>
-        <div className={`${grid.state} ${grid.fl}`}><Link className={grid.stateLink} to={`/fl`}>FL</Link></div>
+        <Link className={`${grid.stateLink} ${grid.ak}`} to={`/ak`}><div className={grid.state}>AK</div></Link>
+        <Link className={`${grid.stateLink} ${grid.me}`} to={`/me`}><div className={grid.state}>ME</div></Link>
+        <Link className={`${grid.stateLink} ${grid.vt}`} to={`/vt`}><div className={grid.state}>VT</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nh}`} to={`/nh`}><div className={grid.state}>NH</div></Link>
+        <Link className={`${grid.stateLink} ${grid.wa}`} to={`/wa`}><div className={grid.state}>WA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.id}`} to={`/id`}><div className={grid.state}>ID</div></Link>
+        <Link className={`${grid.stateLink} ${grid.mt}`} to={`/mt`}><div className={grid.state}>MT</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nd}`} to={`/nd`}><div className={grid.state}>ND</div></Link>
+        <Link className={`${grid.stateLink} ${grid.mn}`} to={`/mn`}><div className={grid.state}>MN</div></Link>
+        <Link className={`${grid.stateLink} ${grid.wi}`} to={`/wi`}><div className={grid.state}>WI</div></Link>
+        <Link className={`${grid.stateLink} ${grid.mi}`} to={`/mi`}><div className={grid.state}>MI</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ny}`} to={`/ny`}><div className={grid.state}>NY</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ma}`} to={`/ma`}><div className={grid.state}>MA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ct}`} to={`/ct`}><div className={grid.state}>CT</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ri}`} to={`/ri`}><div className={grid.state}>RI</div></Link>
+        <Link className={`${grid.stateLink} ${grid.or}`} to={`/or`}><div className={grid.state}>OR</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nv}`} to={`/nv`}><div className={grid.state}>NV</div></Link>
+        <Link className={`${grid.stateLink} ${grid.wy}`} to={`/wy`}><div className={grid.state}>WY</div></Link>
+        <Link className={`${grid.stateLink} ${grid.sd}`} to={`/sd`}><div className={grid.state}>SD</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ia}`} to={`/ia`}><div className={grid.state}>IA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.il}`} to={`/il`}><div className={grid.state}>IL</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ii}`} to={`/in`}><div className={grid.state}>IN</div></Link>
+        <Link className={`${grid.stateLink} ${grid.oh}`} to={`/oh`}><div className={grid.state}>OH</div></Link>
+        <Link className={`${grid.stateLink} ${grid.pa}`} to={`/pa`}><div className={grid.state}>PA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nj}`} to={`/nj`}><div className={grid.state}>NJ</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ca}`} to={`/ca`}><div className={grid.state}>CA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ut}`} to={`/ut`}><div className={grid.state}>UT</div></Link>
+        <Link className={`${grid.stateLink} ${grid.co}`} to={`/co`}><div className={grid.state}>CO</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ne}`} to={`/ne`}><div className={grid.state}>NE</div></Link>
+        <Link className={`${grid.stateLink} ${grid.mo}`} to={`/mo`}><div className={grid.state}>MO</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ky}`} to={`/ky`}><div className={grid.state}>KY</div></Link>
+        <Link className={`${grid.stateLink} ${grid.wv}`} to={`/wv`}><div className={grid.state}>WV</div></Link>
+        <Link className={`${grid.stateLink} ${grid.va}`} to={`/va`}><div className={grid.state}>VA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.md}`} to={`/md`}><div className={grid.state}>MD</div></Link>
+        <Link className={`${grid.stateLink} ${grid.de}`} to={`/de`}><div className={grid.state}>DE</div></Link>
+        <Link className={`${grid.stateLink} ${grid.az}`} to={`/az`}><div className={grid.state}>AZ</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nm}`} to={`/nm`}><div className={grid.state}>NM</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ks}`} to={`/ks`}><div className={grid.state}>KS</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ar}`} to={`/ar`}><div className={grid.state}>AR</div></Link>
+        <Link className={`${grid.stateLink} ${grid.tn}`} to={`/tn`}><div className={grid.state}>TN</div></Link>
+        <Link className={`${grid.stateLink} ${grid.nc}`} to={`/nc`}><div className={grid.state}>NC</div></Link>
+        <Link className={`${grid.stateLink} ${grid.sc}`} to={`/sc`}><div className={grid.state}>SC</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ok}`} to={`/ok`}><div className={grid.state}>OK</div></Link>
+        <Link className={`${grid.stateLink} ${grid.la}`} to={`/la`}><div className={grid.state}>LA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ms}`} to={`/ms`}><div className={grid.state}>MS</div></Link>
+        <Link className={`${grid.stateLink} ${grid.al}`} to={`/al`}><div className={grid.state}>AL</div></Link>
+        <Link className={`${grid.stateLink} ${grid.ga}`} to={`/ga`}><div className={grid.state}>GA</div></Link>
+        <Link className={`${grid.stateLink} ${grid.hi}`} to={`/hi`}><div className={grid.state}>HI</div></Link>
+        <Link className={`${grid.stateLink} ${grid.tx}`} to={`/tx`}><div className={grid.state}>TX</div></Link>
+        <Link className={`${grid.stateLink} ${grid.fl}`} to={`/fl`}><div className={grid.state}>FL</div></Link>
       </div>
       <div className={homes.homeHow}>
-        <p>Tile maps make each state the same size to reduce some bias associated with traditional maps, like the <a href="https://www.tableau.com/about/blog/2017/1/viz-whiz-hex-tile-maps-64713" target="_blank">Alaska effect</a>. Although Alaska contains the largest highpoint (by over 6,000 feet!), it needn't dwarf other states 😊</p>
+        <p>Tile maps make each state the same size to reduce some bias associated with traditional maps, like the <a href="https://www.tableau.com/about/blog/2017/1/viz-whiz-hex-tile-maps-64713" target="_blank" rel="noreferrer">Alaska effect</a>. Although Alaska contains the largest highpoint (by over 6,000 feet!), it needn't dwarf other states 😊</p>
       </div>
     </Layout>
   )

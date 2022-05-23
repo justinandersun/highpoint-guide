@@ -9,15 +9,12 @@
 }
 
 .state {
-  background-color: var(--hill);
-  color: #fff;
   font-size: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: 4px solid var(--brown);
-  cursor: pointer;
   transition: 250ms;
 }
   .state:after {
@@ -73,6 +70,7 @@
 .nm,
 .hi,
 .tx {
+  color: #fff;
   background-color: var(--mountain);
 }
 
@@ -90,10 +88,12 @@
 .va,
 .md,
 .ar,
+.ok,
 .la,
 .ms,
 .al,
 .ga {
+  color: #fff;
   background-color: var(--hill);
 }
 

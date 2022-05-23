@@ -21,16 +21,16 @@ const CommunityPage = () => {
         alt="Highpoint Guide Logo"
         src="../images/logo.png"
       />
-      <a className={comm.communityLink} href="https://highpointers.org/" target="_blank">Highpointers Club Website ↗</a>
+      <a className={`${comm.communityLink} ${comm.glacier}`} href="https://highpointers.org/" target="_blank" rel="noreferrer">Highpointers Club Website ↗</a>
       <p>The Highpointers Club is a non-profit organization dedicated to the conservation and maintenance of U.S. highpoints. They publish a periodic magazine with highpoint news and organize annual conventions at state highpoints.</p>
 
-      <a className={comm.communityLink} href="https://www.facebook.com/groups/276116215808514" target="_blank">50 States Highpointing Group on Facebook ↗</a>
+      <a className={`${comm.communityLink} ${comm.mountain}`} href="https://www.facebook.com/groups/276116215808514" target="_blank" rel="noreferrer">50 States Highpointing Group on Facebook ↗</a>
       <p>The Facebook Group is a great place to share stories and post photos of your highpointing adventures in a positive and encouraging environment.</p>
 
-      <a className={comm.communityLink} href="https://www.reddit.com/r/Highpointers/" target="_blank">r/Highpointers on Reddit ↗</a>
+      <a className={`${comm.communityLink} ${comm.hill}`} href="https://www.reddit.com/r/Highpointers/" target="_blank" rel="noreferrer">r/Highpointers on Reddit ↗</a>
       <p>The sub-Reddit is a good forum for asking questions and getting up-to-date information about your climbs.</p>
 
-      <a className={comm.communityLink} href="https://github.com/justinandersun/highpoint-guide" target="_blank">highpoint-guide on GitHub ↗</a>
+      <a className={`${comm.communityLink} ${comm.field}`} href="https://github.com/justinandersun/highpoint-guide" target="_blank" rel="noreferrer">highpoint-guide on GitHub ↗</a>
       <p>Would you like to contribute to this project? Open a pull-request on GitHub.</p>
     </div>
     </Layout>

@@ -68,7 +68,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={footer}>
-        <p>Made and maintained with ❤️ by <a className={footerLink} href="https://andersun.com" target="_blank" rel="noreferrer">Justin Andersun</a>.</p>
+        <p>Made and maintained by <a className={footerLink} href="https://andersun.com" target="_blank" rel="noreferrer">Justin Andersun</a>.</p>
       </footer>
     </div>
   )
