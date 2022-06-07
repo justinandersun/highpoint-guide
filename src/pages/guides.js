@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import Helmet from "react-helmet"
 import Layout from '../components/layout'
 import {
   masthead,
@@ -12,6 +13,10 @@ import * as grid from '../components/gridmap.module.css'
 const GuidesPage = ({ data }) => {
   return (
     <Layout pageTitle="Guides">
+    <Helmet>
+      <meta name="description" content="A climbing guide for each U.S. state highpoint." />
+      <meta name="keywords" content="highpoint climbing guide, US highpoint climbing guide"/>
+    </Helmet>
       <div className={masthead}>
         <h1 className={mastheadTitle}>Guides</h1>
         <p className={mastheadSubtitle}>Guidebooks for each state highpoint</p>

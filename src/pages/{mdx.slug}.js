@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
+import Helmet from "react-helmet"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
@@ -9,7 +10,11 @@ const GuidePost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hp_image)
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.state}>
+    <Layout pageTitle={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`}>
+    <Helmet>
+      <meta name="description" content={`How to climb ${data.mdx.frontmatter.highpoint}, the highpoint of ${data.mdx.frontmatter.state}`} />
+      <meta name="keywords" content={`${data.mdx.frontmatter.highpoint} guide, ${data.mdx.frontmatter.state} highpoint guide`} />
+    </Helmet>
       <div className={guides.guideTitlehead}>
         <p className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</p>
         <p className={guides.guideState}>{data.mdx.frontmatter.state}</p>
@@ -76,11 +81,11 @@ const GuidePost = ({ data }) => {
         <div className={guides.guideFooter}>
           <h2>Resources</h2>
           <p>
-            <a className={`${guides.guideFooterLink} ${guides.wiki}`} href={data.mdx.frontmatter.wikipedia} target="_blank">{data.mdx.frontmatter.highpoint} on Wikipedia</a>
-            <a className={`${guides.guideFooterLink} ${guides.sump}`} href={data.mdx.frontmatter.summitpost} target="_blank">{data.mdx.frontmatter.highpoint} on Summitpost</a>
-            <a className={`${guides.guideFooterLink} ${guides.pbag}`} href={data.mdx.frontmatter.peakbagger} target="_blank">{data.mdx.frontmatter.highpoint} on Peakbagger</a>
-            <a className={`${guides.guideFooterLink} ${guides.offi}`} href={data.mdx.frontmatter.official_info} target="_blank">Official Info for {data.mdx.frontmatter.highpoint}</a>
-            <a className={`${guides.guideFooterLink} ${guides.weat}`} href={data.mdx.frontmatter.weather} target="_blank">Weather for {data.mdx.frontmatter.highpoint}</a>
+            <a className={`${guides.guideFooterLink} ${guides.wiki}`} href={data.mdx.frontmatter.wikipedia} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Wikipedia</a>
+            <a className={`${guides.guideFooterLink} ${guides.sump}`} href={data.mdx.frontmatter.summitpost} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Summitpost</a>
+            <a className={`${guides.guideFooterLink} ${guides.pbag}`} href={data.mdx.frontmatter.peakbagger} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Peakbagger</a>
+            <a className={`${guides.guideFooterLink} ${guides.offi}`} href={data.mdx.frontmatter.official_info} target="_blank" rel="noreferrer">Official Info for {data.mdx.frontmatter.highpoint}</a>
+            <a className={`${guides.guideFooterLink} ${guides.weat}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint}</a>
           </p>
         </div>
       </div>

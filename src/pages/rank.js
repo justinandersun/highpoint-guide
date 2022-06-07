@@ -12,6 +12,10 @@ import * as ranked from '../components/rank.module.css'
 const RankPage = () => {
   return (
     <Layout pageTitle="Rankings">
+    <Helmet>
+      <meta name="description" content="Ranking the U.S. Highpoints by elevation, distance, difficult, and effort." />
+      <meta name="keywords" content="US highpoints ranked, most difficult US highpoint"/>
+    </Helmet>
     <div className={masthead}>
       <h1 className={mastheadTitle}>Rankings</h1>
       <p className={mastheadSubtitle}>Highpoints by height, length, and difficulty</p>
@@ -22,8 +26,8 @@ const RankPage = () => {
         <p><span className={ranked.dimension}>Elevation</span> Height of the highpoint, measured in feet.</p>
         <p><span className={ranked.dimension}>Gain</span> Elevation gained on the most popular route, measured in feet.</p>
         <p><span className={ranked.dimension}>Distance</span> Length traveled on the most popular route, measured in miles.</p>
-        <p><span className={ranked.dimension}>Difficulty</span> Subjective rating of the highpoint's difficulty, measured on a 0 to 10 scale per the <a href="https://www.summitpost.org/martin-classification-of-difficulty-for-u-s-state-highpoints/1007040" target="_blank">Martin Classification</a>.</p>
-        <p><span className={ranked.dimension}>Effort</span> Subjective rating of the physical effort needed to summit, measured on a 0 to 1000 scale per the <a href="https://www.summitpost.org/the-effort-scale-of-highpointing-the-fifty-us-states/1046476" target="_blank">VanderHeide Effort Scale</a>.</p>
+        <p><span className={ranked.dimension}>Difficulty</span> Subjective rating of the highpoint's difficulty, measured on a 0 to 10 scale per the <a href="https://www.summitpost.org/martin-classification-of-difficulty-for-u-s-state-highpoints/1007040" target="_blank" rel="noreferrer">Martin Classification</a>.</p>
+        <p><span className={ranked.dimension}>Effort</span> Subjective rating of the physical effort needed to summit, measured on a 0 to 1000 scale per the <a href="https://www.summitpost.org/the-effort-scale-of-highpointing-the-fifty-us-states/1046476" target="_blank" rel="noreferrer">VanderHeide Effort Scale</a>.</p>
         <p><span className={ranked.dimension}>Rank</span> Overall rank of the highpoint, calculated by averaging the ranks of the five dimensions above.</p>
       </div>
       <table id="hprank">

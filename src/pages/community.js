@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Helmet from "react-helmet"
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import {
@@ -11,6 +12,10 @@ import * as comm from '../components/community.module.css'
 const CommunityPage = () => {
   return (
     <Layout pageTitle="Community">
+    <Helmet>
+      <meta name="description" content="How to engage with the U.S. Highpointing Community." />
+      <meta name="keywords" content="US highpoint Facebook, US highpoint Reddit, US highpoint Discord, US highpoint community"/>
+    </Helmet>
     <div className={masthead}>
       <h1 className={mastheadTitle}>Community</h1>
       <p className={mastheadSubtitle}>Connect with fellow highpointers</p>
