@@ -1,5 +1,5 @@
 # Highpoint Guide
-An interactive map and guidebook for climbing the 50 U.S. high-points.
+An interactive guidebook for climbing the 50 U.S. highpoints.
 See it live @ http://highpoint.guide
 
 ### Tech Stack
