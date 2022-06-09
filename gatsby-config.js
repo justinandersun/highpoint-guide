@@ -20,23 +20,23 @@ module.exports = {
       "gatsby-plugin-mdx",
       "gatsby-transformer-sharp",
       "gatsby-plugin-react-helmet",
+      // Google Analytics
       {
-        resolve: `gatsby-plugin-google-analytics`,
+        resolve: `gatsby-plugin-google-gtag`,
         options: {
-          trackingId: "G-QPB1CXCKKR",
-          head: false,
-          anonymize: true,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-          pageTransitionDelay: 0,
-          optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-          experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-          variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-          defer: false,
-          sampleRate: 5,
-          siteSpeedSampleRate: 10,
-          cookieDomain: "example.com",
-          enableWebVitalsTracking: true,
+          trackingIds: [
+          "G-QPB1CXCKKR",
+          ],
+          pluginConfig: {
+            head: true
+          },
+        },
+      },
+      // Favicons
+      {
+        resolve: 'gatsby-plugin-manifest',
+        options: {
+          icon: 'src/images/logo.png',
         },
       },
     ],
