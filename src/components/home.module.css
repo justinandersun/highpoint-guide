@@ -25,9 +25,9 @@
 
 .home-what a, .home-how a {
   text-decoration: none;
-  color: var(--sky);
+  color: var(--hill);
   font-weight: bold;
-  border-bottom: 3px solid var(--sky);
+  border-bottom: 3px solid var(--hill);
   transition: 100ms;
 }
   .home-what a:hover, .home-how a:hover {
@@ -55,3 +55,15 @@
 .hill { background-color: var(--hill); }
 .mountain { background-color: var(--mountain); }
 .glacier { background-color: var(--glacier); color: var(--brown);}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .home-what, .home-how {
+    font-size: 1em;
+    padding: 2.5em 10%;
+    margin: auto 5%;
+  }
+  .home-heading { font-size: 1.2em; }
+  .how-box { display: block; }
+  .flat, .hill, .mountain, .glacier { margin: 0.5em; }
+}

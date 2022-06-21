@@ -44,8 +44,6 @@
   overflow: hidden;
 }
 
-.masthead-metadata { }
-
 /* Metadata */
 .guide-metadata {
   display: grid;
@@ -116,9 +114,9 @@
 
 .guide-body a {
   text-decoration: none;
-  color: var(--sky);
+  color: var(--hill);
   font-weight: bold;
-  border-bottom: 3px solid var(--sky);
+  border-bottom: 3px solid var(--hill);
   transition: 100ms;
 }
   .guide-body a:hover {
@@ -157,3 +155,16 @@
 .pbag { background-color: var(--hill); color: #fff; }
 .offi { background-color: var(--field); }
 .weat { background-color: var(--sky); }
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .guide-masthead {
+    display: block;
+    margin: 1em auto 0 auto;
+  }
+  .masthead-image { overflow: visible; }
+  .cell-name { font-size: 0.8em; }
+  .cell-data { font-size: 1em; }
+  .guide-body, .guide-footer { font-size: 1em; }
+  .guide-body h2, .guide-footer h2 { font-size: 1.2em; }
+}

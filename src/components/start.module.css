@@ -35,9 +35,9 @@
 
 .start-section a, .start-link {
   text-decoration: none;
-  color: var(--sky);
+  color: var(--hill);
   font-weight: bold;
-  border-bottom: 3px solid var(--sky);
+  border-bottom: 3px solid var(--hill);
   transition: 100ms;
 }
   .start-section a:hover, .start-link:hover {
@@ -50,4 +50,13 @@
   width: 7em;
   margin: 1em auto;
   display: block;
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .start-body {
+    margin: 2em 5% 4em 5%;
+    font-size: 1em;
+  }
+  .start-section h2 { font-size: 1.2em; }
 }

@@ -58,3 +58,34 @@
   text-decoration: none;
   border-bottom: 0.1em #fff solid;
 }
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .header { height: auto; }
+  .left-header, .right-header {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: left;
+    clear: both;
+  }
+  .header-img {
+    height: 2em;
+    width: 2em;
+  }
+  .site-title { font-size: 1.2em; }
+  .nav-links {
+    display: block;
+    float: inherit;
+  }
+  .nav-link-item  {
+    padding: 1em;
+    margin: 0.1em auto;
+    transition: 200ms;
+  }
+    .nav-link-item:hover  {
+      background-color: rgba(255,255,255,0.2);
+      transition: 200ms;
+    }
+
+}

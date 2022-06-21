@@ -108,3 +108,20 @@
   color: var(--brown);
   background-color: var(--field);
 }
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    grid-gap: 3px;
+    width: 85%;
+  }
+  .state {
+    font-size: 1em;
+    border: 2px solid var(--brown);
+  }
+    .state:hover {
+      background-color: var(--sky);
+      color: var(--brown);
+      font-size: 1.1em;
+    }
+}
