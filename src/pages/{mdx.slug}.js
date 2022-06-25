@@ -116,6 +116,7 @@ export const query = graphql`
         peakbagger
         official_info
         weather
+        alltrails
         hp_image_alt
         hp_image {
           childImageSharp {
