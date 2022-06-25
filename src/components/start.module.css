@@ -7,7 +7,6 @@
 .start-section {
   margin: 1.5em auto;
   padding-bottom: 2em;
-  border-bottom: 4px dotted var(--brown);
 }
 
 .last-section {
@@ -16,11 +15,10 @@
 
 .start-section h2 {
   font-size: 1.5em;
-  margin: 1em 0 0.5em 0;
-  padding: 0.1em 0.5em;
-  background-color: var(--brown);
-  color: #fff;
-  display: inline-block;
+  margin: 1.2em 0 0.2em 0;
+  padding: 0.1em 0;
+  border-bottom: solid 3px var(--charcoal);
+  display: block;
 }
 
 .start-section p {
@@ -37,7 +35,7 @@
   text-decoration: none;
   color: var(--hill);
   font-weight: bold;
-  border-bottom: 3px solid var(--hill);
+  border-bottom: 2px solid var(--hill);
   transition: 100ms;
 }
   .start-section a:hover, .start-link:hover {
@@ -50,6 +48,7 @@
   width: 7em;
   margin: 1em auto;
   display: block;
+  text-align: center;
 }
 
 /* Mobile */

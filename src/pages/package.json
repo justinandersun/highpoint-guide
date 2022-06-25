@@ -1,8 +1,8 @@
 {
-  "name": "highpoint-guide",
+  "name": "gatsby-test",
   "version": "1.0.0",
   "private": true,
-  "description": "Highpoint Guide",
+  "description": "Gatsby Test",
   "author": "Justin Anderson",
   "keywords": [
     "gatsby"
@@ -17,19 +17,13 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "gatsby": "^4.5.4",
-    "gatsby-plugin-google-analytics": "^4.15.0",
-    "gatsby-plugin-google-gtag": "^4.16.0",
+    "gatsby": "^4.5.3",
     "gatsby-plugin-image": "^2.5.2",
-    "gatsby-plugin-manifest": "^4.16.0",
     "gatsby-plugin-mdx": "^3.5.2",
-    "gatsby-plugin-react-helmet": "^5.14.0",
     "gatsby-plugin-sharp": "^4.5.2",
-    "gatsby-plugin-sitemap": "^5.17.0",
     "gatsby-source-filesystem": "^4.5.2",
-    "gatsby-transformer-sharp": "^4.6.0",
+    "gatsby-transformer-sharp": "^4.5.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-dom": "^17.0.1"
   }
 }

@@ -14,7 +14,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 4px solid var(--brown);
+  border: 3px solid var(--charcoal);
+  border-radius: 8px;
   transition: 250ms;
 }
   .state:after {
@@ -26,7 +27,8 @@
   .state:hover {
     background-color: var(--sky);
     color: var(--brown);
-    font-size: 2em;
+    font-size: 1.8em;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
     transition: 250ms;
   }
 
@@ -48,8 +50,9 @@
 .or,
 .wy,
 .mt {
-  color: var(--brown);
+  color: var(--charcoal);
   background-color: var(--glacier);
+  border-radius: 8px;
 }
 
 .me,
@@ -72,6 +75,7 @@
 .tx {
   color: #fff;
   background-color: var(--mountain);
+  border-radius: 8px;
 }
 
 .nd,
@@ -95,6 +99,7 @@
 .ga {
   color: #fff;
   background-color: var(--hill);
+  border-radius: 8px;
 }
 
 .ia,
@@ -105,23 +110,25 @@
 .de,
 .ks,
 .fl {
-  color: var(--brown);
+  color: var(--charcoal);
   background-color: var(--field);
+  border-radius: 8px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 700px) {
   .grid-container {
-    grid-gap: 3px;
-    width: 85%;
+    grid-gap: 2px;
+    width: 90%;
   }
   .state {
-    font-size: 1em;
-    border: 2px solid var(--brown);
+    font-size: 0.9em;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0;
   }
     .state:hover {
-      background-color: var(--sky);
-      color: var(--brown);
-      font-size: 1.1em;
+      font-size: 1em;
+      border-radius: 8px;
     }
 }

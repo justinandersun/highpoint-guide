@@ -2,12 +2,13 @@ module.exports = {
     siteMetadata: {
       title: "U.S. Highpoint Guide",
       description: "An interactive guidebook for climbing all fifty U.S. state highpoints.",
-      url: "https://highpoint.guide",
+      siteUrl: "https://highpoint.guide",
       image: "../images/logo.png",
       tags: "highpoints, US state highpoints, highpointing guide, highpointing, highpointers",
       twitterUsername: "@justinandersun",
-    },
+    },    
     plugins: [
+      "gatsby-plugin-sitemap",
       "gatsby-plugin-image",
       "gatsby-plugin-sharp",
       {

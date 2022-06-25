@@ -16,31 +16,34 @@
   width: 7em;
   margin: 1em auto;
   display: block;
+  text-align: center;
 }
 
 .community-link {
   text-decoration: none;
   padding: 1em;
   display: block;
-  border: 4px solid var(--brown);
-  color: var(--brown);
+  border: 3px solid var(--charcoal);
+  color: #fff;
   width: auto;
   margin: 1.5em auto 0.5em auto;
   box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+  border-radius: 10px;
   transition: 200ms;
 }
 
   .community-link:hover {
-    border-left: 10px solid var(--brown);
+    border-left: 10px solid var(--charcoal);
     padding: 1em 1.5em;
     box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
     transition: 200ms;
   }
 
-.glacier { background-color: var(--glacier); }
-.mountain { background-color: var(--mountain); color: #fff; }
-.hill { background-color: var(--hill); color: #fff; }
-.field { background-color: var(--field); }
+.discord { background-color: #738ADB; }
+.highpointers { background-color: var(--glacier); color: var(--charcoal); }
+.facebook { background-color: #1778F2; }
+.reddit { background-color: #FF4500; }
+.github { background-color: #211F1F; }
 
 /* Mobile */
 @media only screen and (max-width: 700px) {

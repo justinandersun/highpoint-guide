@@ -1,8 +1,8 @@
 .home-what, .home-how {
-  color: var(--brown);
+  color: var(--charcoal);
   font-size: 1.2em;
   font-weight: bold;
-  padding: 2.5em 10%;
+  padding: 2.5em 5%;
   max-width: 60ch;
   margin: auto;
 }
@@ -10,7 +10,8 @@
 .home-what {
   background-color: var(--glacier);
   margin-top: 1em;
-  border: 4px solid var(--brown);
+  border: 3px solid var(--charcoal);
+  border-radius: 10px;
 }
 
 .home-heading {
@@ -27,7 +28,7 @@
   text-decoration: none;
   color: var(--hill);
   font-weight: bold;
-  border-bottom: 3px solid var(--hill);
+  border-bottom: 2px solid var(--hill);
   transition: 100ms;
 }
   .home-what a:hover, .home-how a:hover {
@@ -46,15 +47,16 @@
 }
 
 .flat, .hill, .mountain, .glacier {
-  border: 4px solid var(--brown);
+  border: 3px solid var(--charcoal);
   padding: 0.5em;
   color: #fff;
+  border-radius: 10px;
 }
 
-.flat { background-color: var(--field); color: var(--brown);}
+.flat { background-color: var(--field); color: var(--charcoal);}
 .hill { background-color: var(--hill); }
 .mountain { background-color: var(--mountain); }
-.glacier { background-color: var(--glacier); color: var(--brown);}
+.glacier { background-color: var(--glacier); color: var(--charcoal);}
 
 /* Mobile */
 @media only screen and (max-width: 700px) {

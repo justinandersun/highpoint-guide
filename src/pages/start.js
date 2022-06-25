@@ -3,11 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from "react-helmet"
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import {
-  masthead,
-  mastheadTitle,
-  mastheadSubtitle,
-} from '../components/masthead.module.css'
+import * as mast from '../components/masthead.module.css'
 import * as start from '../components/start.module.css'
 
 const StartPage = () => {
@@ -17,9 +13,9 @@ const StartPage = () => {
       <meta name="description" content="How to get started climbing the U.S. state highpoints." />
       <meta name="keywords" content="US highpoints getting started, getting started guide, US highpoint climbing guide"/>
     </Helmet>
-    <div className={masthead}>
-      <h1 className={mastheadTitle}>Get Started</h1>
-      <p className={mastheadSubtitle}>Ten steps to start your highpoint adventure</p>
+    <div className={mast.masthead}>
+      <h1 className={mast.mastheadTitle}>Get Started</h1>
+      <p className={mast.mastheadSubtitle}>Ten steps to start your highpoint adventure</p>
     </div>
     <div className={start.startBody}>
       <div className={start.startSection}>

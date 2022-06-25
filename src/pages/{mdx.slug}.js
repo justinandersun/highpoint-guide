@@ -73,7 +73,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guides.guideBody}>
-          <p className={guides.guideDisclaimer}><em>The text below is copied from SummitPost. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</em></p>
+          <div className={guides.guideDisclaimer}>The text below is copied from SummitPost. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>
@@ -81,11 +81,12 @@ const GuidePost = ({ data }) => {
         <div className={guides.guideFooter}>
           <h2>Resources</h2>
           <p>
-            <a className={`${guides.guideFooterLink} ${guides.wiki}`} href={data.mdx.frontmatter.wikipedia} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Wikipedia</a>
-            <a className={`${guides.guideFooterLink} ${guides.sump}`} href={data.mdx.frontmatter.summitpost} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Summitpost</a>
-            <a className={`${guides.guideFooterLink} ${guides.pbag}`} href={data.mdx.frontmatter.peakbagger} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Peakbagger</a>
-            <a className={`${guides.guideFooterLink} ${guides.offi}`} href={data.mdx.frontmatter.official_info} target="_blank" rel="noreferrer">Official Info for {data.mdx.frontmatter.highpoint}</a>
-            <a className={`${guides.guideFooterLink} ${guides.weat}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint}</a>
+            <a className={`${guides.guideFooterLink} ${guides.wikipedia}`} href={data.mdx.frontmatter.wikipedia} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Wikipedia ↗</a>
+            <a className={`${guides.guideFooterLink} ${guides.summitpost}`} href={data.mdx.frontmatter.summitpost} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Summitpost ↗</a>
+            <a className={`${guides.guideFooterLink} ${guides.peakbagger}`} href={data.mdx.frontmatter.peakbagger} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Peakbagger ↗</a>
+            <a className={`${guides.guideFooterLink} ${guides.official}`} href={data.mdx.frontmatter.official_info} target="_blank" rel="noreferrer">Official Info for {data.mdx.frontmatter.highpoint} ↗</a>
+            <a className={`${guides.guideFooterLink} ${guides.alltrails}`} href={data.mdx.frontmatter.alltrails} target="_blank" rel="noreferrer">AllTrails Route for {data.mdx.frontmatter.highpoint} ↗</a>
+            <a className={`${guides.guideFooterLink} ${guides.weather}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint} ↗</a>
           </p>
         </div>
       </div>

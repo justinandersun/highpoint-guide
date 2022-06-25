@@ -1,21 +1,22 @@
 /* Title */
 .guide-titlehead {
   width: 100%;
-  background-image: url('../images/topo.jpg');
+  background-image: url('../images/darktopo.jpg');
   background-repeat: repeat;
-  box-shadow:inset 0 0 0 2000px rgba(59, 118, 57, 0.2);
+  box-shadow:inset 0 0 0 2000px rgba(33, 33, 33, 0.8);
   text-align: center;
   padding: 4em 0 2em 0;
+  color: #fff;
 }
 
 .guide-title {
   font-family: Explore, sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
 }
 
 .guide-state {
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
@@ -43,6 +44,8 @@
   height: 25em;
   overflow: hidden;
 }
+
+.masthead-metadata { }
 
 /* Metadata */
 .guide-metadata {
@@ -78,10 +81,13 @@
 }
 
 .guide-disclaimer {
-  padding: 1em;
+  font-style: italic;
   background-color: var(--glacier);
   text-align: center;
+  padding: 1em;
   margin: 1em auto;
+  border: 3px solid var(--charcoal);
+  border-radius: 10px;
 }
 
 .guide-body p {
@@ -92,19 +98,16 @@
 
 .guide-body h2, .guide-footer h2 {
   font-size: 1.5em;
-  margin: 1em 0 0.5em 0;
-  padding: 0.1em 0.5em;
-  background-color: var(--brown);
-  color: #fff;
-  display: inline-block;
+  margin: 1.2em 0 0.2em 0;
+  padding: 0.1em 0;
+  border-bottom: solid 3px var(--charcoal);
+  display: block;
 }
 
 .guide-body h3 {
-  font-size: 1.2em;
-  margin: 1em 0 0.5em 0;
-  padding: 0.1em 0.5em;
-  background-color: var(--brown);
-  color: #fff;
+  font-size: 1.1em;
+  margin: 1em 0 0.2em 0;
+  padding: 0.1em 0;
   display: inline-block;
 }
 
@@ -135,29 +138,36 @@
   text-decoration: none;
   padding: 1em;
   display: block;
-  border: 4px solid var(--brown);
-  color: var(--brown);
+  border: 3px solid var(--charcoal);
+  color: var(--charcoal);
   width: auto;
   margin: 1em auto;
   box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+  border-radius: 10px;
   transition: 200ms;
 }
 
   .guide-footer-link:hover {
-    border-left: 10px solid var(--brown);
+    border-left: 10px solid var(--charcoal);
     padding: 1em 1.5em;
     box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
     transition: 200ms;
   }
 
-.wiki { background-color: var(--glacier); }
-.sump { background-color: var(--mountain); color: #fff; }
-.pbag { background-color: var(--hill); color: #fff; }
-.offi { background-color: var(--field); }
-.weat { background-color: var(--sky); }
+.odd { background-color: var(--glacier); }
+.even { background-color: var(--mountain); color: #fff; }
+
+.wikipedia { background-color: #C7C8CA; }
+.summitpost { background-color: var(--sky); }
+.peakbagger { background-color: var(--glacier); }
+.official { background-color: var(--mountain); color: #fff; }
+.alltrails { background-color: var(--hill); color: #fff; }
+.weather { background-color: var(--field); }
 
 /* Mobile */
 @media only screen and (max-width: 700px) {
+  .guide-title { font-size: 2em; }
+  .guide-state { font-size: 1.1em; }
   .guide-masthead {
     display: block;
     margin: 1em auto 0 auto;
