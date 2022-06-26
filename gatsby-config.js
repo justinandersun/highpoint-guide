@@ -6,9 +6,8 @@ module.exports = {
       image: "../images/logo.png",
       tags: "highpoints, US state highpoints, highpointing guide, highpointing, highpointers",
       twitterUsername: "@justinandersun",
-    },    
+    },
     plugins: [
-      "gatsby-plugin-sitemap",
       "gatsby-plugin-image",
       "gatsby-plugin-sharp",
       {
