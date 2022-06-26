@@ -7,13 +7,13 @@ import * as ranked from '../components/rank.module.css'
 
 const RankPage = () => {
   return (
-    <Layout pageTitle="Rankings">
+    <Layout pageTitle="Ranking">
     <Helmet>
       <meta name="description" content="Ranking the U.S. Highpoints by elevation, distance, difficult, and effort." />
       <meta name="keywords" content="US highpoints ranked, most difficult US highpoint"/>
     </Helmet>
     <div className={mast.masthead}>
-      <h1 className={mast.mastheadTitle}>Rankings</h1>
+      <h1 className={mast.mastheadTitle}>Ranking</h1>
       <p className={mast.mastheadSubtitle}>Highpoints by height, length, and difficulty</p>
     </div>
     <div>

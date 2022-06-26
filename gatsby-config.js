@@ -20,6 +20,13 @@ module.exports = {
       "gatsby-plugin-mdx",
       "gatsby-transformer-sharp",
       "gatsby-plugin-react-helmet",
+      // HTML Attributes
+      {
+        resolve: 'gatsby-plugin-html-attributes',
+        options: {
+          lang: 'en'
+        },
+      },
       // Google Analytics
       {
         resolve: `gatsby-plugin-google-gtag`,

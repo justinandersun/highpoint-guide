@@ -25,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
       </Helmet>
       <div className={layout.header}>
         <div className={layout.leftHeader}>
-          <Link to="/" className={layout.navLinkText}>
+          <Link to="/" className={layout.titleLinkText}>
             <StaticImage className={layout.headerImg}
               alt="Highpoint Guide Logo"
               src="../images/logo.png"
@@ -37,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
           <ul className={layout.navLinks}>
             <li className={layout.navLinkItem}>
               <Link to="/start" className={layout.navLinkText}>
-                Start
+                Get Started
               </Link>
             </li>
             <li className={layout.navLinkItem}>
