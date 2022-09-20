@@ -12,8 +12,8 @@ const GuidePost = ({ data }) => {
   return (
     <Layout pageTitle={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`}>
     <Helmet>
-      <meta name="description" content={`How to climb ${data.mdx.frontmatter.highpoint}, the highpoint of ${data.mdx.frontmatter.state}`} />
-      <meta name="keywords" content={`${data.mdx.frontmatter.highpoint} guide, ${data.mdx.frontmatter.state} highpoint guide`} />
+      <meta name="description" content={data.mdx.frontmatter.description} />
+      <meta name="keywords" content={`${data.mdx.frontmatter.highpoint} guide, highest point of ${data.mdx.frontmatter.state}, ${data.mdx.frontmatter.state} highpoint`} />
     </Helmet>
       <div className={guides.guideTitlehead}>
         <p className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</p>
@@ -73,7 +73,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guides.guideBody}>
-          <div className={guides.guideDisclaimer}>The text below is copied from SummitPost. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div>
+          <div className={guides.guideDisclaimer}>The text below is copied from <a href="https://www.summitpost.org/" target="_blank" rel="noreferrer">SummitPost</a>. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>
@@ -117,6 +117,7 @@ export const query = graphql`
         official_info
         weather
         alltrails
+        description
         hp_image_alt
         hp_image {
           childImageSharp {
