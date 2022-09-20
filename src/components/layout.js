@@ -3,7 +3,6 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Helmet from "react-helmet"
 import { StaticImage } from 'gatsby-plugin-image'
 import * as layout from './layout.module.css'
-import * as burger from './burger.module.css'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +33,6 @@ const Layout = ({ pageTitle, children }) => {
             <header className={layout.siteTitle}>{data.site.siteMetadata.title}</header>
           </Link>
         </div>
-        <button id={burger.menu}>
           <nav className={layout.rightHeader}>
             <ul className={layout.navLinks}>
               <li className={layout.navLinkItem}>
@@ -59,7 +57,6 @@ const Layout = ({ pageTitle, children }) => {
               </li>
             </ul>
           </nav>
-        </button>
       </div>
       <main>
         {children}
