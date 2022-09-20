@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Helmet from "react-helmet"
 import { StaticImage } from 'gatsby-plugin-image'
 import * as layout from './layout.module.css'
+import * as burger from './burger.module.css'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -33,30 +34,32 @@ const Layout = ({ pageTitle, children }) => {
             <header className={layout.siteTitle}>{data.site.siteMetadata.title}</header>
           </Link>
         </div>
-        <nav className={layout.rightHeader}>
-          <ul className={layout.navLinks}>
-            <li className={layout.navLinkItem}>
-              <Link to="/start" className={layout.navLinkText}>
-                Get Started
-              </Link>
-            </li>
-            <li className={layout.navLinkItem}>
-              <Link to="/guides" className={layout.navLinkText}>
-                Guides
-              </Link>
-            </li>
-            <li className={layout.navLinkItem}>
-              <Link to="/rank" className={layout.navLinkText}>
-                Ranking
-              </Link>
-            </li>
-            <li className={layout.navLinkItem}>
-              <Link to="/community" className={layout.navLinkText}>
-                Community
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <button id={burger.menu}>
+          <nav className={layout.rightHeader}>
+            <ul className={layout.navLinks}>
+              <li className={layout.navLinkItem}>
+                <Link to="/start" className={layout.navLinkText}>
+                  Get Started
+                </Link>
+              </li>
+              <li className={layout.navLinkItem}>
+                <Link to="/guides" className={layout.navLinkText}>
+                  Guides
+                </Link>
+              </li>
+              <li className={layout.navLinkItem}>
+                <Link to="/rank" className={layout.navLinkText}>
+                  Ranking
+                </Link>
+              </li>
+              <li className={layout.navLinkItem}>
+                <Link to="/community" className={layout.navLinkText}>
+                  Community
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </button>
       </div>
       <main>
         {children}
