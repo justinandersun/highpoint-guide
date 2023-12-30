@@ -14,7 +14,7 @@ module.exports = {
         resolve: "gatsby-source-filesystem",
         options: {
           name: `guides`,
-          path: `${__dirname}/guides`,
+          path: `${__dirname}/src/guides`,
         },
       },
       "gatsby-plugin-mdx",
