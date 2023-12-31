@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Helmet from "react-helmet"
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
 import * as mast from '../components/masthead.module.css'
 import * as comm from '../components/community.module.css'
 
@@ -34,10 +33,6 @@ const CommunityPage = () => {
       <a className={`${comm.communityLink} ${comm.github}`} href="https://github.com/justinandersun/highpoint-guide" target="_blank" rel="noreferrer">Repo on GitHub ↗</a>
       <p>Would you like to contribute to this project? Open a pull-request on GitHub.</p>
 
-      <StaticImage className={comm.logo}
-        alt="Highpoint Guide Logo"
-        src="../images/logo.png"
-      />
     </div>
     </Layout>
   )

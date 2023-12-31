@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Helmet from "react-helmet"
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
 import * as mast from '../components/masthead.module.css'
 import * as start from '../components/start.module.css'
 
@@ -100,10 +99,6 @@ const StartPage = () => {
         <p>If highpointing had one rule, it would be: “Getting to the top is optional but getting down is mandatory.” No highpoint is worth dying for.</p>
       </div>
 
-      <StaticImage className={start.logo}
-        alt="Highpoint Guide Logo"
-        src="../images/logo.png"
-      />
     </div>
     </Layout>
   )
