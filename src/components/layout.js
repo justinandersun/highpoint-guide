@@ -62,7 +62,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={layout.footer}>
-        <p>Made with ❤️ by <a className={layout.footerLink} href="https://andersun.com" target="_blank" rel="noreferrer">Justin Anderson</a>.</p>
+        <p>Made with ❤ by fellow highpointers</p>
       </footer>
     </div>
   )

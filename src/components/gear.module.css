@@ -1,0 +1,29 @@
+.gearlist {
+	margin: 3em auto 5em auto;
+	max-width: 60ch;
+}
+
+.gearlist p {
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.gearlist h2 {
+	font-size: 1.5em;
+	margin: 1.2em 0 0.2em 0;
+	padding: 0.1em 0;
+	border-bottom: solid 3px var(--charcoal);
+	display: block;
+}
+
+.gearlist ul {
+	line-height: 1.8em;
+	font-size: 1.2em;
+	list-style: circle;
+}
+
+.gearlist a {
+	text-decoration: none;
+	color: var(--hill);
+	border-bottom: 2px dotted var(--hill);
+}
