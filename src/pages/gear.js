@@ -16,21 +16,24 @@ const GearPage = () => {
       <p className={mast.mastheadSubtitle}>Recommended gear for your next climb</p>
     </div>
     <div className={gear.gearlist}>
-      <p>Learn what to bring on your next highpointing journey. Please note that Highpoint Guide earns affiliate income from the links on this page to keep the site running.</p>
+      <p>Learn what to bring on your next highpointing journey.</p>
+      <p>Unless you're summitting Rainier or Denali, you won't need everything on this list. Consider weather, trail conditions, and the highpoint itself when packing your gear.</p>
+      <p>Please note that Highpoint Guide earns affiliate income from links on this page. These funds pay for domain registration and web hosting.</p>
+      <p>That said, we only recommend products that we're personally used and appreciated on highpoint climbs.</p>
       <h2>Clothing</h2>
       <ul>
         <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3uaUR05">Liner socks</a></li>
         <li>Moisture-wicking T-shirt</li>
         <li>Sun hoodie</li>
-        <li>Neck gaiter</li>
-        <li>Liner gloves</li>
-        <li>Balaclava</li>
-        <li>Wool socks / hiking socks</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3UqKmAP">Neck gaiter</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/48Yva1G">Liner gloves</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3SqMOWo">Balaclava</a></li>
+        <li>Wool hiking socks</li>
         <li>Warm hat</li>
         <li>Insulated gloves</li>
         <li>Fleece pants</li>
-        <li>Soft shell pants / mountaineering pants</li>
-        <li>Hard shell pants / rain pants</li>
+        <li>Soft shell mountaineering pants</li>
+        <li>Hard shell rain pants</li>
         <li>Long-sleeve T-shirt</li>
         <li>Lightweight fleece jacket</li>
         <li>Insulated jacket</li>
@@ -42,28 +45,28 @@ const GearPage = () => {
       <ul>
         <li>Hiking boots</li>
         <li>Trail shoes</li>
-        <li>Sandals</li>
+        <li>Sandals (or <a target="_blank" rel="noreferrer" href="https://amzn.to/3vN8rYg">Crocs</a>)</li>
         <li>Crampon-compatible boots</li>
       </ul>
       <h2>Food & Hydration</h2>
       <ul>
-        <li>Energy gels</li>
-        <li>Energy bars</li>
-        <li>Dehydrated meals</li>
-        <li>Electrolyte mix</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/42elSfN">Energy gels</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3U9lxJk">Energy bars</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3S5sXdW">Dehydrated meals</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3S9YYSg">Electrolyte mix</a></li>
         <li>Water bottles</li>
-        <li>Iodine tablets</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3S1wFoW">Iodine tablets</a></li>
         <li>Water filter</li>
       </ul>
       <h2>Cookware</h2>
       <ul>
         <li>Small, quick-dry towel</li>
-        <li>Backpacking stove</li>
-        <li>Fuel</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/4b7UDre">Backpacking stove</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3S5tlsU">Fuel</a></li>
         <li>Cookset</li>
         <li>Dishes/bowls</li>
-        <li>Spork/eating utensils</li>
-        <li>Biodegradable soap</li>
+        <li>Utensils (or a <a target="_blank" rel="noreferrer" href="https://amzn.to/47IvKzp">spork</a>)</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/48Tc4u0">Biodegradable soap</a></li>
         <li>Insulated mug/cup</li>
         <li>Collapsible water container</li>
         <li>Hang bag with 50' of nylon rope</li>
@@ -71,17 +74,17 @@ const GearPage = () => {
       </ul>
       <h2>Sanitation</h2>
       <ul>
-        <li>Hand sanitizer</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/47G1Z2h">Hand sanitizer</a></li>
         <li>Hand/sanitation trowel</li>
         <li>Blue bag/sanitation bag</li>
-        <li>Wipes</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3OaWG44">Wipes</a></li>
         <li>Toothbrush and toothpaste and floss</li>
       </ul>
       <h2>Safety</h2>
       <ul>
-        <li>Bear spray</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3vSUpnC">Bear spray</a></li>
         <li>Bear bell</li>
-        <li>Lighter and matches</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3SpN8Vf">Lighter</a> and matches</li>
         <li>First-aid kit</li>
         <li>Fire starter</li>
         <li>Two itineraries</li>
@@ -90,15 +93,15 @@ const GearPage = () => {
       </ul>
       <h2>Sun & Bug Protection</h2>
       <ul>
-        <li>Sunscreen</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3RZaq2Y">Sunscreen</a></li>
         <li>Sunglasses</li>
         <li>Sun hat</li>
-        <li>SPF lip balm</li>
-        <li>Insect repellant</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/48SyBXI">SPF lip balm</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3vKociw">Insect repellant</a></li>
       </ul>
       <h2>Navigation</h2>
       <ul>
-        <li>GPS app</li>
+        <li>GPS app (such as <a target="_blank" rel="noreferrer" href="https://www.alltrails.com/">AllTrails</a>)</li>
         <li>Map</li>
         <li>Compass</li>
         <li>Battery pack</li>
@@ -110,14 +113,14 @@ const GearPage = () => {
         <li>Duct tape strips</li>
         <li>Knife</li>
         <li>Multi-tool</li>
-        <li>Trekking poles</li>
-        <li>Headlamp</li>
-        <li>Batteries</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3HqDF9V">Trekking poles</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/4bg9Arw">Headlamp</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/47IugVW">Batteries</a></li>
       </ul>    
       <h2>Shelter</h2>
       <ul>
-        <li>Emergency blanket</li>
-        <li>Bivy bag</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3U3WxTR">Emergency blanket</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3tZSsFC">Bivy bag</a></li>
         <li>Tent</li>
         <li>Sleeping bag</li>
         <li>Sleeping pads</li>
@@ -125,20 +128,20 @@ const GearPage = () => {
       </ul>
       <h2>Mountaineering Gear</h2>
       <ul>
-        <li>Helmet</li>
-        <li>Harness</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/4aX1lQO">Helmet</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/47Igu5N">Harness</a></li>
         <li>Ropes</li>
         <li>Locking carabiners</li>
         <li>Non-locking carabiners</li>
         <li>Belay/rappel device</li>
         <li>Prusik cords</li>
-        <li>Microspikes</li>
-        <li>Crampons</li>
-        <li>Ice axe</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/424S9pC">Microspikes</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/48GDuU2">Crampons</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/42nlBYd">Ice axe</a></li>
         <li>Folding shovel</li>
         <li>Probe</li>
-        <li>Goggles</li>
-        <li>Glacier glasses</li>
+        <li>Ski goggles</li>
+        <li><a target="_blank" rel="noreferrer" href="https://amzn.to/4b4yTMY">Glacier glasses</a></li>
       </ul>
     </div>
     </Layout>
