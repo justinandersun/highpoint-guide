@@ -13,7 +13,7 @@ const GuidePost = ({ data }) => {
     <Layout pageTitle={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`}>
     <Helmet>
       <meta name="description" content={data.mdx.frontmatter.description} />
-      <meta name="keywords" content={`${data.mdx.frontmatter.highpoint} guide, highest point of ${data.mdx.frontmatter.state}, ${data.mdx.frontmatter.state} highpoint`} />
+      <meta name="keywords" content={`${data.mdx.frontmatter.keywords}, ${data.mdx.frontmatter.highpoint} guide, highest point of ${data.mdx.frontmatter.state}, ${data.mdx.frontmatter.state} highpoint`} />
     </Helmet>
       <div className={guides.guideTitlehead}>
         <p className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</p>
@@ -118,6 +118,7 @@ export const query = graphql`
         weather
         alltrails
         description
+        keywords
         hp_image_alt
         hp_image {
           childImageSharp {
