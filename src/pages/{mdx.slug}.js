@@ -73,7 +73,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guides.guideBody}>
-          <div className={guides.guideDisclaimer}>The text below is copied from <a href="https://www.summitpost.org/" target="_blank" rel="noreferrer">SummitPost</a>. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div>
+          {/* <div className={guides.guideDisclaimer}>The text below is copied from <a href="https://www.summitpost.org/" target="_blank" rel="noreferrer">SummitPost</a>. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div> */}
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>

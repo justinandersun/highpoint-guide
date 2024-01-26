@@ -14,9 +14,8 @@ const IndexPage = () => {
       <div className={home.homeWhat}>
         <h2 className={home.homeHeading}>What is Highpointing?</h2>
         <p>"Highpointing" is the act of climbing to the highest geographic point in a region.</p>
-        <p>Some adventurers highpoint on a global scale, such as climbing the loftiest peak on every continent.</p>
-        <p>Other folks highpoint on a local scale, like bagging the tallest point of each county in their state.</p>
-        <p>This guide is built for people interested in climbing to the highest point of U.S. states.</p>
+        <p>Some highpoint on a global scale, like climbing the loftiest peak on every continent. Others highpoint locally, like bagging the tallest point in each county of their state.</p>
+        <p>This guide is built for people climbing to the highest point of each U.S. state.</p>
       </div>
       <Gridmap></Gridmap>
     </Layout>
