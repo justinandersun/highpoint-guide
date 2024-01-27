@@ -292,7 +292,7 @@ const RankPage = () => {
         <td>Vermont</td>
         <td>Mount Mansfield</td>
         <td>4393</td>
-        <td>550</td>
+        <td>1053</td>
         <td>2.8</td>
         <td>3</td>
         <td>28</td>
@@ -301,8 +301,8 @@ const RankPage = () => {
         <td>Connecticut</td>
         <td>Mount Frissell-South Slope</td>
         <td>2380</td>
-        <td>450</td>
-        <td>3.6</td>
+        <td>862</td>
+        <td>2.3</td>
         <td>3</td>
         <td>31</td>
       </tr>
