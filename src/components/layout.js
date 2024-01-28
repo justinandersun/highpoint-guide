@@ -36,27 +36,27 @@ const Layout = ({ pageTitle, children }) => {
           <nav className={layout.rightHeader}>
             <ul className={layout.navLinks}>
               <li className={layout.navLinkItem}>
-                <Link to="/start" className={layout.navLinkText}>
+                <Link to="/start/" className={layout.navLinkText}>
                   Get Started
                 </Link>
               </li>
               <li className={layout.navLinkItem}>
-                <Link to="/guides" className={layout.navLinkText}>
+                <Link to="/guides/" className={layout.navLinkText}>
                   Guides
                 </Link>
               </li>
               <li className={layout.navLinkItem}>
-                <Link to="/rank" className={layout.navLinkText}>
+                <Link to="/rank/" className={layout.navLinkText}>
                   Ranking
                 </Link>
               </li>
               <li className={layout.navLinkItem}>
-                <Link to="/gear" className={layout.navLinkText}>
+                <Link to="/gear/" className={layout.navLinkText}>
                   Gear
                 </Link>
               </li>
               <li className={layout.navLinkItem}>
-                <Link to="/community" className={layout.navLinkText}>
+                <Link to="/community/" className={layout.navLinkText}>
                   Community
                 </Link>
               </li>
