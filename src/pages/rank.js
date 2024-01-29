@@ -89,7 +89,7 @@ const RankPage = () => {
     <Layout pageTitle="Ranking">
     <Helmet>
       <meta name="description" content="Ranking the U.S. Highpoints by elevation, distance, difficult, and effort." />
-      <meta name="keywords" content="US highpoints ranked, most difficult US highpoint"/>
+      <meta name="keywords" content="US highpoints ranked, most difficult US highpoint, list of US highpoints"/>
     </Helmet>
     <div className={mast.masthead}>
       <h1 className={mast.mastheadTitle}>Ranking</h1>
