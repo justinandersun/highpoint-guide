@@ -28,18 +28,18 @@ const StartPage = () => {
 
       <div className={start.startSection}>
         <h2>#2 Do Research</h2>
-        <p>As much as I’d like this guide to be the renowned “source of truth” for highpoint information, I suggest you consult various sources before any highpointing trip. Each guide on this site includes several links to external resources you could leverage for up-to-date information: <a href="https://www.summitpost.org/u-s-state-highpoints/171191" target="_blank" rel="noreferrer">SummitPost</a>, <a href="https://www.peakbagger.com/list.aspx?lid=12003" target="_blank" rel="noreferrer">Peakbagger</a>, and even <a href="https://en.wikipedia.org/wiki/Highpointing#U.S._state_and_territory_highpoints" target="_blank" rel="noreferrer">Wikipedia</a>, to name a few. </p>
+        <p>Read the guide for your selected highpoint, especially the <b>Access Point</b>, <b> Recommended Route</b>, and <b>Restrictions</b> sections to ensure you're in the right physical condition for the trip and get the necessary permits. It's also smart to check the external <b>Official Info</b> and <b>Weather</b> links for up-to-date information on trail conditions.</p>
       </div>
 
       <div className={start.startSection}>
         <h2>#3 Consult the Community</h2>
-        <p>If you have any questions or want more timely details about weather or trail conditions, consult the highpointing community. Highpointers are a helpful and welcoming bunch, so please be encouraged to reach out to them on the <a href="https://www.facebook.com/groups/276116215808514" target="_blank" rel="noreferrer">Facebook Group</a>, <a href="https://www.reddit.com/r/Highpointers/" target="_blank" rel="noreferrer">sub-Reddit</a>, or other communities mentioned on <Link className={start.startLink} to={`/community`}>Community</Link>.</p>
+        <p>If you have any questions or want more timely details about weather or trail conditions, consult the highpointing community. Highpointers are a helpful and welcoming bunch, so please be encouraged to reach out to them on the <a href="https://www.facebook.com/groups/276116215808514" target="_blank" rel="noreferrer">Facebook Group</a>, <a href="https://www.reddit.com/r/Highpointers/" target="_blank" rel="noreferrer">Reddit</a>, or other communities mentioned on <Link className={start.startLink} to={`/community`}>Community</Link>.</p>
       </div>
 
       <div className={start.startSection}>
         <h2>#4 Inform Family & Friends</h2>
         <p>Share your itinerary with family and friends and set expectations for when they should hear from you. If you’re going on a longer hike (over 3 miles), share Search & Rescue (SAR) information. If they don’t hear from you, SAR should be their first contact if an emergency.</p>
-        <p>Note: If YOU find yourself in an emergency, call 911.</p>
+        <p>Note: If you find yourself in an emergency, call 911.</p>
       </div>
 
       <div className={start.startSection}>

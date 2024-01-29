@@ -76,6 +76,7 @@ const GearPage = () => {
       <ul>
         <li><a target="_blank" rel="noreferrer" href="https://amzn.to/47G1Z2h">Hand sanitizer</a></li>
         <li>Hand/sanitation trowel</li>
+        <li>Toilet paper in a plastic bag</li>
         <li>Blue bag/sanitation bag</li>
         <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3OaWG44">Wipes</a></li>
         <li>Toothbrush and toothpaste and floss</li>
