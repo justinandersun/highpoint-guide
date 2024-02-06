@@ -10,6 +10,7 @@ const GuidesPage = ({ data }) => {
       <Helmet>
         <meta name="description" content="A climbing guide for each U.S. state highpoint." />
         <meta name="keywords" content="highpoint climbing guide, US highpoint climbing guide, list of US highpoints"/>
+        <link rel="canonical" href="https://highpoint.guides/guides/" />
       </Helmet>
       <div className={mast.masthead}>
         <h1 className={mast.mastheadTitle}>Guides</h1>
