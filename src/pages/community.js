@@ -10,7 +10,7 @@ const CommunityPage = () => {
     <Helmet>
       <meta name="description" content="How to engage with the U.S. Highpointing Community." />
       <meta name="keywords" content="US highpoint Facebook, US highpoint Reddit, US highpoint Discord, US highpoint community"/>
-      <link rel="canonical" href="https://highpoint.guides/community/" />
+      <link rel="canonical" href="https://highpoint.guide/community/" />
     </Helmet>
     <div className={mast.masthead}>
       <h1 className={mast.mastheadTitle}>Community</h1>

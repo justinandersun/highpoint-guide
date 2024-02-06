@@ -10,7 +10,7 @@ const GearPage = () => {
     <Helmet>
       <meta name="description" content="Gear for climbing the U.S. highpoints" />
       <meta name="keywords" content="Highpointing gear list, highpoint gear, mountaineering gear list"/>
-      <link rel="canonical" href="https://highpoint.guides/gear/" />
+      <link rel="canonical" href="https://highpoint.guide/gear/" />
     </Helmet>
     <div className={mast.masthead}>
       <h1 className={mast.mastheadTitle}>Gear</h1>

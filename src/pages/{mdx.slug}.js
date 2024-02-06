@@ -14,7 +14,7 @@ const GuidePost = ({ data }) => {
     <Helmet>
       <meta name="description" content={data.mdx.frontmatter.description} />
       <meta name="keywords" content={`${data.mdx.frontmatter.keywords}, ${data.mdx.frontmatter.highpoint} guide, highest point of ${data.mdx.frontmatter.state}, ${data.mdx.frontmatter.state} highpoint`} />
-      <link rel="canonical" href={`https://highpoint.guides/${data.mdx.frontmatter.code}/`} />
+      <link rel="canonical" href={`https://highpoint.guide/${data.mdx.frontmatter.code}/`} />
     </Helmet>
       <div className={guides.guideTitlehead}>
         <p className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</p>

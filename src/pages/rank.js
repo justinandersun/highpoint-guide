@@ -90,7 +90,7 @@ const RankPage = () => {
     <Helmet>
       <meta name="description" content="Ranking the U.S. Highpoints by elevation, distance, difficult, and effort." />
       <meta name="keywords" content="US highpoints ranked, most difficult US highpoint, list of US highpoints"/>
-      <link rel="canonical" href="https://highpoint.guides/rank/" />
+      <link rel="canonical" href="https://highpoint.guide/rank/" />
     </Helmet>
     <div className={mast.masthead}>
       <h1 className={mast.mastheadTitle}>Ranking</h1>

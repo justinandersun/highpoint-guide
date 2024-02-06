@@ -11,7 +11,7 @@ const StartPage = () => {
     <Helmet>
       <meta name="description" content="How to get started climbing the U.S. state highpoints." />
       <meta name="keywords" content="US highpoints getting started, getting started guide, US highpoint climbing guide"/>
-      <link rel="canonical" href="https://highpoint.guides/start/" />
+      <link rel="canonical" href="https://highpoint.guide/start/" />
     </Helmet>
     <div className={mast.masthead}>
       <h1 className={mast.mastheadTitle}>Get Started</h1>
