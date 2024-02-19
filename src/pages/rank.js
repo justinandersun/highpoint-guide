@@ -120,7 +120,7 @@ const RankPage = () => {
         </tr>
       </thead>
       <tbody><tr>
-        <td><Link to={`/ak/`}>Alaska</Link></td>
+        <td><span hidden>Alaska</span><Link to={`/ak/`}>Alaska</Link></td>
         <td>Denali</td>
         <td>20320</td>
         <td>24500</td>
@@ -129,7 +129,7 @@ const RankPage = () => {
         <td>1000</td>
       </tr>
       <tr>
-        <td><Link to={`/wy/`}>Wyoming</Link></td>
+        <td><span hidden>Wyoming</span><Link to={`/wy/`}>Wyoming</Link></td>
         <td>Gannett Peak</td>
         <td>13804</td>
         <td>8650</td>
@@ -138,7 +138,7 @@ const RankPage = () => {
         <td>506</td>
       </tr>
       <tr>
-        <td><Link to={`/wa/`}>Washington</Link></td>
+        <td><span hidden>Washington</span><Link to={`/wa/`}>Washington</Link></td>
         <td>Mount Rainier</td>
         <td>14411</td>
         <td>9100</td>
@@ -147,7 +147,7 @@ const RankPage = () => {
         <td>366</td>
       </tr>
       <tr>
-        <td><Link to={`/mt/`}>Montana</Link></td>
+        <td><span hidden>Montana</span><Link to={`/mt/`}>Montana</Link></td>
         <td>Granite Peak</td>
         <td>12799</td>
         <td>7700</td>
@@ -156,7 +156,7 @@ const RankPage = () => {
         <td>368</td>
       </tr>
       <tr>
-        <td><Link to={`/ca/`}>California</Link></td>
+        <td><span hidden>California</span><Link to={`/ca/`}>California</Link></td>
         <td>Mount Whitney</td>
         <td>14494</td>
         <td>6750</td>
@@ -165,7 +165,7 @@ const RankPage = () => {
         <td>263</td>
       </tr>
       <tr>
-        <td><Link to={`/ut/`}>Utah</Link></td>
+        <td><span hidden>Utah</span><Link to={`/ut/`}>Utah</Link></td>
         <td>Kings Peak</td>
         <td>13528</td>
         <td>5350</td>
@@ -174,7 +174,7 @@ const RankPage = () => {
         <td>291</td>
       </tr>
       <tr>
-        <td><Link to={`/co/`}>Colorado</Link></td>
+        <td><span hidden>Colorado</span><Link to={`/co/`}>Colorado</Link></td>
         <td>Mount Elbert</td>
         <td>14440</td>
         <td>5000</td>
@@ -183,7 +183,7 @@ const RankPage = () => {
         <td>147</td>
       </tr>
       <tr>
-        <td><Link to={`/or/`}>Oregon</Link></td>
+        <td><span hidden>Oregon</span><Link to={`/or/`}>Oregon</Link></td>
         <td>Mount Hood</td>
         <td>11239</td>
         <td>5300</td>
@@ -192,7 +192,7 @@ const RankPage = () => {
         <td>222</td>
       </tr>
       <tr>
-        <td><Link to={`/id/`}>Idaho</Link></td>
+        <td><span hidden>Idaho</span><Link to={`/id/`}>Idaho</Link></td>
         <td>Borah Peak</td>
         <td>12662</td>
         <td>5550</td>
@@ -201,7 +201,7 @@ const RankPage = () => {
         <td>181</td>
       </tr>
       <tr>
-        <td><Link to={`/nv/`}>Nevada</Link></td>
+        <td><span hidden>Nevada</span><Link to={`/nv/`}>Nevada</Link></td>
         <td>Boundary Peak</td>
         <td>13140</td>
         <td>4400</td>
@@ -210,7 +210,7 @@ const RankPage = () => {
         <td>126</td>
       </tr>
       <tr>
-        <td><Link to={`/az/`}>Arizona</Link></td>
+        <td><span hidden>Arizona</span><Link to={`/az/`}>Arizona</Link></td>
         <td>Humphreys Peak</td>
         <td>12633</td>
         <td>3500</td>
@@ -219,7 +219,7 @@ const RankPage = () => {
         <td>120</td>
       </tr>
       <tr>
-        <td><Link to={`/ny/`}>New York</Link></td>
+        <td><span hidden>New York</span><Link to={`/ny/`}>New York</Link></td>
         <td>Mount Marcy</td>
         <td>5344</td>
         <td>3200</td>
@@ -228,7 +228,7 @@ const RankPage = () => {
         <td>151</td>
       </tr>
       <tr>
-        <td><Link to={`/me/`}>Maine</Link></td>
+        <td><span hidden>Maine</span><Link to={`/me/`}>Maine</Link></td>
         <td>Katahdin</td>
         <td>5268</td>
         <td>4200</td>
@@ -237,7 +237,7 @@ const RankPage = () => {
         <td>141</td>
       </tr>
       <tr>
-        <td><Link to={`/nm/`}>New Mexico</Link></td>
+        <td><span hidden>New Mexico</span><Link to={`/nm/`}>New Mexico</Link></td>
         <td>Wheeler Peak</td>
         <td>13161</td>
         <td>3250</td>
@@ -246,7 +246,7 @@ const RankPage = () => {
         <td>98</td>
       </tr>
       <tr>
-        <td><Link to={`/tx/`}>Texas</Link></td>
+        <td><span hidden>Texas</span><Link to={`/tx/`}>Texas</Link></td>
         <td>Guadalupe Peak</td>
         <td>8749</td>
         <td>2950</td>
@@ -255,7 +255,7 @@ const RankPage = () => {
         <td>106</td>
       </tr>
       <tr>
-        <td><Link to={`/va/`}>Virginia</Link></td>
+        <td><span hidden>Virginia</span><Link to={`/va/`}>Virginia</Link></td>
         <td>Mount Rogers</td>
         <td>5729</td>
         <td>1500</td>
@@ -264,7 +264,7 @@ const RankPage = () => {
         <td>81</td>
       </tr>
       <tr>
-        <td><Link to={`/ok/`}>Oklahoma</Link></td>
+        <td><span hidden>Oklahoma</span><Link to={`/ok/`}>Oklahoma</Link></td>
         <td>Black Mesa</td>
         <td>4975</td>
         <td>775</td>
@@ -273,7 +273,7 @@ const RankPage = () => {
         <td>68</td>
       </tr>
       <tr>
-        <td><Link to={`/sd/`}>South Dakota</Link></td>
+        <td><span hidden>South Dakota</span><Link to={`/sd/`}>South Dakota</Link></td>
         <td>Black Elk Peak</td>
         <td>7242</td>
         <td>1500</td>
@@ -282,7 +282,7 @@ const RankPage = () => {
         <td>64</td>
       </tr>
       <tr>
-        <td><Link to={`/mn/`}>Minnesota</Link></td>
+        <td><span hidden>Minnesota</span><Link to={`/mn/`}>Minnesota</Link></td>
         <td>Eagle Mountain</td>
         <td>2301</td>
         <td>600</td>
@@ -291,7 +291,7 @@ const RankPage = () => {
         <td>55</td>
       </tr>
       <tr>
-        <td><Link to={`/vt/`}>Vermont</Link></td>
+        <td><span hidden>Vermont</span><Link to={`/vt/`}>Vermont</Link></td>
         <td>Mount Mansfield</td>
         <td>4393</td>
         <td>1053</td>
@@ -300,7 +300,7 @@ const RankPage = () => {
         <td>28</td>
       </tr>
       <tr>
-        <td><Link to={`/ct/`}>Connecticut</Link></td>
+        <td><span hidden>Connecticut</span><Link to={`/ct/`}>Connecticut</Link></td>
         <td>Mount Frissell-South Slope</td>
         <td>2380</td>
         <td>862</td>
@@ -309,7 +309,7 @@ const RankPage = () => {
         <td>31</td>
       </tr>
       <tr>
-        <td><Link to={`/nd/`}>North Dakota</Link></td>
+        <td><span hidden>North Dakota</span><Link to={`/nd/`}>North Dakota</Link></td>
         <td>White Butte</td>
         <td>3506</td>
         <td>400</td>
@@ -318,7 +318,7 @@ const RankPage = () => {
         <td>29</td>
       </tr>
       <tr>
-        <td><Link to={`/hi/`}>Hawaii</Link></td>
+        <td><span hidden>Hawaii</span><Link to={`/hi/`}>Hawaii</Link></td>
         <td>Mauna Kea</td>
         <td>13796</td>
         <td>230</td>
@@ -327,7 +327,7 @@ const RankPage = () => {
         <td>7</td>
       </tr>
       <tr>
-        <td><Link to={`/md/`}>Maryland</Link></td>
+        <td><span hidden>Maryland</span><Link to={`/md/`}>Maryland</Link></td>
         <td>Backbone Mountain</td>
         <td>3360</td>
         <td>750</td>
@@ -336,7 +336,7 @@ const RankPage = () => {
         <td>27</td>
       </tr>
       <tr>
-        <td><Link to={`/tn/`}>Tennessee</Link></td>
+        <td><span hidden>Tennessee</span><Link to={`/tn/`}>Tennessee</Link></td>
         <td>Clingmans Dome</td>
         <td>6643</td>
         <td>330</td>
@@ -345,7 +345,7 @@ const RankPage = () => {
         <td>12</td>
       </tr>
       <tr>
-        <td><Link to={`/ga/`}>Georgia</Link></td>
+        <td><span hidden>Georgia</span><Link to={`/ga/`}>Georgia</Link></td>
         <td>Brasstown Bald</td>
         <td>4784</td>
         <td>400</td>
@@ -354,7 +354,7 @@ const RankPage = () => {
         <td>1</td>
       </tr>
       <tr>
-        <td><Link to={`/il/`}>Illinois</Link></td>
+        <td><span hidden>Illinois</span><Link to={`/il/`}>Illinois</Link></td>
         <td>Charles Mound</td>
         <td>1235</td>
         <td>275</td>
@@ -363,7 +363,7 @@ const RankPage = () => {
         <td>21</td>
       </tr>
       <tr>
-        <td><Link to={`/nc/`}>North Carolina</Link></td>
+        <td><span hidden>North Carolina</span><Link to={`/nc/`}>North Carolina</Link></td>
         <td>Mount Mitchell</td>
         <td>6684</td>
         <td>100</td>
@@ -372,7 +372,7 @@ const RankPage = () => {
         <td>3</td>
       </tr>
       <tr>
-        <td><Link to={`/ar/`}>Arkansas</Link></td>
+        <td><span hidden>Arkansas</span><Link to={`/ar/`}>Arkansas</Link></td>
         <td>Magazine Mountain</td>
         <td>2753</td>
         <td>225</td>
@@ -381,7 +381,7 @@ const RankPage = () => {
         <td>10</td>
       </tr>
       <tr>
-        <td><Link to={`/la/`}>Louisiana</Link></td>
+        <td><span hidden>Louisiana</span><Link to={`/la/`}>Louisiana</Link></td>
         <td>Driskill Mountain</td>
         <td>535</td>
         <td>150</td>
@@ -390,7 +390,7 @@ const RankPage = () => {
         <td>14</td>
       </tr>
       <tr>
-        <td><Link to={`/wv/`}>West Virginia</Link></td>
+        <td><span hidden>West Virginia</span><Link to={`/wv/`}>West Virginia</Link></td>
         <td>Spruce Knob</td>
         <td>4863</td>
         <td>20</td>
@@ -399,7 +399,7 @@ const RankPage = () => {
         <td>2</td>
       </tr>
       <tr>
-        <td><Link to={`/wi/`}>Wisconsin</Link></td>
+        <td><span hidden>Wisconsin</span><Link to={`/wi/`}>Wisconsin</Link></td>
         <td>Timms Hill</td>
         <td>1951</td>
         <td>120</td>
@@ -408,7 +408,7 @@ const RankPage = () => {
         <td>5</td>
       </tr>
       <tr>
-        <td><Link to={`/sc/`}>South Carolina</Link></td>
+        <td><span hidden>South Carolina</span><Link to={`/sc/`}>South Carolina</Link></td>
         <td>Sassafras Mountain</td>
         <td>3533</td>
         <td>50</td>
@@ -417,7 +417,7 @@ const RankPage = () => {
         <td>2</td>
       </tr>
       <tr>
-        <td><Link to={`/mo/`}>Missouri</Link></td>
+        <td><span hidden>Missouri</span><Link to={`/mo/`}>Missouri</Link></td>
         <td>Taum Sauk Mountain</td>
         <td>1772</td>
         <td>30</td>
@@ -426,7 +426,7 @@ const RankPage = () => {
       <td>3</td>
       </tr>
       <tr>
-        <td><Link to={`/nh/`}>New Hampshire</Link></td>
+        <td><span hidden>New Hampshire</span><Link to={`/nh/`}>New Hampshire</Link></td>
         <td>Mount Washington</td>
         <td>6288</td>
         <td>20</td>
@@ -435,7 +435,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/ky/`}>Kentucky</Link></td>
+        <td><span hidden>Kentucky</span><Link to={`/ky/`}>Kentucky</Link></td>
         <td>Black Mountain</td>
         <td>4145</td>
         <td>30</td>
@@ -444,7 +444,7 @@ const RankPage = () => {
         <td>1</td>
       </tr>
       <tr>
-        <td><Link to={`/nj/`}>New Jersey</Link></td>
+        <td><span hidden>New Jersey</span><Link to={`/nj/`}>New Jersey</Link></td>
         <td>High Point</td>
         <td>1803</td>
         <td>40</td>
@@ -453,7 +453,7 @@ const RankPage = () => {
         <td>2</td>
       </tr>
       <tr>
-        <td><Link to={`/ne/`}>Nebraska</Link></td>
+        <td><span hidden>Nebraska</span><Link to={`/ne/`}>Nebraska</Link></td>
         <td>Panorama Point</td>
         <td>5424</td>
         <td>0</td>
@@ -462,7 +462,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/ma/`}>Massachusetts</Link></td>
+        <td><span hidden>Massachusetts</span><Link to={`/ma/`}>Massachusetts</Link></td>
         <td>Mount Greylock</td>
         <td>3491</td>
         <td>20</td>
@@ -471,7 +471,7 @@ const RankPage = () => {
         <td>1</td>
       </tr>
       <tr>
-        <td><Link to={`/ks/`}>Kansas</Link></td>
+        <td><span hidden>Kansas</span><Link to={`/ks/`}>Kansas</Link></td>
         <td>Mount Sunflower</td>
         <td>4039</td>
         <td>0</td>
@@ -480,7 +480,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/mi/`}>Michigan</Link></td>
+        <td><span hidden>Michigan</span><Link to={`/mi/`}>Michigan</Link></td>
         <td>Mount Arvon</td>
         <td>1979</td>
         <td>10</td>
@@ -489,7 +489,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/ri/`}>Rhode Island</Link></td>
+        <td><span hidden>Rhode Island</span><Link to={`/ri/`}>Rhode Island</Link></td>
         <td>Jerimoth Hill</td>
         <td>812</td>
         <td>0</td>
@@ -498,7 +498,7 @@ const RankPage = () => {
         <td>1</td>
       </tr>
       <tr>
-        <td><Link to={`/pa/`}>Pennsylvania</Link></td>
+        <td><span hidden>Pennsylvania</span><Link to={`/pa/`}>Pennsylvania</Link></td>
         <td>Mount Davis</td>
         <td>3213</td>
         <td>0</td>
@@ -507,7 +507,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/al/`}>Alabama</Link></td>
+        <td><span hidden>Alabama</span><Link to={`/al/`}>Alabama</Link></td>
         <td>Cheaha Mountain</td>
         <td>2407</td>
         <td>0</td>
@@ -516,7 +516,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/ia/`}>Iowa</Link></td>
+        <td><span hidden>Iowa</span><Link to={`/ia/`}>Iowa</Link></td>
         <td>Hawkeye Point</td>
         <td>1670</td>
         <td>0</td>
@@ -525,7 +525,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/oh/`}>Ohio</Link></td>
+        <td><span hidden>Ohio</span><Link to={`/oh/`}>Ohio</Link></td>
         <td>Campbell Hill</td>
         <td>1550</td>
         <td>0</td>
@@ -534,7 +534,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/in/`}>Indiana</Link></td>
+        <td><span hidden>Indiana</span><Link to={`/in/`}>Indiana</Link></td>
         <td>Hoosier Hill</td>
         <td>1257</td>
         <td>0</td>
@@ -543,7 +543,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/ms/`}>Mississippi</Link></td>
+        <td><span hidden>Mississippi</span><Link to={`/ms/`}>Mississippi</Link></td>
         <td>Woodall Mountain</td>
         <td>806</td>
         <td>0</td>
@@ -552,7 +552,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/de/`}>Delaware</Link></td>
+        <td><span hidden>Delaware</span><Link to={`/de/`}>Delaware</Link></td>
         <td>Ebright Azimuth</td>
         <td>448</td>
         <td>0</td>
@@ -561,7 +561,7 @@ const RankPage = () => {
         <td>0</td>
       </tr>
       <tr>
-        <td><Link to={`/fl/`}>Florida</Link></td>
+        <td><span hidden>Florida</span><Link to={`/fl/`}>Florida</Link></td>
         <td>Britton Hill</td>
         <td>345</td>
         <td>0</td>
