@@ -18,9 +18,8 @@ const GearPage = () => {
     </div>
     <div className={gear.gearlist}>
       <p>Learn what to bring on your next highpointing journey.</p>
-      <p>Unless you're summitting Rainier or Denali, you won't need everything on this list. Consider weather, trail conditions, and the highpoint itself when packing your gear.</p>
-      <p>Please note that Highpoint Guide earns affiliate income from links on this page. These funds pay for domain registration and web hosting.</p>
-      <p>That said, we only recommend products that we've personally used on highpoint climbs.</p>
+      <p>Unless you're climbing Rainier or Denali, you won't need everything on this list. Consider weather and trail conditions when packing.</p>
+      <p>I only recommend gear that I have personally used.</p>
       <h2>Clothing</h2>
       <ul>
         <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3uaUR05">Liner socks</a></li>
