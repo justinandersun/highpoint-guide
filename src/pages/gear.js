@@ -18,8 +18,8 @@ const GearPage = () => {
     </div>
     <div className={gear.gearlist}>
       <p>Learn what to bring on your next highpointing journey.</p>
-      <p>Unless you're climbing Rainier or Denali, you won't need everything on this list. Consider weather and trail conditions when packing.</p>
-      <p>I only recommend gear that I have personally used.</p>
+      <p>Unless you're climbing Rainier or Denali, you won't need everything on this list. Consider seasonal weather and trail conditions when packing.</p>
+      <p>I only recommend gear I've used and do not earn affiliate income.</p>
       <h2>Clothing</h2>
       <ul>
         <li><a target="_blank" rel="noreferrer" href="https://amzn.to/3uaUR05">Liner socks</a></li>

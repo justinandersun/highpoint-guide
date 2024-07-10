@@ -67,7 +67,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={layout.footer}>
-        <p>Made with ❤ by fellow highpointers</p>
+        <p>Made with ❤ by a <a target="_blank" rel="noreferrer" href="https://andersun.com/">fellow highpointer</a>.</p>
       </footer>
     </div>
   )
