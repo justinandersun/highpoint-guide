@@ -18,6 +18,15 @@ const IndexPage = () => {
         <p>This guide is built for people climbing to the highest point of each U.S. state.</p>
       </div>
       <Gridmap></Gridmap>
+
+      <div className={home.homeHow}>
+        <h2 className={home.homeHeading}>Highpoint Locations</h2>
+        <p>Select a tile above for more granular location details on the specific highpoint.</p>
+        <div className={home.googleMap}>
+          <iframe title="U.S. Highpoint Map" src="https://www.google.com/maps/d/embed?mid=14j2M4rcOPXs4DHRBytD_jTFP4Nw&ehbc=2E312F" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
     </Layout>
   )
 }

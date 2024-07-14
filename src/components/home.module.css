@@ -48,6 +48,22 @@
   text-align: center;
 }
 
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  margin: 0.5em 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: none;
+}
+
 .flat, .hill, .mountain, .glacier {
   border: 3px solid var(--charcoal);
   padding: 0.5em;

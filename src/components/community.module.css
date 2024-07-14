@@ -43,6 +43,8 @@
 .highpointers { background-color: var(--glacier); color: var(--charcoal); }
 .facebook { background-color: #1778F2; }
 .reddit { background-color: #FF4500; }
+.podcast { background-color: #3B7639; }
+.video { background-color: #BF9A3A; }
 .github { background-color: #211F1F; }
 
 /* Mobile */

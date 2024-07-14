@@ -31,6 +31,12 @@ const CommunityPage = () => {
       <a className={`${comm.communityLink} ${comm.reddit}`} href="https://www.reddit.com/r/Highpointers/" target="_blank" rel="noreferrer">r/Highpointers on Reddit ↗</a>
       <p>The sub-Reddit is a good forum for asking questions and getting up-to-date information about your climbs.</p>
 
+      <a className={`${comm.communityLink} ${comm.podcast}`} href="https://linktr.ee/highpointingpodcast" target="_blank" rel="noreferrer">Trail Talk: Highpointing Podcast ↗</a>
+      <p>Listen to Lauren Toner conduct in-depth interviews with members of the Highpointing Community.</p>
+
+      <a className={`${comm.communityLink} ${comm.video}`} href="https://www.youtube.com/c/RooftopsofAmerica" target="_blank" rel="noreferrer">Rooftops of America Videos ↗</a>
+      <p>Watch films about the rich geographic and cultural history of the American Highpoints by Skye Marthaler.</p>
+
       <a className={`${comm.communityLink} ${comm.github}`} href="https://github.com/justinandersun/highpoint-guide" target="_blank" rel="noreferrer">Repo on GitHub ↗</a>
       <p>Would you like to contribute to this project? Open a pull-request on GitHub.</p>
 
