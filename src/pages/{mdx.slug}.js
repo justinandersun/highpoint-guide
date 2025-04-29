@@ -74,7 +74,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guides.guideBody}>
-          {/* <div className={guides.guideDisclaimer}>The text below is copied from <a href="https://www.summitpost.org/" target="_blank" rel="noreferrer">SummitPost</a>. Any usefulness is courtesy of the SummitPost community. Any inaccuracies are the result of my edits.</div> */}
+          <p className={guides.lastUpdated}><span className={guides.lastUpdatedTitle}>Last Updated</span> {data.mdx.frontmatter.updated}</p>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>
@@ -83,8 +83,6 @@ const GuidePost = ({ data }) => {
           <h2>References</h2>
           <p>
             <a className={`${guides.guideFooterLink} ${guides.wikipedia}`} href={data.mdx.frontmatter.wikipedia} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Wikipedia ↗</a>
-            {/* <a className={`${guides.guideFooterLink} ${guides.summitpost}`} href={data.mdx.frontmatter.summitpost} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Summitpost ↗</a> */}
-            {/* <a className={`${guides.guideFooterLink} ${guides.peakbagger}`} href={data.mdx.frontmatter.peakbagger} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Peakbagger ↗</a> */}
             <a className={`${guides.guideFooterLink} ${guides.official}`} href={data.mdx.frontmatter.official_info} target="_blank" rel="noreferrer">Official Info for {data.mdx.frontmatter.highpoint} ↗</a>
             <a className={`${guides.guideFooterLink} ${guides.alltrails}`} href={data.mdx.frontmatter.alltrails} target="_blank" rel="noreferrer">AllTrails Route for {data.mdx.frontmatter.highpoint} ↗</a>
             <a className={`${guides.guideFooterLink} ${guides.weather}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint} ↗</a>
@@ -121,6 +119,7 @@ export const query = graphql`
         alltrails
         description
         keywords
+        updated(formatString: "D MMM YYYY")
         hp_image_alt
         hp_image {
           childImageSharp {
