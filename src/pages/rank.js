@@ -337,7 +337,7 @@ const RankPage = () => {
       </tr>
       <tr>
         <td><span hidden>Tennessee</span><Link to={`/tn/`}>Tennessee</Link></td>
-        <td>Clingmans Dome</td>
+        <td>Kuwohi</td>
         <td>6643</td>
         <td>330</td>
         <td>1</td>
