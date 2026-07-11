@@ -1,13 +1,32 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Helmet from "react-helmet"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import * as guides from '../components/guide.module.css'
+import { parseFaqs } from '../utils/parseFaqs'
+import { distanceInMiles } from '../utils/distance'
+
+const NEARBY_RADIUS_MILES = 250
 
 const GuidePost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hp_image)
+  const faqs = parseFaqs(data.mdx.rawBody)
+  const nearbyGuides = data.allMdx.nodes
+    .filter((node) => node.frontmatter.code !== data.mdx.frontmatter.code)
+    .map((node) => ({
+      ...node,
+      distance: distanceInMiles(
+        data.mdx.frontmatter.lat,
+        data.mdx.frontmatter.long,
+        node.frontmatter.lat,
+        node.frontmatter.long
+      ),
+    }))
+    .filter((node) => node.distance <= NEARBY_RADIUS_MILES)
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, 3)
 
   return (
     <Layout pageTitle={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`}>
@@ -15,9 +34,48 @@ const GuidePost = ({ data }) => {
       <meta name="description" content={data.mdx.frontmatter.description} />
       <meta name="keywords" content={`${data.mdx.frontmatter.keywords}, ${data.mdx.frontmatter.highpoint} guide, highest point of ${data.mdx.frontmatter.state}, ${data.mdx.frontmatter.state} highpoint`} />
       <link rel="canonical" href={`https://highpoint.guide/${data.mdx.frontmatter.code}/`} />
+      <meta property="og:title" content={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`} />
+      <meta property="og:description" content={data.mdx.frontmatter.description} />
+      <meta property="og:url" content={`https://highpoint.guide/${data.mdx.frontmatter.code}/`} />
+      <meta property="og:type" content="article" />
+      {data.mdx.frontmatter.hp_image?.publicURL && (
+        <meta property="og:image" content={`https://highpoint.guide${data.mdx.frontmatter.hp_image.publicURL}`} />
+      )}
+      <meta name="twitter:title" content={`${data.mdx.frontmatter.highpoint}, ${data.mdx.frontmatter.state}`} />
+      <meta name="twitter:description" content={data.mdx.frontmatter.description} />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://highpoint.guide/' },
+            { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://highpoint.guide/guides/' },
+            { '@type': 'ListItem', position: 3, name: data.mdx.frontmatter.state, item: `https://highpoint.guide/${data.mdx.frontmatter.code}/` },
+          ],
+        })}
+      </script>
+      {faqs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+              },
+            })),
+          })}
+        </script>
+      )}
     </Helmet>
       <div className={guides.guideTitlehead}>
-        <p className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</p>
+        <nav className={guides.breadcrumb} aria-label="Breadcrumb">
+          <Link to="/">Home</Link> <span className={guides.breadcrumbSep}>&rarr;</span> <Link to="/guides/">Guides</Link> <span className={guides.breadcrumbSep}>&rarr;</span> <span>{data.mdx.frontmatter.state}</span>
+        </nav>
+        <h1 className={guides.guideTitle}>{data.mdx.frontmatter.highpoint}</h1>
         <p className={guides.guideState}>{data.mdx.frontmatter.state}</p>
       </div>
       <div className={guides.guidePage}>
@@ -88,6 +146,22 @@ const GuidePost = ({ data }) => {
             <a className={`${guides.guideFooterLink} ${guides.weather}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint} ↗</a>
           </p>
         </div>
+        {nearbyGuides.length > 0 && (
+          <div className={guides.guideFooter}>
+            <h2>Nearby Highpoints</h2>
+            <p>
+              {nearbyGuides.map((node) => (
+                <Link
+                  key={node.frontmatter.code}
+                  className={guides.guideFooterLink}
+                  to={`/${node.frontmatter.code}/`}
+                >
+                  {node.frontmatter.highpoint}, {node.frontmatter.state} ↗
+                </Link>
+              ))}
+            </p>
+          </div>
+        )}
       </div>
     </Layout>
   )
@@ -111,6 +185,7 @@ export const query = graphql`
         gain_feet
         route_type
         season
+        range
         wikipedia
         summitpost
         peakbagger
@@ -122,12 +197,25 @@ export const query = graphql`
         updated(formatString: "D MMM YYYY")
         hp_image_alt
         hp_image {
+          publicURL
           childImageSharp {
             gatsbyImageData
           }
         }
       }
       body
+      rawBody
+    }
+    allMdx {
+      nodes {
+        frontmatter {
+          code
+          state
+          highpoint
+          lat
+          long
+        }
+      }
     }
   }
 `

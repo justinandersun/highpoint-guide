@@ -1,21 +1,18 @@
 import * as React from 'react'
-import Helmet from "react-helmet"
 import Layout from '../components/layout'
-import * as mast from '../components/masthead.module.css'
+import PageHeader from '../components/pageHeader'
 import * as gear from '../components/gear.module.css'
 
 const GearPage = () => {
   return (
     <Layout pageTitle="Gear">
-    <Helmet>
-      <meta name="description" content="Gear for climbing the U.S. highpoints" />
-      <meta name="keywords" content="Highpointing gear list, highpoint gear, mountaineering gear list"/>
-      <link rel="canonical" href="https://highpoint.guide/gear/" />
-    </Helmet>
-    <div className={mast.masthead}>
-      <h1 className={mast.mastheadTitle}>Gear</h1>
-      <p className={mast.mastheadSubtitle}>Recommended gear for your next climb</p>
-    </div>
+    <PageHeader
+      title="Gear"
+      subtitle="Recommended gear for your next climb"
+      description="Gear for climbing the U.S. highpoints"
+      keywords="Highpointing gear list, highpoint gear, mountaineering gear list"
+      canonical="https://highpoint.guide/gear/"
+    />
     <div className={gear.gearlist}>
       <p>Learn what to bring on your next highpointing journey.</p>
       <p>Unless you're climbing Rainier or Denali, you won't need everything on this list. Consider seasonal weather and trail conditions when packing.</p>

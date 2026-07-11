@@ -16,3 +16,5 @@ p { max-width: 60ch; margin: auto; }
 ul, ol { margin-left: 1.5em; }
 
 li { list-style-position: outside; }
+
+iframe { border: none; }

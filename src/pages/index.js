@@ -1,16 +1,18 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Gridmap from '../components/gridmap'
-import * as mast from '../components/masthead.module.css'
+import PageHeader from '../components/pageHeader'
 import * as home from '../components/home.module.css'
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
-      <div className={mast.masthead}>
-        <h1 className={mast.mastheadTitle}>U.S. Highpoint Guide</h1>
-        <p className={mast.mastheadSubtitle}>How to summit the U.S. state highpoints</p>
-      </div>
+      <PageHeader
+        title="U.S. Highpoint Guide"
+        subtitle="How to summit the U.S. state highpoints"
+        description="A free guidebook for climbing to the highest point of every U.S. state, with routes, access details, and difficulty ratings for all fifty highpoints."
+        canonical="https://highpoint.guide/"
+      />
       <div className={home.homeWhat}>
         <h2 className={home.homeHeading}>What is Highpointing?</h2>
         <p>"Highpointing" is the act of climbing to the highest geographic point in a region.</p>

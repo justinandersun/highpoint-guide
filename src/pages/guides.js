@@ -1,21 +1,18 @@
 import * as React from 'react'
-import Helmet from "react-helmet"
 import Layout from '../components/layout'
 import Gridmap from '../components/gridmap'
-import * as mast from '../components/masthead.module.css'
+import PageHeader from '../components/pageHeader'
 
-const GuidesPage = ({ data }) => {
+const GuidesPage = () => {
   return (
     <Layout pageTitle="Guides">
-      <Helmet>
-        <meta name="description" content="A climbing guide for each U.S. state highpoint." />
-        <meta name="keywords" content="highpoint climbing guide, US highpoint climbing guide, list of US highpoints"/>
-        <link rel="canonical" href="https://highpoint.guide/guides/" />
-      </Helmet>
-      <div className={mast.masthead}>
-        <h1 className={mast.mastheadTitle}>Guides</h1>
-        <p className={mast.mastheadSubtitle}>Guidebooks for each state highpoint</p>
-      </div>
+      <PageHeader
+        title="Guides"
+        subtitle="Guidebooks for each state highpoint"
+        description="A climbing guide for each U.S. state highpoint."
+        keywords="highpoint climbing guide, US highpoint climbing guide, list of US highpoints"
+        canonical="https://highpoint.guide/guides/"
+      />
       <Gridmap></Gridmap>
     </Layout>
   )

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://highpoint.guide/sitemap/sitemap-index.xml

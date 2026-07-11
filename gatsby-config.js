@@ -3,7 +3,7 @@ module.exports = {
       title: "U.S. Highpoint Guide",
       description: "An interactive guidebook for climbing all fifty U.S. state highpoints.",
       siteUrl: "https://highpoint.guide",
-      image: "../images/logo.png",
+      image: "/og-image.png",
       tags: "highpoints, US state highpoints, highpointing guide, highpointing, highpointers, list of US highpoints",
       twitterUsername: "@justinandersun",
     },
@@ -46,5 +46,7 @@ module.exports = {
           icon: 'src/images/logo.png',
         },
       },
+      // Sitemap
+      "gatsby-plugin-sitemap",
     ],
 }

@@ -1,22 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Helmet from "react-helmet"
 import Layout from '../components/layout'
-import * as mast from '../components/masthead.module.css'
+import PageHeader from '../components/pageHeader'
 import * as start from '../components/start.module.css'
 
 const StartPage = () => {
   return (
     <Layout pageTitle="Get Started">
-    <Helmet>
-      <meta name="description" content="How to get started climbing the U.S. state highpoints." />
-      <meta name="keywords" content="US highpoints getting started, getting started guide, US highpoint climbing guide"/>
-      <link rel="canonical" href="https://highpoint.guide/start/" />
-    </Helmet>
-    <div className={mast.masthead}>
-      <h1 className={mast.mastheadTitle}>Get Started</h1>
-      <p className={mast.mastheadSubtitle}>Ten steps to start your highpoint adventure</p>
-    </div>
+    <PageHeader
+      title="Get Started"
+      subtitle="Ten steps to start your highpoint adventure"
+      description="How to get started climbing the U.S. state highpoints."
+      keywords="US highpoints getting started, getting started guide, US highpoint climbing guide"
+      canonical="https://highpoint.guide/start/"
+    />
     <div className={start.startBody}>
       <div className={start.startSection}>
         <p>Highpointing is an exciting adventure. It’ll take you to all corners of the country, from breathtaking beauty to quirky outposts to backyard suburbia. Not only will you spend time in each state, but you’ll go off the beaten path—beyond popular cities and parks—to see this nation in a different light. It’s a long road to the top of America, but it’s a fascinating one. Here are ten steps to get started!</p>

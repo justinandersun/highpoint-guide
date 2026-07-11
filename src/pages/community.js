@@ -1,21 +1,18 @@
 import * as React from 'react'
-import Helmet from "react-helmet"
 import Layout from '../components/layout'
-import * as mast from '../components/masthead.module.css'
+import PageHeader from '../components/pageHeader'
 import * as comm from '../components/community.module.css'
 
 const CommunityPage = () => {
   return (
     <Layout pageTitle="Community">
-    <Helmet>
-      <meta name="description" content="How to engage with the U.S. Highpointing Community." />
-      <meta name="keywords" content="US highpoint Facebook, US highpoint Reddit, US highpoint Discord, US highpoint community"/>
-      <link rel="canonical" href="https://highpoint.guide/community/" />
-    </Helmet>
-    <div className={mast.masthead}>
-      <h1 className={mast.mastheadTitle}>Community</h1>
-      <p className={mast.mastheadSubtitle}>Connect with fellow highpointers</p>
-    </div>
+    <PageHeader
+      title="Community"
+      subtitle="Connect with fellow highpointers"
+      description="How to engage with the U.S. Highpointing Community."
+      keywords="US highpoint Facebook, US highpoint Reddit, US highpoint Discord, US highpoint community"
+      canonical="https://highpoint.guide/community/"
+    />
     <div className={comm.communityBox}>
       <p>The Highpointing Community is a fun, welcoming, and helpful group of people from all walks of life. Don't hesistate to reach out!</p>
 
