@@ -125,12 +125,9 @@ main {
 /* Mobile */
 @media only screen and (max-width: 700px) {
   .header {
+    /* Keep the base's fixed, inset, rounded "floating" positioning;
+       only allow the card to grow when the menu expands. */
     height: auto;
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    margin: 0.5em;
     overflow: hidden;
   }
   .left-header {

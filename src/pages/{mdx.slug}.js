@@ -5,10 +5,15 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import * as guides from '../components/guide.module.css'
+import * as grid from '../components/gridmap.module.css'
 import { parseFaqs } from '../utils/parseFaqs'
 import { distanceInMiles } from '../utils/distance'
 
 const NEARBY_RADIUS_MILES = 250
+
+// The grid map keys Indiana's color class off "ii" (not its "in" code) since
+// CSS Modules exports classes as JS identifiers, and "in" is a reserved word.
+const gridColorClass = (code) => grid[code === 'in' ? 'ii' : code]
 
 const GuidePost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hp_image)
@@ -153,7 +158,7 @@ const GuidePost = ({ data }) => {
               {nearbyGuides.map((node) => (
                 <Link
                   key={node.frontmatter.code}
-                  className={guides.guideFooterLink}
+                  className={`${guides.guideFooterLink} ${gridColorClass(node.frontmatter.code)}`}
                   to={`/${node.frontmatter.code}/`}
                 >
                   {node.frontmatter.highpoint}, {node.frontmatter.state} ↗

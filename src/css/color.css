@@ -1,4 +1,8 @@
 :root {
+  /* The site is designed as a light-only theme. Opt out of the browser's
+     dark-mode rendering so pages don't inherit the OS dark canvas/text. */
+  color-scheme: only light;
+
   --charcoal: #212121;
   --sky: #6AB3E0;
   --glacier: #D7EAF3;
