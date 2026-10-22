@@ -42,7 +42,8 @@ const sortTable = (columnIndex, type) => () => {
 const RankPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx {
+      # Guides only -- blog posts are Mdx nodes too and would add a blank row.
+      allMdx(filter: { fileAbsolutePath: { regex: "/src/guides/" } }) {
         nodes {
           id
           frontmatter {

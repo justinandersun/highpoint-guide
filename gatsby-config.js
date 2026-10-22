@@ -1,4 +1,33 @@
+// gatsby-plugin-offline's service worker caches every .js file CacheFirst. If
+// one ever gets registered on localhost:8000 (e.g. after a production build
+// left public/sw.js behind, which `gatsby develop` then serves), it keeps
+// handing the browser stale bundles and develop breaks with errors like
+// "Cannot read properties of undefined (reading 'component---src-pages-...')".
+// In develop, answer /sw.js with a worker that clears its caches, unregisters
+// itself, and reloads open tabs -- so the browser recovers on its next update
+// check. This runs before develop's static handler for public/, so it wins.
+const SELF_DESTRUCTING_SW = `
+self.addEventListener('install', () => self.skipWaiting())
+self.addEventListener('activate', (event) => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys()
+    await Promise.all(keys.map((key) => caches.delete(key)))
+    await self.clients.claim()
+    await self.registration.unregister()
+    const clients = await self.clients.matchAll({ type: 'window' })
+    clients.forEach((client) => client.navigate(client.url))
+  })())
+})
+`
+
 module.exports = {
+    developMiddleware: (app) => {
+      app.get('/sw.js', (req, res) => {
+        res.set('Content-Type', 'application/javascript')
+        res.set('Cache-Control', 'no-store')
+        res.send(SELF_DESTRUCTING_SW)
+      })
+    },
     siteMetadata: {
       title: "U.S. Highpoint Guide",
       description: "An interactive guidebook for climbing all fifty U.S. state highpoints.",
@@ -67,15 +96,21 @@ module.exports = {
         },
       },
       // Offline support -- must come after gatsby-plugin-manifest so the
-      // manifest/icons it generates are included in the precache.
-      {
-        resolve: 'gatsby-plugin-offline',
-        options: {
-          // Scans these pages' HTML for extra JS chunks to precache (e.g. the
-          // shared guide-page template component) beyond the default app shell.
-          precachePages: ['/*'],
-        },
-      },
+      // manifest/icons it generates are included in the precache. Production
+      // builds only: its browser code calls loader APIs that rely on
+      // window.___chunkMapping, which doesn't exist under `gatsby develop`.
+      ...(process.env.NODE_ENV === 'production'
+        ? [
+            {
+              resolve: 'gatsby-plugin-offline',
+              options: {
+                // Scans these pages' HTML for extra JS chunks to precache (e.g. the
+                // shared guide-page template component) beyond the default app shell.
+                precachePages: ['/*'],
+              },
+            },
+          ]
+        : []),
       // Sitemap
       "gatsby-plugin-sitemap",
     ],

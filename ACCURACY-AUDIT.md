@@ -715,3 +715,108 @@ Also very common: roughly 30 of the 50 states have at least one case where front
 **Fine:** elevation 13,804ft (within Wikipedia's own 13,802-13,810ft spread across its pages, not a clear error); prominence 7,076ft; isolation ~290.36mi; rank #5 (holds both ways); 1922 first ascent (Tate/Stahlnaker); 1906 naming for Henry Gannett; two-counties/two-NF/two-Wilderness-Areas claim; Dinwoody/Gooseneck glaciers correctly placed; ~70mi to Grand Teton (independently computed ≈69mi); weather link live and correctly geolocated.
 
 **Inconclusive:** alltrails/summitpost/peakbagger all 403'd, couldn't verify exact mileage/gain or isolation's named reference peak. Whether either trailhead crosses Wind River Indian Reservation land requiring a tribal permit unconfirmed (Reservation does require a tribal license for hiking/fishing on ITS roadless land generally, but these specific routes weren't addressed). "Father of the Quadrangle" phrase for Henry Gannett isn't verbatim on Wikipedia (which calls him "father of mapmaking in America" instead).
+
+---
+
+## Changelog — fixes applied
+
+**Site fix (not a guide):** `src/pages/rank.js` now queries only `src/guides/`. Before, the blog post's MDX file added a blank 51st row (NaN difficulty/effort, linking to /null/).
+
+Each state's audit items, what was done, and the source checked at the time of the edit. Status: ✅ fixed · ⏭ skipped (reason given) · ❓ needs your decision.
+
+### AK — Denali (complete)
+- ✅ Elevation 20,320 → **20,310** (frontmatter + body). Source: Wikipedia infobox citing USGS Sept 2015 survey.
+- ✅ Coordinates → **63.06917, -151.00639** (Wikipedia summit coords; matches the weather link).
+- ✅ Distance/gain 56.0 mi / 24,500 ft → **34.6 mi / 14,639 ft**. NPS publishes no route length, so the embedded AllTrails West Buttress route (34.6 mi out & back, 14,639 ft) was used. Body now says ~17 mi each way, ~13,100 ft net from 7,200 ft Base Camp.
+- ✅ Permit fee $375/$275 → **$475/$375** (NPS mountaineering page, 2027 season). The $15 entrance fee and 60-day registration were reconfirmed.
+- ✅ Webcam → nps.gov/dena/learn/photosmultimedia/webcams.htm (the URL the audit suggested redirects here).
+- ✅ Airport "four miles south" → "about five miles southwest of downtown"; "fifth-largest cargo airport" → "among the world's busiest cargo airports".
+- ✅ "The Great One" → **"The High One"**, matching the FAQ and Wikipedia ("based on a Koyukon word for 'high' or 'tall'").
+- ✅ **Not in the audit:** the federal name has been **Mount McKinley since January 2025** (Interior Dept., per Wikipedia). Per your decision, the page keeps "Denali" and the intro and FAQ now add that the federal name was restored in 2025 while Alaska still uses Denali.
+
+### AR — Magazine Mountain (complete)
+- ✅ Recommended Route → **Signal Hill Trail**, which reaches the summit. Description now follows the official park trail page (arkansas.com/state-parks/explore/trails/signal-hill-trail): gentle forest walk, 400 sq ft stone map at the summit. Benefield Loop kept only as an optional side trip that "does not reach the summit". The FAQ trailhead question is updated to match.
+- ✅ Range: `Ozark Highlands` → **Ouachita Mountains** (Wikipedia: Frontal Ouachita Mountains, Arkansas River Valley). Intro no longer says "Boston Mountains of the Northern Ouachitas"; location is now Mount Magazine State Park (the Ozark NF framing is kept as "surrounded by").
+- ✅ Distance stays **1.8 mi / 259 ft** (embedded AllTrails loop). The park lists the trail as 1.5 mi without saying round trip, so the body gives both figures.
+- ✅ `official_info` → the arkansas.com Signal Hill Trail page (the old arkansasstateparks.com URL already redirected to arkansas.com).
+- ✅ Benefield homestead "1870s" vs "1880s" (sources conflict) → "19th-century".
+
+### FL — Britton Hill (complete)
+- ✅ **Hijacked `official_info`** (waltonoutdoors.com → labbymemorial.com spam, reconfirmed live) → Walton County's own page, **mywaltonfl.gov/Facilities/Facility/Details/Lakewood-Park-28**.
+- ✅ Location "Town of Lakewood" → **"Lakewood Park, Walton County"**. The intro calls Lakewood an unincorporated community, and the "Paxton, Florida" park location is removed.
+- ✅ Range "Piedmont-Southeast Coast" → **Florida Ridge Hills** (Wikipedia infobox).
+- ✅ Re-check of the inconclusive items:
+  - Hours: "open 24 hours" was **wrong**. The county page says **Dawn to Dusk** and admission is free. Regulations is updated and now includes the county address and phone; the FAQ facilities list now matches the county page (restrooms, pavilions, picnic tables, walking path).
+  - Access mileage: confirmed by routing (~21 mi north on US 331 from I-10, then 2.8 mi on CR 285). The text now names County Highway 285.
+- ⏭ Naming origin (postmistress vs. Britton family) is disputed between sources, so the "named after a retired postmistress" claim was removed rather than replaced.
+- No change: elevation 345 ft, 0.1 mi / 0 ft, rank 50 (all confirmed fine by the audit).
+
+### GA — Brasstown Bald (complete)
+- ✅ "30 miles southwest of … Springer Mountain" → **northeast**.
+- ✅ Drive time "an hour and a half" → **"approximately two hours"** north of Atlanta.
+- ✅ "Jack Knob's Trail, 1.5-mile" → **Jacks Knob Trail**: runs south from the summit area, crosses GA 180 at Jacks Gap after ~2.2 mi, and reaches the AT at Chattahoochee Gap after ~4.5 mi (Wikipedia; NRT database).
+- ✅ `official_info` → Forest Service Brasstown Bald Visitor Information Center page (fs.usda.gov/r08/chattahoochee-oconee/recreation/brasstown-bald-visitor-information-center).
+- ✅ **Re-checked the inconclusive fee item, and it was wrong.** "$5/person, under 13 free, free shuttle" → **$10/adult (16+), $6 after hours, 15 and under free; shuttle included with admission**, hours 10–5, last shuttle 4:30, no shuttle 12:30–1:10, America the Beautiful passes accepted, holiday closures. Updated in Recommended Route, Regulations, and FAQ.
+- ✅ Distance 1.4 → **1.2 mi** round trip. The Forest Service lists the Summit Trail as a "0.6 mile paved foot trail" (very steep). The intro's "half-mile" → 0.6-mile. "Turn onto a dirt road" was removed because the agency describes the whole trail as paved. Gain stays at **426 ft** (AllTrails; the Forest Service gives no gain figure).
+- ✅ Added: dogs are not permitted inside the visitor center (Forest Service page).
+
+### HI — Mauna Kea (complete)
+- ✅ **Summit-cone wording** (intro, Regulations, FAQ): "requires permission from the local tribe" was removed everywhere. The guide now says a sign at the base of the summit cone (Puʻu Wēkiu) asks visitors not to climb it out of respect, that this is a request rather than a permit system, and encourages honoring it. The cultural council is not named because neither UH Hilo's pages nor Wikipedia name it.
+- ✅ Meters 4,198 → **4,205 m** (matches UH Hilo's "important things to know" page).
+- ✅ Gain: frontmatter 4,753 vs body 4,576 → **4,708 ft** in both places, and distance 13.2 → **13.0 mi** (embedded AllTrails Humuʻula Trail: 13 mi out & back, 4,708 ft; UH Hilo publishes no trail length or gain). The body now says ~6.5 mi one way, ~4,700 ft.
+- ✅ Dead `official_info` → hilo.hawaii.edu/maunakea/visitor-information/important-things-to-know; dead `sar` → …/visitor-information/public-safety (lists 911, Maunakea Rangers (808) 960-2952, VIS (808) 934-4550).
+- ✅ Gap filled: Regulations and FAQ now state that **4WD/AWD is required** above the VIS (UH Hilo public-safety page), with the road-conditions number and emergency info. The pets FAQ is aligned with UH rules (no pets except service animals and Forest Reserve hunting dogs).
+- ✅ Range "Hawaii" → **Mauna Kea (shield volcano)** (⚑ from the plan's range table, pending your review).
+- ⏭ Not in the audit, unconfirmed: whether the Mauna Kea State Recreation Area (Lodging section) currently allows camping. Left as is.
+
+### MA — Mount Greylock (complete)
+- ✅ Elevation 3,491 → **3,489** (Wikipedia, NAVD88/NGS). ⚠️ Note: DCR's own mass.gov page still says **3,491 ft**. We follow the Wikipedia/USGS rule, but you may want to reconsider here.
+- ✅ Prominence: "nearly 2,700 feet above Adams" is kept as relief above the town, and the true topographic prominence (**~2,463 ft**, Wikipedia/Peakbagger) is added.
+- ✅ Range → **Taconic Mountains** (Wikipedia: "geologically distinct" from the Berkshires); intro reworded to "Taconic Mountains in … Berkshire County".
+- ✅ NY directions: fixed in batch 0 (I-87 north to Albany, then I-90 **East**).
+- ✅ Season/stats inconsistency: `season` "All Year" → **"May-Oct"** (auto-road season), and the Recommended Route now says the drive-up applies mid-May–late Oct and the summit is hike-only otherwise. Drive-up stats (0.1 mi / 20 ft) are unchanged.
+- ✅ Melville "observation deck" → "visible from Arrowhead, the author's home" (Wikipedia).
+- ✅ Re-checked the inconclusive items on mass.gov (loaded in browser):
+  - Road closure "Columbus Day–Memorial Day" → auto roads open **May 16–Oct 30 (2026)**; tower/Bascom Lodge open ~Memorial Day weekend; Visitor Center accessible year-round; park dawn to dusk.
+  - **New:** vehicles over 22 ft are prohibited on the auto roads.
+  - Camping fees added: $8 resident / $20 non-resident.
+- ⏭ **$2 summit parking fee: could not be confirmed.** mass.gov shows no amount, and the only web source for "$2" was this guide itself; a 2017 Boston Globe article gave $5–10. The guide now says there is a summit parking fee and gives the Visitor Center phone number (413) 499-4262 instead of a number.
+- ⏭ "Monadnock status" left as is (unconfirmed either way).
+
+### MD — Hoye-Crest / Backbone Mountain (complete)
+- ✅ Coordinates 39.1475, -79.56999 → **39.23733, -79.48533** (Wikipedia's Hoye-Crest article, GNIS-sourced; matches the file's own map/weather link). Note: Wikipedia's *Backbone Mountain* ridge article uses the old value, which is likely where the error came from. The nearby-highpoints list was checked: Spruce Knob, Mount Davis, Mount Rogers.
+- ✅ Dead `official_info` (garretttrails.org: no longer resolves) → **Mon Forest Towns' Maryland Highpoint Trail page** (live; "climbs nearly 700 feet in about a mile", no permits or fees). No Garrett County or Maryland agency page exists for the hike.
+- ✅ Body "about 1 mile round-trip" → **"a little over 1 mile one way (about 2.3 miles round trip)"**, matching frontmatter 2.3 mi / 688 ft (unchanged).
+- ✅ Range "Appalachian Plateaus" → **Allegheny Mountains** (Wikipedia Hoye-Crest infobox).
+
+### MO — Taum Sauk Mountain (complete)
+- ✅ Coordinates 37.55635, -90.75803 → **37.57033, -90.72790** (Wikipedia; matches the file's own weather link and map). The nearby-highpoints list was checked: Magazine Mountain, Woodall Mountain.
+- ✅ "St. Francis Mountains" (×2) → **St. Francois Mountains**; range "Ozark Highlands" → **St. Francois Mountains** (Wikipedia infobox).
+- ✅ Clarity gap: Recommended Route now separates the **paved, ADA-accessible summit walk (0.4 mi round trip)**, which the frontmatter stats describe, from the **separate 3-mile Mina Sauk Falls loop**.
+- ⏭ "132 feet in three stages" for Mina Sauk Falls is unconfirmed (no source gives a height). Left as is.
+
+### NM — Wheeler Peak (complete)
+- ✅ Sub-peak "Walker" → **Mount Walter (13,141 ft)** (batch 0; Wikipedia).
+- ✅ **"Harold D. Walker" 1948 survey → Harold D. Walter.** The audit asked for a manual check. The story comes from SummitPost, which misspells the name; UNM's archives (Harold D. Walter, 1900–1958) and Taos News confirm Walter, a photographer/mountaineer, measured Wheeler higher than Truchas in 1948, prompting a USGS resurvey, and Mount Walter is named for him. Text rewritten accordingly.
+- ✅ Range length "250 miles from Santa Fe to Salida" → **~242 miles from Poncha Pass, CO to Glorieta Pass, NM** (Wikipedia). Range field → "Sangre de Cristo Mountains".
+- ✅ Elevation 13,161 → **13,167** (frontmatter + body; Wikipedia NAVD88). ⚠️ The Carson NF's own Wheeler Peak Trail page still says **13,161**, so the agency and Wikipedia disagree here, as with MA.
+- ✅ Webcam (404) → skitaos.com/weather. `official_info` → Carson NF Williams Lake Trail (#62) page (live, updated Aug 2026).
+- ✅ **Not in the audit, added to Regulations:** Carson NF's annual summer closure of the Wheeler Peak / Williams Lake area "for local community, traditional purposes" (Aug 21–28 in 2026, per the July 20, 2026 press release).
+- ✅ Distance kept: 8.7 mi / 2,972 ft. The Forest Service gives ~2 mi to the #67 junction + ~2 mi to the summit (≈8 mi round trip), consistent with the body's "approximately 8-mile".
+- ⏭ `sar` (generic NM State Police homepage) left as is: State Police coordinate SAR in New Mexico, and no more specific official page was found. "First two miles on private property" and "~19 miles from Taos" are unconfirmed and left as is.
+
+### OK — Black Mesa (complete)
+- ✅ "dark pumice" → **basalt**; "30 million years ago" → **3 to 5 million years ago**; "Capulin Volcano" → **a vent in the Raton-Clayton volcanic field** (all from Wikipedia's Black Mesa article). ⚠️ TNC's own preserve page also says "30 million years ago", which is probably where the error came from; Wikipedia's figure was used per the audit.
+- ✅ Colorado summit 5,715 → **5,705 ft**; Mesa de Maya "6,840+, also known as the Corona" → **6,902 ft**, with the "Corona" name dropped (neither confirmed by Wikipedia). Black Mesa is now described as Mesa de Maya's eastern finger (Wikipedia).
+- ✅ Elevation 4,975 → **4,973** (Wikipedia, TravelOK, and TNC all agree).
+- ✅ Distance 8.8 → **8.5 mi** round trip (TNC: "This 8.5 mile trail"). The segment breakdown that added up to 9.0 mi was reworded to drop the unsourced 2.5 mi / 1 mi figures; gain 748 ft unchanged (AllTrails).
+- ✅ Trailhead directions: **the audit was mistaken here.** TNC routes *west* on Hwy 325 from Boise City and turns north on the road marked "Colorado" *before* Kenton, so "east of Kenton" was right. Batch 0 rewrote the directions to follow TNC's wording.
+- ✅ Range "Great Plains" → **Mesa de Maya** (⚑ Black Mesa has no named range; Wikipedia describes it as Mesa de Maya's eastern finger).
+
+### TX — Guadalupe Peak (complete)
+- ✅ Distance/gain: frontmatter 8.1 mi / 2,950 ft and body/FAQ "8.4-mile" → **8.5 mi / 3,000 ft** everywhere (NPS hiking page: "8.5 mile round trip hike with a 3,000 foot elevation gain").
+- ✅ Elevation 8,749 → **8,751** (Wikipedia, NAVD88/NGS).
+- ✅ Access label "Salt Flat, Dell City, TX" → **"Pine Springs, TX"** (batch 0; the map link itself was already correct).
+- ✅ **Re-checked the inconclusive permit item, and the guide was missing it.** NPS's Permits & Reservations page says "Wilderness use permits are required for all overnight backpacking in the park". Added to the backcountry campsite paragraph in Lodging & Camping.
+- ✅ Range "Southwest Basins and Ranges" → **Guadalupe Mountains** (Wikipedia infobox).
+- ⏭ "80 mph" wind-gust claim unverified; left as is.

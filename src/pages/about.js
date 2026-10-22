@@ -28,11 +28,17 @@ const AboutPage = () => {
       />
       <div className={about.aboutBody}>
         <div className={about.bio}>
-          <p>TBD</p>
+          <p>I’m Justin, and I grew up in Michigan, about as flat as it gets. But mountains always fascinated me, and in 2013 a friend and I road-tripped through New England in winter to summit Mount Greylock with duct tape around our shoes to keep the snow out. I was hooked. Highpointing went on to shape my twenties and early thirties, pulling me to live in eight states from South Carolina to Washington.</p>
+
+          <p>I’ve climbed Gannett Peak deep in Wyoming’s Wind River Range, scrambled Montana’s Granite Peak unroped via the Southwest Couloir, and needed two attempts on Oregon’s Mount Hood after a May snowstorm turned me around the first time. I’ve loved the low-elevation places too, like the proud highpoint in a northern Iowa cornfield. Today I’ve stood on 49 of the 50. Only Denali remains, which I’m procrastinating with my first child on the way.</p>
+
+          <p>I built Highpoint Guide in 2022 to share what I learned. Every guide on this site comes from my own time on the trails, covering the routes, logistics, and gear that I found helpful. If a flatlander like me can climb Rainier, Gannett, and Granite, so can you. Highpointing is one of the best ways to explore the less traveled corners of America and its remarkably diverse terrain. Below are photos from my own highpointing journey.</p>
+
+          <p>Happy climbing!</p>
         </div>
 
-        <h2 className={about.photoHeading}>Fifty Summits</h2>
-        <p className={about.photoSubheading}>TBD</p>
+        <h2 className={about.photoHeading}>My Highpoints</h2>
+        <p className={about.photoSubheading}>49 of 50 summitted, 2013-2025</p>
         <div className={about.photoGrid}>
           {STATES.map(([code, name]) => (
             <div className={about.photoTile} key={code}>
