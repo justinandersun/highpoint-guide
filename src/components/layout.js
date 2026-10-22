@@ -96,7 +96,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={layout.footer}>
-        <p>Made with ❤ by <a target="_blank" rel="noreferrer" href="https://andersun.com/">Justin</a>.</p>
+        <p>&copy; 2026 <a target="_blank" rel="noreferrer" href="https://andersun.com/">Justin Anderson</a>. <Link to="/privacy/">Privacy &amp; Disclaimer</Link></p>
       </footer>
     </div>
   )

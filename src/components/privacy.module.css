@@ -1,0 +1,47 @@
+.body {
+  width: 80%;
+  max-width: 700px;
+  margin: 2em auto 5em auto;
+  font-size: 1.1em;
+}
+
+.body p {
+  padding: 0.4em 0;
+  line-height: 1.6em;
+}
+
+.body ul {
+  list-style-type: square;
+  padding-left: 1.5em;
+}
+
+.body li {
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+.body h2 {
+  font-size: 1.5em;
+  margin: 1.4em 0 0.3em 0;
+  padding: 0.1em 0;
+  border-bottom: solid 3px var(--charcoal);
+}
+
+.body a {
+  text-decoration: none;
+  color: var(--hill);
+  font-weight: bold;
+  border-bottom: 3px solid var(--hill);
+}
+
+.lastUpdated {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.85em;
+  color: #999;
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 700px) {
+  .body { width: 92%; font-size: 1em; }
+}

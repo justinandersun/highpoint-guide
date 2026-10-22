@@ -1,0 +1,71 @@
+.aboutBody {
+  width: 80%;
+  max-width: 1000px;
+  margin: 2em auto 1em auto;
+}
+
+.bio {
+  max-width: 60ch;
+  margin: 0 auto 3em auto;
+  font-size: 1.2em;
+}
+
+.bio p { padding: 0.5em 0; line-height: 1.5em; }
+
+.photoHeading {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+}
+
+.photoSubheading {
+  text-align: center;
+  color: #999;
+  margin-bottom: 2em;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-gap: 8px;
+  margin: 0 auto 5em auto;
+}
+
+.photoTile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed var(--mountain);
+  border-radius: 8px;
+  color: var(--mountain);
+  background-color: var(--glacier);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.photoTile:after {
+  content: "";
+  height: 0;
+  padding-top: 100%;
+  width: 1px;
+}
+
+.photoTileLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.photoTileState {
+  display: block;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutBody { width: 92%; }
+  .bio { font-size: 1em; }
+  .photoGrid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+}
