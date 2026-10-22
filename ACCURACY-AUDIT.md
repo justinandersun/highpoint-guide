@@ -820,3 +820,61 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ✅ **Re-checked the inconclusive permit item, and the guide was missing it.** NPS's Permits & Reservations page says "Wilderness use permits are required for all overnight backpacking in the park". Added to the backcountry campsite paragraph in Lodging & Camping.
 - ✅ Range "Southwest Basins and Ranges" → **Guadalupe Mountains** (Wikipedia infobox).
 - ⏭ "80 mph" wind-gust claim unverified; left as is.
+
+### AL — Cheaha Mountain (complete)
+- ✅ "I-20, take exit 431" → **exit 191, then AL Hwy 281 south (Talladega Scenic Drive)** (park's own driving-directions page).
+- ✅ Hotel claim (intro + FAQ) → campgrounds, cabins, chalets and the **Mountain Store**; "the old Cheaha Hotel has been torn down, and a new hotel is being built (scheduled to open in 2026)" (park page). "Convenience store" → Mountain Store throughout.
+- ✅ Range "Appalachian Ridges" → **Talladega Mountains** (Wikipedia: "part of the Talladega Mountains, a small section of the Ridge-and-Valley Appalachians").
+- ✅ Elevation 2,407 → **2,413** under the Wikipedia/USGS rule (infobox cites the NGS benchmark "Cheehahaw", NAVD88). ⚠️ The park's own page still says **2,407**, and the audit had marked 2,407 "fine", so you may want to override this one. Rank 35 is unaffected.
+- ✅ **Not in the audit, added to Regulations:** the park's day-use admission fee ($5 ages 12+, $2 ages 4–11 and seniors, free 0–3 and veterans/military) and its sunset closing (park page).
+- ⏭ Climbing waiver/fee re-check: still unconfirmed. A search snippet says the official page requires a waiver signed at the Mountain Store, but that page now redirects to the park's fishing page. The existing permit wording is left as is.
+- ⏭ Name etymology (Muscogee vs. Choctaw) is disputed between sources; left as is.
+
+### AZ — Humphreys Peak (complete)
+- ✅ Lockett Meadow fees "$10/site, $5/extra vehicle, $5 picnic, free day-use parking" → **$27/night (up to 8 people, 1 vehicle), $10/extra vehicle**, day use "$12–$14 per vehicle" (the Forest Service page lists both figures), 17 first-come sites (Forest Service campground page).
+- ✅ **Not in the audit, added:** Lockett Meadow Road (FR 552) is **closed to all traffic, including foot traffic, through November 2026** (Forest Service alert).
+- ✅ Agassiz "$500 fine" → the current Forest Order (Dec 2024–Dec 2029): closes the area above ~11,500 ft treeline around Humphreys/Abineau/Agassiz; **exempts hikers staying on system trails or on snow cover**; violations are a Class B misdemeanor, **up to $5,000 / $10,000 (orgs) and/or 6 months**. Read directly from the order text.
+- ✅ Distance: body "≈9.5 mi" (3 + 1¾ mi segments) vs frontmatter 10.1 → body now uses the Forest Service figure, **5–5.5 mi one way, ~10 mi round trip**; frontmatter **10.1** kept (within the agency's range). Gain 3,382 → **3,420** (Forest Service trail page).
+- ✅ `official_info` → Forest Service Humphreys Trail No. 151 page.
+- ✅ Elevation 12,633 → **12,637** under the Wikipedia/USGS rule (NGS "Frisco" benchmark, NAVD88). Rank 12 is unaffected.
+- ✅ Range "Colorado Plateau" → **San Francisco Peaks** (Wikipedia).
+- ⏭ The "no camping above 11,400 ft" wording was left as is: it's a separate Kachina Peaks Wilderness rule, and the audit flagged it only as inconclusive.
+
+### CA — Mount Whitney (complete)
+- ✅ "National Oceanographic & Atmospheric Administration" → **National Oceanic and Atmospheric Administration**.
+- ✅ Elevation: frontmatter 14,494 → **14,505**, matching the body (Wikipedia, NAVD88). Rank 2 is unaffected.
+- ✅ "Smithsonian Institute Shelter, built in 1904" → **Smithsonian Institution Shelter, built in 1909** (Wikipedia: Smithsonian Institution Shelter).
+- ✅ Badwater "trek … to the peak" → **race 135 miles … to Whitney Portal, the 8,360-foot trailhead** (Wikipedia: Badwater Ultramarathon).
+- ✅ Distance 21.2 → **22.0 mi**, matching the body's "22-mile round trip" (Inyo NF trail page: "climbs over 6,000 feet in 11 miles"). Gain 6,663 unchanged (the agency gives only "over 6,000 ft").
+- ✅ `official_info` → Inyo NF Mt. Whitney Trail page.
+- ✅ `webcam` (lookr → generic Windy map) → **"na"**. No confirmed live Whitney/Lone Pine camera was found. The site doesn't currently render the `webcam` field anywhere.
+- ✅ `keywords` "2025 permits" was already fixed earlier.
+
+### CO — Mount Elbert (complete)
+- ✅ Massive cairn dispute: **the audit was only half right.** The 1930s episode is real (a Dec. 11, 1939 newspaper account of two teens building a 7-ft cairn), but Colorado Public Radio also says "in the 1970s they piled rocks on Massive's highest point". The text now says **"As early as the 1930s, and again in the 1970s"**.
+- ✅ `official_info` → fs.usda.gov/r02/psicc/recreation/mount-elbert-fourteener (live, Elbert-specific).
+- ✅ `sar` → lakecountyco.gov/232/Sheriff (live).
+- ✅ Range "Southern Rocky Mountains" → **Sawatch Range** (Wikipedia).
+- No change: elevation 14,440, distance/gain, rank 3 (all fine per the audit).
+
+### CT — Mount Frissell, south slope (complete)
+- ✅ "Bash Bish Falls State Park … offers camping facilities" → **day-use only (sunrise to sunset)**, per mass.gov. Campers are now pointed to **Taconic State Park's Copake Falls Area (NY)**: tent platforms, RV sites, cabins (NY State Parks page).
+- ✅ **The audit's suggested alternative is closed:** mass.gov says Mount Washington State Forest's wilderness (backcountry) camping is **"closed until further notice"**. The guide now says so instead of recommending the Ashley Brook sites.
+- ✅ `official_info` → **Mount Washington State Forest** (mass.gov), which manages the trailhead area.
+- ✅ Elevation 2,380 → **2,379** under the Wikipedia rule (List of U.S. states by elevation; the Frissell article's 2,454 is the MA summit). Rank 36 is unaffected.
+- ✅ Range "Northern U.S. Appalachians" → **Taconic Mountains** (Wikipedia).
+- ⏭ Distance/gain (2.3 mi / 862 ft) unchanged: no agency figure exists, and independent trackers vary (2.4–2.9 mi).
+
+### DE — Ebright Azimuth (complete)
+- ✅ Location "Town of Azimuth" (no such town) → **"New Castle County"** (Wikipedia infobox). The Access Point label "RFPJ+78 Azimuth, Delaware" → "RFPJ+78 Wilmington, Delaware" (the postal address the audit cites, Wilmington 19810).
+- ✅ Toll claim (Regulations + FAQ): **the audit overstated this.** I-95's only mainline toll plaza is near the Maryland line in Newark (Wikipedia: Interstate 95 in Delaware), so drivers coming *from Maryland* do pay; drivers from Pennsylvania or Wilmington don't. Reworded to say exactly that rather than deleted.
+- ✅ Range "Northern U.S. Appalachians" → **Piedmont Plateau** (Wikipedia, Delaware article: "The northernmost part of the state is part of the Piedmont Plateau").
+- No change: elevation 448, rank 49 (fine per the audit; Wikipedia infobox 448).
+
+### IA — Hawkeye Point (complete)
+- ✅ Camping fee $20 → **$25 per night** (Osceola County's Hawkeye Point page).
+- ✅ Dead `official_info` (osceolacountyia.org) → **osceolacountyia.gov/living-here/hawkeye-point/** (live).
+- ✅ Gain 6 → **9 ft** (embedded AllTrails route: 0.3 mi, 9 ft; the county gives no figure). The body's "rising 20 feet above the surrounding farmland" describes local relief, not hike gain, and is unchanged.
+- ✅ Location "Private Property" → **"Hawkeye Point, Osceola County"** (per your decision; the county page confirms county ownership since 2008).
+- ✅ Range "Great Plains" → **Coteau des Prairies** (⚑ Wikipedia: the plateau extends into northwestern Iowa; it doesn't name Hawkeye Point specifically).
+- ⏭ Acreage history (guide: 1.6 acres donated + 5 purchased in 2007; county: "acquired seven acres" in 2008) is minor and was marked inconclusive; left as is.

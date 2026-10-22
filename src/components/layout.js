@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { to: '/rank/', label: 'Ranking' },
   { to: '/gear/', label: 'Gear' },
   { to: '/community/', label: 'Community' },
+  { to: '/about/', label: 'About' },
 ]
 
 const Layout = ({ pageTitle, children }) => {
@@ -96,7 +97,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={layout.footer}>
-        <p>&copy; 2026 <a target="_blank" rel="noreferrer" href="https://andersun.com/">Justin Anderson</a>. <Link to="/privacy/">Privacy &amp; Disclaimer</Link></p>
+        <p>&copy; 2026 <a target="_blank" rel="noreferrer" href="https://andersun.com/">Justin Anderson</a>. <Link to="/contact/">Contact</Link> · <Link to="/privacy/">Privacy &amp; Disclaimer</Link></p>
       </footer>
     </div>
   )

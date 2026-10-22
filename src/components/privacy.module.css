@@ -5,14 +5,19 @@
   font-size: 1.1em;
 }
 
+/* Override the global `p { max-width: 60ch; margin: auto }`, which would
+   center paragraphs and offset them from the headings. */
 .body p {
+  max-width: none;
+  margin: 0;
   padding: 0.4em 0;
   line-height: 1.6em;
 }
 
 .body ul {
   list-style-type: square;
-  padding-left: 1.5em;
+  margin: 0;
+  padding-left: 1.2em;
 }
 
 .body li {

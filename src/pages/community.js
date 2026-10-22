@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import PageHeader from '../components/pageHeader'
 import * as comm from '../components/community.module.css'
@@ -14,7 +15,7 @@ const CommunityPage = () => {
       canonical="https://highpoint.guide/community/"
     />
     <div className={comm.communityBox}>
-      <p>The Highpointing Community is a fun, welcoming, and helpful group of people from all walks of life. Don't hesistate to reach out!</p>
+      <p>The Highpointing Community is a fun, welcoming, and helpful group of people from all walks of life. Don't hesitate to <Link to="/contact/">reach out</Link>!</p>
 
       <a className={`${comm.communityLink} ${comm.discord}`} href="https://discord.gg/pFbbSfUBrr" target="_blank" rel="noreferrer">U.S. Highpointers on Discord ↗</a>
       <p>In June 2022, we launched the U.S. Highpointers Discord Server to engage with the highpointing community. Anyone is welcome to join to ask questions about specific highpoints, share progress, and meet fellow highpointers!</p>
@@ -33,9 +34,6 @@ const CommunityPage = () => {
 
       <a className={`${comm.communityLink} ${comm.video}`} href="https://www.youtube.com/c/RooftopsofAmerica" target="_blank" rel="noreferrer">Rooftops of America Videos ↗</a>
       <p>Watch films about the rich geographic and cultural history of the American Highpoints by Skye Marthaler.</p>
-
-      <a className={`${comm.communityLink} ${comm.github}`} href="https://github.com/justinandersun/highpoint-guide" target="_blank" rel="noreferrer">Repo on GitHub ↗</a>
-      <p>Would you like to contribute to this project? Open a pull-request on GitHub.</p>
 
     </div>
     </Layout>

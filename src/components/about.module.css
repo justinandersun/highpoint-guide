@@ -10,7 +10,33 @@
   font-size: 1.2em;
 }
 
-.bio p { padding: 0.5em 0; line-height: 1.5em; }
+.bio p {
+  padding: 0.5em 0;
+  line-height: 1.5em;
+  text-align: justify;
+  /* Hyphenation keeps justified lines from opening wide gaps. Phones left-align instead (see below). */
+  hyphens: auto;
+}
+
+.headshot {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1em auto;
+  border-radius: 50%;
+}
+
+/* Matches the signature on andersun.com */
+.signature {
+  display: inline-block;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1.6em;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+}
+
+.signature::first-letter { font-size: 1.4em; }
 
 .photoHeading {
   text-align: center;
@@ -26,46 +52,158 @@
 
 .photoGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  grid-gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 32px 20px;
   margin: 0 auto 5em auto;
 }
 
 .photoTile {
-  position: relative;
+  margin: 0;
+  min-width: 0;
+}
+
+.photo {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.photo img { object-fit: cover; }
+
+.photoPlaceholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 4 / 3;
+  box-sizing: border-box;
   border: 3px dashed var(--mountain);
   border-radius: 8px;
   color: var(--mountain);
   background-color: var(--glacier);
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
-.photoTile:after {
-  content: "";
-  height: 0;
-  padding-top: 100%;
-  width: 1px;
-}
-
-.photoTileLabel {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.photoCaption {
+  margin-top: 0.5em;
   text-align: center;
+  font-size: 1.15em;
+  line-height: 1.3em;
 }
 
-.photoTileState {
+.photoButton {
   display: block;
-  font-size: 1.3em;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: zoom-in;
+}
+
+.photoButton:hover .photo { opacity: 0.9; }
+
+.photoButton:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 2px;
+}
+
+.photoCaptionName {
+  display: block;
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Lightbox */
+.lightbox {
+  max-width: none;
+  max-height: none;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.lightbox::backdrop { background: rgba(0, 0, 0, 0.88); }
+
+.lightbox[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxFigure {
+  margin: 0;
+  width: min(92vw, calc((100vh - 7em) * 4 / 3));
+}
+
+.lightboxImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.lightboxCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.6em;
+  color: #eee;
+  font-size: 1.15em;
+  line-height: 1.4em;
+}
+
+.lightboxCaption a { color: #fff; font-weight: bold; }
+.lightboxCaption span { color: #bbb; font-size: 0.9em; }
+
+.lightboxClose,
+.lightboxNav {
+  position: fixed;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightboxClose {
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 2em;
+}
+
+.lightboxNav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 64px;
+  border-radius: 8px;
+  font-size: 2.6em;
+}
+
+.lightboxPrev { left: 12px; }
+.lightboxNext { right: 12px; }
+
+.lightboxClose:hover,
+.lightboxNav:hover { background: rgba(0, 0, 0, 0.7); }
+
+.photoCaptionMeta {
+  display: block;
+  color: #999;
+  font-size: 0.9em;
 }
 
 @media only screen and (max-width: 700px) {
   .aboutBody { width: 92%; }
   .bio { font-size: 1em; }
-  .photoGrid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+  .bio p { text-align: left; hyphens: manual; }
+  .photoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 16px 12px;
+  }
+  .photoCaption { font-size: 1em; }
 }

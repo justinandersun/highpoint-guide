@@ -56,6 +56,14 @@ module.exports = {
           path: `${__dirname}/src/blog`,
         },
       },
+      // Summit photos for the About page, queried by sourceInstanceName.
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+          name: `journey`,
+          path: `${__dirname}/src/images/journey`,
+        },
+      },
       "gatsby-plugin-mdx",
       "gatsby-transformer-sharp",
       "gatsby-plugin-react-helmet",

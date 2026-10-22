@@ -31,10 +31,7 @@ If `gatsby develop` or `gatsby build` crashes unexpectedly (segfault or cache-re
 npm run clean
 ```
 
-## Contribute 
-1. Fork this repo on GitHub
-2. Create a branch
-3. Make any needed changes 
-4. Create a pull request
+## Contribute
+This project doesn't accept pull requests. To report a bug, suggest a correction, or share an idea, please reach out through the [Contact page](https://highpoint.guide/contact/).
 
 Thank you! 

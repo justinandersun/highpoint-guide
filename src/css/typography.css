@@ -14,3 +14,9 @@
   font-family: "UncutSans";
   src: url("../fonts/UncutSans.otf");
 }
+/* Handwritten signature, matching andersun.com. Subset to the glyphs J U S T I N. */
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("../fonts/ReenieBeanie-Justin.woff2") format("woff2");
+  font-display: swap;
+}
