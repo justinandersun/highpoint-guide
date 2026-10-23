@@ -1,18 +1,37 @@
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/OpenSans.ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat.ttf");
-}
-@font-face {
   font-family: "Explore";
   src: url("../fonts/Explore.ttf");
 }
+/* Uncut Sans (SIL OFL 1.1, see fonts/UncutSans-OFL.txt), from Fontsource's
+   @fontsource/uncut-sans 5.3.0. Real bold and italic files, so browsers don't
+   fake them -- Safari's synthesized bold is much heavier than Chrome's. */
 @font-face {
   font-family: "UncutSans";
-  src: url("../fonts/UncutSans.otf");
+  src: url("../fonts/UncutSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/UncutSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/UncutSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/UncutSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 /* Handwritten signature, matching andersun.com. Subset to the glyphs J U S T I N. */
 @font-face {

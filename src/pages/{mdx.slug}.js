@@ -137,7 +137,7 @@ const GuidePost = ({ data }) => {
           </div>
         </div>
         <div className={guides.guideBody}>
-          <p className={guides.lastUpdated}><span className={guides.lastUpdatedTitle}>Last Updated</span> {data.mdx.frontmatter.updated} <Link className={guides.methodologyLink} to="/methodology/">How we measure</Link></p>
+          <p className={guides.lastUpdated}><span className={guides.lastUpdatedTitle}>Last Updated</span> {data.mdx.frontmatter.updated}</p>
           <MDXRenderer>
             {data.mdx.body}
           </MDXRenderer>

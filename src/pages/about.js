@@ -62,10 +62,10 @@ const SUMMITS = [
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-// "2013-03-02" -> "2013-Mar-02"
+// "2013-03-02" -> "02 Mar 2013" (DD MMM YYYY, matching the site's Last Updated dates)
 const formatDate = (iso) => {
   const [y, m, d] = iso.split('-')
-  return `${y}-${MONTHS[Number(m) - 1]}-${d}`
+  return `${d} ${MONTHS[Number(m) - 1]} ${y}`
 }
 
 const AboutPage = ({ data }) => {
