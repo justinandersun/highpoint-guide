@@ -31,7 +31,22 @@ If `gatsby develop` or `gatsby build` crashes unexpectedly (segfault or cache-re
 npm run clean
 ```
 
+## Checking Links
+Run this a few times per year to catch broken or hijacked links in the state guides:
+```
+npm run check-links
+```
+It visits every external link in `src/guides/*.mdx` (the frontmatter links like `official_info` and `weather`, plus links and embeds in the guide text) and prints anything that needs attention:
+
+- **Hijack risk:** the link now redirects to a different website. This is the pattern of an expired domain bought by someone else, so fix these first.
+- **Dead:** a 404 or a domain that no longer exists.
+- **Error:** a timeout or another error from the site, which may be temporary. Re-run before changing anything.
+- **Moved:** the link redirects to a different page on the same website. These still work but are worth updating, since some now land on a generic homepage.
+- **Blocked:** the site (AllTrails, SummitPost, Peakbagger) refuses automated checks. Spot-check these by hand.
+
+Expected redirects (Google Maps short links, twitter.com → x.com) are allowlisted at the top of `scripts/check-links.js`.
+
 ## Contribute
-This project doesn't accept pull requests. To report a bug, suggest a correction, or share an idea, please reach out through the [Contact page](https://highpoint.guide/contact/).
+To report a bug, suggest a correction, or share an idea, please reach out through the [Contact page](https://highpoint.guide/contact/).
 
 Thank you! 

@@ -15,7 +15,8 @@
     "build": "rm -rf .cache && mkdir -p .cache && gatsby build",
     "preserve": "if lsof -i :9000 -sTCP:LISTEN -t >/dev/null 2>&1; then echo '\\n\u2716 Port 9000 is already in use -- another serve/preview is probably still running. Stop it first (Ctrl+C in its terminal), then try again.\\n'; exit 1; fi",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "check-links": "node scripts/check-links.js"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",

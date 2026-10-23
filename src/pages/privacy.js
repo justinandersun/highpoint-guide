@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import PageHeader from '../components/pageHeader'
 import * as privacy from '../components/privacy.module.css'
@@ -57,6 +58,11 @@ const PrivacyPage = () => {
         <p>
           External links are provided for reference. We don&apos;t control or vouch for the accuracy of
           third-party sites.
+        </p>
+        <p>
+          We audit the guides&apos; external links a few times a year to make sure they&apos;re still active,
+          still relevant, and haven&apos;t been hijacked to point somewhere else. If you find a link that
+          looks wrong, please <Link to="/contact/">let us know</Link>.
         </p>
       </div>
     </Layout>
