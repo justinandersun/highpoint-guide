@@ -931,14 +931,14 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ✅ Range "Northern U.S. Appalachians" → **Appalachian Mountains** (Wikipedia infobox; Katahdin is described as an isolated monadnock, and no source ties it to the Longfellow Mountains, so the plan's guess was dropped).
 - ⏭ The "previously full gear, now just a flashlight" claim is unconfirmed; left as is. Distance/gain 10.4 mi / 4,200 ft unchanged (no agency total for the loop).
 
-### MI — Mount Arvon (complete, one ❓)
+### MI — Mount Arvon (complete)
 - ✅ Dead `official_info` → **visitbaragacounty.com/activities/mt-arvon/** (live).
 - ✅ "Paper companies own the surrounding land" → **Weyerhaeuser** (county page: "Thanks to Weyerhaeuser (the landowner)").
 - ✅ Lake Superior "~10 miles to the north" → **about 8 miles** (Wikipedia: Arvon "rises about eight miles south of Lake Superior").
 - ✅ **Curwood/Tilden note (per your decision):** the intro now says 2025 surveys found Curwood ~0.4 ft higher and a 2018 NOAA report found the Tilden Mine waste pile higher than either, and that Arvon remains the conventionally recognized highpoint. A new FAQ, "Is Mount Arvon really the highest point in Michigan?", covers the same points (all from Wikipedia).
 - ✅ **Not in the audit, fixed:** the FAQ said the road is "accessible by most vehicles". The county says the roads "become muddy and are often unfit for passenger cars" in the rainy season, and AllTrails recommends 4WD, so the FAQ now says high-clearance/4WD is recommended.
 - ✅ Gain 10 → **9 ft** (embedded AllTrails route: 0.1 mi, 9 ft). **The audit's "AllTrails says 11.2 mi / 1,007 ft" is no longer true**; that page now shows 0.1 mi from a small lot at the end of the 4WD road.
-- ❓ **Distance conflict, needs you:** AllTrails (and the frontmatter) say **0.1 mi** from the top lot, but the body's driving log ends "At 7.2 miles, park in the lot and walk approximately a half mile", up a trail that "was once a rough road accessible by 4-wheel drive vehicles". These may be two different parking spots (walk-up from a lower lot vs. drive to the top). The frontmatter stays 0.1 per the AllTrails rule and the body is unchanged until you confirm.
+- ✅ **Distance conflict, resolved by you:** keep **0.1 mi**. AllTrails (and the frontmatter) say **0.1 mi** from the top lot, but the body's driving log ends "At 7.2 miles, park in the lot and walk approximately a half mile", up a trail that "was once a rough road accessible by 4-wheel drive vehicles". These may be two different parking spots (walk-up from a lower lot vs. drive to the top). The frontmatter stays 0.1 per the AllTrails rule and the body is unchanged until you confirm.
 - ✅ Range "Midwest-Great Lakes Area" → **Huron Mountains** (Wikipedia).
 - No change: elevation 1,979 (Wikipedia), rank 38, location "Private Property" (Weyerhaeuser).
 
@@ -971,7 +971,7 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ✅ Location "Pisgah National Forest" → **Mount Mitchell State Park** (matches the body; the summit is inside the state park).
 - ✅ "~35 miles northeast of Asheville" → **30 miles** (NC State Parks: "Located in Yancey County 30 miles northeast of Asheville").
 - ✅ Dead `official_info` → ncparks.gov/state-parks/mount-mitchell-state-park/trails (live).
-- ✅ **Not in the audit, current closure added:** NPS road status shows the Blue Ridge Parkway **closed from NC 80 to Mount Mitchell State Park (MP 344.2–355.3)** for Helene damage, with "recreation of any kind" prohibited. **Both of the guide's routes use that section.** A current-closure note was added above the directions: approach from Asheville via the Parkway to MP 355 / NC-128, with construction traffic, 35 mph, and no gas between Asheville and the park (NC Parks + NPS). The original routes were kept for when it reopens (NPS target: end of 2026).
+- ⏭ **Not in the audit:** NPS shows the Blue Ridge Parkway closed NC 80–Mount Mitchell State Park (MP 344.2–355.3) for Helene repairs, which affects both of the guide's routes. A temporary closure note was added and then **removed at your request**, so it won't need maintenance; the original directions remain.
 - ✅ Range "Blue Ridge Mountains" → **Black Mountains** (Wikipedia: "in the Black Mountain subrange of the Appalachians").
 - No change: elevation 6,684, 0.4 mi / 91 ft, rank 16.
 
@@ -1025,3 +1025,125 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ✅ Range "Canadian Shield" (a geologic province) → **Adirondack Mountains** (Wikipedia).
 - ✅ Elevation 5,344 → **5,343** under the Wikipedia rule (infobox), frontmatter + body. Rank 21 holds.
 - No change: Van Hoevenberg Trail stats.
+
+**Site fix (not a guide):** `src/pages/{mdx.slug}.js` now hides the footer's "AllTrails Route for …" button when `alltrails` is `"na"`. This was needed for OH, which has no AllTrails trail page; no other guide uses `"na"` for this field.
+
+### OH — Campbell Hill (complete)
+- ✅ Elevation 1,550 → **1,549** (Wikipedia 1,549.09; matches the USC&GS marker and Highpointers).
+- ✅ Dead `official_info` (Ohio History Central, 404) → **Highpointers Foundation's Campbell Hill page** (live; no official Logan County or tourism page exists).
+- ✅ `alltrails` (the generic AllTrails homepage) → **"na"**. AllTrails has no Campbell Hill trail page (the likely URL 404s; only a removed user recording exists), so the footer button is now hidden for OH.
+- ✅ Range "Midwest-Great Lakes Area" → **Bellefontaine Outlier** (Wikipedia infobox).
+- ⏭ Visitor hours (M–F 6:30–10, Sat 6:30–3): sources still disagree; left as is.
+- No change: rank 43, 0.4 mi / 0 ft, directions, phone number.
+
+### OR — Mount Hood (complete)
+- ✅ "last erupting in 1907" → **last eruption 1865–66; last major eruptive period 1781–82**. Wikipedia: the 1907 event was "discredited as an observation of non-eruptive fumarolic activity".
+- ✅ Timberline Lodge 5,800 ft → **6,000 ft** (Wikipedia).
+- ✅ "blue bags" → **WAG (Waste Alleviation and Gelling) bags, free at the Climbers Registration area by the Wy'East Day Lodge**. "Climbers' Cave" was updated to the same location. Permit prices ($20 / 3 days, $50 / year) and the 12-person group limit were added (Mt. Hood NF climbing page).
+- ✅ **Re-checked the inconclusive MLU item:** the current Forest Service page never mentions Mountain Locator Unit rentals, so the rental claim was removed (Regulations) and the two FAQs now recommend a PLB / satellite messenger.
+- ✅ `official_info` → Mt. Hood NF **Climbing Mt. Hood** permit page (live); `sar` (generic sheriff page) → **Portland Mountain Rescue** (pmru.org), the Mount Hood rescue team Clackamas County lists as a partner. Clackamas has no dedicated SAR page.
+- ✅ Elevation 11,239 → **11,249** under the Wikipedia rule (NAVD88). Rank 13 holds.
+- ⏭ "Second-most-climbed glaciated peak after Fuji" is unverified; left as is. Distance/gain 6.7 mi / 5,308 ft unchanged.
+
+### PA — Mount Davis (complete)
+- ✅ Distance/gain 2.0 mi / 124 ft and "two-mile round-trip" → **1.8 mi / 118 ft** (embedded AllTrails Mount Davis Highpoint Trail; no agency figure). The body now also notes the High Point Trail is ~0.8 mi each way (Wikipedia trail list). The audit's suggested 1.6 / ~200 came from Wikipedia/SummitPost; AllTrails was used per the rule.
+- ✅ Camping rules (Regulations + Lodging) → **backpack camping allowed in most of Forbes SF without a permit for one night; the Mt. Davis Natural Area and anywhere within 300 ft of the Mt. Davis picnic area are closed; roadside camping only at designated sites with permit + reservation** (DCNR Forbes "Camping" page, loaded live). The guide's 200 ft / 25 ft / 100 ft setback list already matched DCNR.
+- ✅ "5.7-mile Mount Davis Highpoint Trail loop" (no such loop) → removed; the guide now points to the natural area's other short trails (Tub Mill Run, Laurel Run), and the FAQ was adjusted to match.
+- ✅ `official_info` → the current pa.gov Forbes State Forest URL (the old dcnr.pa.gov link redirected there).
+- ✅ Range "Appalachian Plateaus" → **Allegheny Mountains** (Wikipedia).
+- No change: elevation 3,213, rank 33, Negro Mountain history.
+
+### RI — Jerimoth Hill (complete)
+- ✅ Ownership history: "Brown acquired it in 2012 and transferred it to DEM in 2014" → **Brown owned it for decades (donated by alumnus Walter Raymond Turner; used for astronomy) and sold the summit to the State in 2014, keeping observatory rights** (Wikipedia). The unsourced "2012" and "DEM, October" details were dropped.
+- ✅ Location "Private Property" → **"State of Rhode Island"** (per your naming rule; the trail edges past neighboring private land, which the guide already notes).
+- ✅ Dead `official_info` (Town of Foster land-trust page, 404) → **Highpointers Foundation's Jerimoth Hill page** (live; no state or town page exists).
+- ✅ Gain 0 → **6 ft** and distance 0.2 → **0.3 mi** (embedded AllTrails: 0.3 mi / 6 ft). The audit suggested 10 ft from Wikipedia/Highpointers; AllTrails was used per the rule, and the body now says "gains less than ten feet … about 0.3 miles round trip" instead of "200 yards … ten feet".
+- ✅ Elevation 812 → **811** under the Wikipedia rule. ⚠️ Note: Wikipedia's 811 is on the older **NGVD29** datum (not NAVD88 like the other states), and the Highpointers Foundation uses 812. You chose to keep 811. Rank 46 is unaffected.
+- ✅ Range "Northern U.S. Appalachians" → **New England Uplands** (⚑ the physiographic section covering interior New England; Wikipedia doesn't name Jerimoth specifically).
+- ⏭ The "24 hours access" claim is unconfirmed (sources say 8–6 or sunup–sundown); left as is.
+
+### SC — Sassafras Mountain (complete)
+- ✅ `keywords` "Jocassee Gorges Wilderness Area" → **"Jocassee Gorges"** (the last remaining instance of the wrong name).
+- ✅ Summit-walk stats: the body's "direct 0.5-mile trail" contradicted frontmatter 0.2 mi / 52 ft. The **embedded AllTrails Observation Tower Walk is 0.2 mi / 52 ft (short, paved)**, so the frontmatter was kept and the body now says "about 0.2 miles round trip". Conserving Carolina (a land-trust partner, not the managing agency) lists 0.5 mi RT / 80 ft from its trailhead; the audit preferred that, but the rule puts AllTrails ahead of non-agency sources.
+- ✅ Camping: "backpacking and dispersed camping are allowed" → **backcountry camping requires an SCDNR permit (apply online); Foothills Trail backpackers may camp within 100 ft of the trail; no fires; 25 ft from streams and lakes** (SCDNR managed-lands regulations, read directly). The regulation does **not** say Foothills Trail campers are exempt from the permit, as the audit suggested, so no exemption is claimed.
+- ✅ AllTrails URL under "/north-carolina/": checked. AllTrails itself files the trail under NC (as with IN), so the URL is correct and was kept.
+- ✅ **Elevation, kept at 3,533 per your decision:** Wikipedia's infobox now says **3,554 ft**, but it cites Peakbagger as of 2012, *before* the 2019 tower construction. Your earlier dedicated SC pass settled on **3,533** as the post-construction figure. It was left at 3,533 rather than overriding that verified decision with the Wikipedia rule.
+- No change: range Blue Ridge Mountains, rank 29.
+
+### SD — Black Elk Peak (complete)
+- ✅ "Highest summit in a line between the Rocky Mountains and the Pyrenees" (stated twice) → removed. The intro now says it's "often called the highest summit east of the Rocky Mountains in the United States (a claim that depends on how you define the Rockies)", matching Wikipedia's framing.
+- ✅ Custer SP "per-person and vehicle entry fee" → **per vehicle: $25 for 1–7 days, $20 per motorcycle; annual $40 resident / $60 nonresident** (SD GFP Custer page; the $4/person fee applies only to motorcoach passengers).
+- ✅ Distance: body "~3.8 mi one way, ~1,000 ft" vs frontmatter 6.4 → **3.5 mi one way / 7.0 mi round trip** (Black Hills NF trail table: "9 Harney Peak South 3.5, 6100–7200"). The body explains net climb ~6,100→7,244 ft vs ~1,500 ft total gain; frontmatter gain 1,500 unchanged.
+- ✅ `official_info` → Black Hills NF **Black Elk Wilderness & Norbeck Wildlife Preserve** page (live).
+- ✅ Elevation 7,242 → **7,244** (Wikipedia, NGS NAVD88), frontmatter + intro. Rank 15 holds.
+- ✅ Range "Great Plains" → **Black Hills** (Wikipedia).
+- ⏭ The snow-link layer and Laramide dating are left as is.
+
+### TN — Kuwohi (complete)
+- ✅ Range "Blue Ridge Mountains" (template contamination) → **Great Smoky Mountains** (Wikipedia).
+- ✅ Gain 337 → **332** (matches the body's two mentions).
+- ✅ Distance 1.3 → **1.0 mi** round trip (NPS "Hike to Kuwohi": "one mile (1.6 km) roundtrip"); body adds "(about 1 mile round trip)".
+- ✅ Renaming "In 2023 … successfully petitioned" → **Tribal Council backed it in 2022, authorized the formal application to the Board on Geographic Names in early 2024, approved effective Sept 18, 2024** (Wikipedia: Kuwohi).
+- ✅ Road closure "December 1 through March 31" (Access + Regulations) → **typically open April 1–late November (2026: April 1–November 29), subject to weather closures** (NPS Seasonal Road Schedule).
+- No change: elevation 6,643, rank 17, parking-tag system, links.
+
+### UT — Kings Peak (complete)
+- ✅ Location "Ashely & Wasatch National Forests" → **"Ashley & Uinta-Wasatch-Cache National Forests"** (typo fixed and the post-merger forest name used).
+- ✅ `sar` (Summit County Sheriff, the wrong county) → **Duchesne County Sheriff's Search and Rescue page** (live; Kings Peak is in Duchesne County per Wikipedia).
+- ✅ `official_info` (generic UWC homepage redirect) → **Uinta-Wasatch-Cache NF Henrys Fork Trail #117** page (live; confirms County Road 290 access).
+- ✅ Distance/gain 27.8 mi / 5,160 ft → **25.6 mi / 4,215 ft** (embedded AllTrails "King's Peak via Henry's Fork"; the Forest Service gives only the 10.45-mi trail segment, not the summit route). ⚠️ Sources vary widely: Wikipedia says 29 mi. The body now says "about 25.6 miles … estimates range up to about 29".
+- ✅ Range "Western Rocky Mountains" → **Uinta Mountains** (Wikipedia).
+- No change: elevation 13,528 (Wikipedia NAVD88), rank 7.
+
+### VA — Mount Rogers (complete)
+- ✅ **Hijacked `sar`** (mtrogersvfd-rs.com → content-farm page) → **"na"**. No dedicated Mount Rogers rescue page exists (Grayson County's site has no specific page; news reports show the Mt. Rogers Fire Dept., Rugby VFR, and Grayson Highlands crews handle rescues). The field isn't displayed on the site, so removing the bad link was the priority.
+- ✅ Parking fees "$3 / $2" → **$7 standard, $10 weekends April–October, $16/night backpacker parking** (Virginia State Parks parking-fee table, loaded live).
+- ✅ Hours "7–10 seasonal, sunrise–sunset winter" → **8 a.m.–10 p.m. daily** (Grayson Highlands park page).
+- ✅ Distance: three figures (frontmatter 8.6, "9-mile", "four miles one way") → **9.0 mi round trip, ~4.5 mi one way, ~1,100 ft gain** everywhere. Source: a Virginia State Parks ranger-hike listing from Massie Gap, "approximately 9 miles round trip … ~1,100 feet over 4.5 miles". Gain 1,500 → **1,100** (agency figure). Note: the embedded AllTrails route now shows 10.8 mi / 1,797 ft.
+- ✅ `official_info` http → https (same page, live).
+- No change: elevation 5,729, rank 19, range Blue Ridge Mountains, pony details.
+
+### VT — Mount Mansfield (complete)
+- ✅ "one of two places in Vermont where Arctic Tundra exists" (intro + FAQ) → **one of three alpine-tundra sites (with Camel's Hump and Mount Abraham)** (Wikipedia).
+- ✅ Taft Lodge "$6 per person" (Lodging + FAQ) → **free**; GMC dropped the fee at caretaker-staffed sites in 2023 (GMC caretakers page). Added: first-come, first-served, and **no tenting or hammocking outside the lodge or above 2,500 ft** (GMC alert). The current Sept 8 – end-of-October repair closure was **not** added as a dated note since it ends in about a week; the guide says to check GMC alerts instead.
+- ✅ Elevation 4,393 → **4,395** (Wikipedia, NGS NAVD88 "Mt Mansfield Highest Point"), frontmatter + the Chin's elevation in the intro. Rank 26 holds.
+- ✅ Range "Northern U.S. Appalachians" → **Green Mountains** (Wikipedia).
+- No change: sub-peak elevations, directions, closure-date and toll-road text, links.
+
+### WA — Mount Rainier (complete)
+- ✅ Climbing fee "$68 in 2024" → **$82 per person**, plus a **$12/person/night Wilderness Permit, required even for single-push climbs** (NPS climbing page, loaded live).
+- ✅ Elevation: frontmatter 14,411 / intro 14,410 / route table 14,411 → **14,406 everywhere** (Wikipedia: "14,406 ft (2025, NAVD88)"). Rank 4 holds.
+- ✅ Camp Muir 10,080 → **10,188 ft** (Wikipedia: Camp Muir).
+- ✅ Park acreage 235,625 → **236,381** (Wikipedia infobox, NPS area figure).
+- ✅ Tahoma "originally named … by the Yakima people" → **"also known as Tahoma"; Lushootseed-speaking Coast Salish peoples, the Cowlitz, and the Yakama have their own names for it, several close to 'Tahoma'"**. ⚠️ The audit said "not the Yakama", but Wikipedia lists a Yakama name (Tax̱úma) alongside the Lushootseed and Cowlitz ones, so the text names all three instead of swapping one tribe for another. The unsourced "Great Snowy Peak" translation was dropped.
+- ✅ `sar` (Seattle Mountain Rescue, North Bend–based, no Rainier mention) → **NPS Mount Rainier Safety page**. NPS runs SAR inside the park; neither Seattle nor Tacoma Mountain Rescue's sites mention Rainier.
+- ⏭ "Guided by Yakima Indian Sluiskin" left as is (affiliation unconfirmed). Distance/gain 14.9 mi / 9,015 ft unchanged.
+
+### WI — Timms Hill (complete)
+- ✅ Winter parking "Ring School Road and Rustic Road" → **Ring School Road and County Road RR** (Price County park page: "Winter parking is available at the intersection of Ring School Rd. and County RR").
+- ✅ "turn south on County Road RR at the sign for High Point Village" → **"…and follow the signs for Timm's Hill County Park"**. The audit's exact sign wording couldn't be confirmed, so it isn't quoted; the wrong High Point Village attribution was removed.
+- ✅ Distance/gain: body "quarter-mile" vs frontmatter 0.4 mi / 98 ft → **0.4 mi round trip (~0.2 mi each way) / 101 ft** (embedded AllTrails Timms Hill Green Trail: 0.4 mi, 101 ft).
+- ✅ Range "Midwest-Great Lakes Area" → **Northern Highland** (Wikipedia: Timms Hill "is located in the Northern Highlands").
+- No change: elevation 1,951 (Price County / Wikipedia 1,951.5), rank 39, hours (county page confirms 7:30–9:30, ~May–Oct).
+
+### WV — Spruce Knob (complete)
+- ✅ Range "Appalachian Plateaus" → **Allegheny Mountains** (Wikipedia: Spruce Mountain, "the highest ridge of the Allegheny Mountains").
+- ✅ Pottsville Sandstone "found only in PA, WV, OH, and western MD" → **"found in a handful of states, including PA, WV, OH, MD, AL, and MS"** (Wikipedia: Pottsville Formation extent).
+- ✅ Distance 0.6 → **0.5 mi** (Forest Service: Whispering Spruce Trail "1/2 mile. Encircles the Spruce Knob tower"), matching the body.
+- ✅ `official_info` → Monongahela NF **Spruce Knob and Spruce Knob Observation Tower** page (live).
+- ✅ Access label "Forest Rd 274" → **"Spruce Knob Observation Tower parking (FR 104)"**; the directions now spell out Briery Gap Rd → FR 112 → FR 104 (Forest Service directions; Wikipedia also names FR 112/104).
+- ✅ **"State Route 28/55": the audit was wrong here.** The Forest Service's own directions from Seneca Rocks say "WV-28S/WV-55W … about 10 miles", so the guide was right. Wikipedia's "US 33/WV 28" describes a different junction near Riverton. The route was kept and clarified.
+- No change: elevation 4,863, rank 24, Krummholz description.
+
+### WY — Gannett Peak (complete)
+- ✅ Range "Greater Yellowstone Rockies" (same string as MT) → **Wind River Range** (Wikipedia).
+- ✅ `snow` (Bridger-Teton Avalanche Center, which doesn't forecast the Wind Rivers) → **"na"**. No public avalanche center covers the Wind River Range.
+- ✅ `sar` (redirected to the generic county homepage) → **Sublette County Sheriff's Office** page on the county's current domain (sublettecountywy.gov). The sheriff coordinates SAR with Tip Top Search and Rescue.
+- ✅ `official_info` (generic Bridger-Teton directory) → **Shoshone NF Fitzpatrick Wilderness** page (live; names Gannett Peak and the Trail Lake access used by the guide's Glacier Trail route).
+- ✅ Stats: frontmatter 53.1 mi / 11,217 ft matched neither route in the body → **53.6 mi / 11,112 ft**, the embedded AllTrails Glacier Trail route (clearly what the frontmatter was based on). The body's East section "50 mi / ~10,750 ft" → "about 53.6 mi (estimates commonly 50–54) / ~11,100 ft". The West (Pole Creek) figures are unchanged.
+- ✅ Location "Bridger & Shoshone National Forest" → **"Bridger-Teton & Shoshone National Forests"**.
+- ✅ Elevation 13,804 → **13,810** under the Wikipedia rule (frontmatter + intro). ⚠️ Wikipedia's infobox cites no source, and its own pages span 13,802–13,810; the Shoshone NF page says 13,804. Rank 5 holds.
+- ⏭ "Father of the Quadrangle" for Henry Gannett: not verbatim in Wikipedia, but not shown wrong either; left as is. Wind River Reservation permit question not addressed by the audit's sources; left as is.
+
+### KS — Mount Sunflower (complete)
+- ✅ The audit found no issues. Only change: per the range decision, "Great Plains" → **High Plains** (Wikipedia: the High Plains cover western Kansas; Mount Sunflower is on the Colorado line in Wallace County). `updated` bumped.

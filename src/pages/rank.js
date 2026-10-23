@@ -80,10 +80,11 @@ const RankPage = () => {
         <ul>
           <li><span className={ranked.dimension}>Elevation:</span> Height of the highpoint, measured in feet.</li>
           <li><span className={ranked.dimension}>Gain:</span> Elevation gained on the most popular route, measured in feet.</li>
-          <li><span className={ranked.dimension}>Distance:</span> Length traveled on the most popular route, measured in miles.</li>
+          <li><span className={ranked.dimension}>Distance:</span> Round-trip length of the most popular route, measured in miles.</li>
           <li><span className={ranked.dimension}>Difficulty:</span> Subjective rating of the highpoint's difficulty, measured on a 0 to 10 scale per the <a href="https://www.summitpost.org/martin-classification-of-difficulty-for-u-s-state-highpoints/1007040" target="_blank" rel="noreferrer">Martin Classification</a>.</li>
           <li><span className={ranked.dimension}>Effort:</span> Subjective rating of the physical effort needed to summit, measured on a 0 to 1000 scale per the <a href="https://www.summitpost.org/the-effort-scale-of-highpointing-the-fifty-us-states/1046476" target="_blank" rel="noreferrer">VanderHeide Effort Scale</a>.</li>
         </ul>
+        <p>See our <Link to="/methodology/">methodology</Link> for how these numbers are sourced and measured.</p>
       </div>
       <table id="hprank">
       <thead>

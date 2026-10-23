@@ -5,14 +5,15 @@ import * as privacy from '../components/privacy.module.css'
 
 const PrivacyPage = () => {
   return (
-    <Layout pageTitle="Privacy & Disclaimer">
+    <Layout pageTitle="Privacy">
       <PageHeader
-        title="Privacy & Disclaimer"
+        title="Privacy"
         subtitle="What we collect and how to use this site"
         description="Highpoint Guide's privacy practices and a disclaimer for using this site."
         canonical="https://highpoint.guide/privacy/"
       />
       <div className={privacy.body}>
+        <p className={privacy.lastUpdated}><span className={privacy.lastUpdatedTitle}>Last Updated</span> 23 Oct 2026</p>
         <h2>Privacy</h2>
         <p>
           This site uses Google Analytics to understand how many people visit and which pages are useful.
@@ -57,8 +58,6 @@ const PrivacyPage = () => {
           External links are provided for reference. We don&apos;t control or vouch for the accuracy of
           third-party sites.
         </p>
-
-        <p className={privacy.lastUpdated}>Last updated 22 Oct 2026</p>
       </div>
     </Layout>
   )

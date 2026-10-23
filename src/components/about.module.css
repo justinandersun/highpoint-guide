@@ -18,7 +18,10 @@
   hyphens: auto;
 }
 
-.headshot {
+/* Two classes so this outranks gatsby-plugin-image's global
+   `.gatsby-image-wrapper-constrained { display: inline-block }`, which can load
+   after this file (it does in Safari) and would leave the photo un-centered. */
+.bio .headshot {
   display: block;
   width: 200px;
   height: 200px;
