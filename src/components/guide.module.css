@@ -193,12 +193,42 @@
 .odd { background-color: var(--glacier); }
 .even { background-color: var(--mountain); color: #fff; }
 
-.wikipedia { background-color: #C7C8CA; }
-.summitpost { background-color: var(--sky); }
-.peakbagger { background-color: var(--glacier); }
-.official { background-color: var(--mountain); color: #fff; }
-.alltrails { background-color: var(--hill); color: #fff; }
-.weather { background-color: var(--field); }
+/* References: one neutral style for every link, with the destination domain
+   shown so readers can see where they're going. */
+.references {
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+.reference-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  margin: 0.6em 0;
+  padding: 0.8em 1em;
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: 200ms;
+}
+  .reference-link:hover {
+    border-left: 8px solid var(--charcoal);
+    padding-left: 1.4em;
+  }
+
+.reference-label {
+  font-weight: bold;
+}
+
+.reference-domain {
+  color: #6b6b6b;
+  font-size: 0.85em;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
 
 /* Mobile */
 @media only screen and (max-width: 700px) {
@@ -216,5 +246,7 @@
   .cell-name { font-size: 0.8em; }
   .cell-data { font-size: 1em; }
   .guide-body, .guide-footer { font-size: 1em; }
+  .reference-link { flex-direction: column; gap: 0.2em; }
+  .reference-domain { text-align: left; }
   .guide-body h2, .guide-footer h2 { font-size: 1.2em; }
 }

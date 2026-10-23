@@ -15,6 +15,28 @@ const NEARBY_RADIUS_MILES = 250
 // CSS Modules exports classes as JS identifiers, and "in" is a reserved word.
 const gridColorClass = (code) => grid[code === 'in' ? 'ii' : code]
 
+// References, in display order. Webcam and snow are optional: guides without
+// one store "na", and those entries are skipped.
+const references = (fm) =>
+  [
+    { label: 'Official Info', url: fm.official_info },
+    { label: 'Weather', url: fm.weather },
+    { label: 'Webcam', url: fm.webcam },
+    { label: 'Snow Conditions', url: fm.snow },
+    { label: 'Wikipedia', url: fm.wikipedia },
+    { label: 'Peakbagger', url: fm.peakbagger },
+    { label: 'SummitPost', url: fm.summitpost },
+  ].filter(({ url }) => url && url !== 'na')
+
+// "https://www.fs.usda.gov/r06/..." -> "fs.usda.gov", so readers can see where a link goes.
+const linkDomain = (url) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '')
+  } catch {
+    return ''
+  }
+}
+
 const GuidePost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hp_image)
   const faqs = parseFaqs(data.mdx.rawBody)
@@ -144,14 +166,16 @@ const GuidePost = ({ data }) => {
         </div>
         <div className={guides.guideFooter}>
           <h2>References</h2>
-          <p>
-            <a className={`${guides.guideFooterLink} ${guides.wikipedia}`} href={data.mdx.frontmatter.wikipedia} target="_blank" rel="noreferrer">{data.mdx.frontmatter.highpoint} on Wikipedia ↗</a>
-            <a className={`${guides.guideFooterLink} ${guides.official}`} href={data.mdx.frontmatter.official_info} target="_blank" rel="noreferrer">Official Info for {data.mdx.frontmatter.highpoint} ↗</a>
-            {data.mdx.frontmatter.alltrails !== 'na' && (
-              <a className={`${guides.guideFooterLink} ${guides.alltrails}`} href={data.mdx.frontmatter.alltrails} target="_blank" rel="noreferrer">AllTrails Route for {data.mdx.frontmatter.highpoint} ↗</a>
-            )}
-            <a className={`${guides.guideFooterLink} ${guides.weather}`} href={data.mdx.frontmatter.weather} target="_blank" rel="noreferrer">Weather for {data.mdx.frontmatter.highpoint} ↗</a>
-          </p>
+          <ul className={guides.references}>
+            {references(data.mdx.frontmatter).map(({ label, url }) => (
+              <li key={label}>
+                <a className={guides.referenceLink} href={url} target="_blank" rel="noreferrer">
+                  <span className={guides.referenceLabel}>{label}</span>
+                  <span className={guides.referenceDomain}>{linkDomain(url)} ↗</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
         {nearbyGuides.length > 0 && (
           <div className={guides.guideFooter}>
@@ -198,7 +222,8 @@ export const query = graphql`
         peakbagger
         official_info
         weather
-        alltrails
+        webcam
+        snow
         description
         keywords
         updated(formatString: "D MMM YYYY")
