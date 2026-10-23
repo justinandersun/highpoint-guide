@@ -941,3 +941,87 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ❓ **Distance conflict, needs you:** AllTrails (and the frontmatter) say **0.1 mi** from the top lot, but the body's driving log ends "At 7.2 miles, park in the lot and walk approximately a half mile", up a trail that "was once a rough road accessible by 4-wheel drive vehicles". These may be two different parking spots (walk-up from a lower lot vs. drive to the top). The frontmatter stays 0.1 per the AllTrails rule and the body is unchanged until you confirm.
 - ✅ Range "Midwest-Great Lakes Area" → **Huron Mountains** (Wikipedia).
 - No change: elevation 1,979 (Wikipedia), rank 38, location "Private Property" (Weyerhaeuser).
+
+### MN — Eagle Mountain (complete)
+- ✅ **Cross-state contamination removed:** "Huron Mountain Range in the north-central Upper Peninsula" (Michigan's Mount Arvon region) → **Misquah Hills of northern Cook County, northwest of Grand Marais** (Wikipedia).
+- ✅ Lake Superior "15 miles" → **about 12 miles** (Wikipedia).
+- ✅ Distance 6.6 → **7.0 mi** round trip (Superior NF: "a 3 1/2 mile hike … the round trip to the summit is 7 miles"); body now says "3.5-mile trail (7 miles round trip)". Gain 656 ft unchanged (no agency figure).
+- ✅ `official_info` → fs.usda.gov/r09/superior/recreation/trails/eagle-mountain-trail (live, specific).
+- ✅ `sar` → Cook County Sheriff at cookcountymn.gov (live; the old co.cook.mn.us path was dead).
+- ✅ Range "Midwest-Great Lakes Area" → **Misquah Hills** (Wikipedia).
+- No change: elevation 2,301, prominence 1,321, rank 37, BWCAW free self-issued day permit.
+
+### MS — Woodall Mountain (complete)
+- ✅ Battle of Iuka aftermath "driven … from Iuka to Corinth" → the Confederates **withdrew on the unblocked Fulton Road to join Van Dorn; the combined force then attacked Corinth in October 1862 (Second Battle of Corinth, Union victory)** (Wikipedia: Battle of Iuka). The audit's "retreated to Ripley" detail wasn't on Wikipedia, so it was left out.
+- ✅ Range "Appalachian Plateaus" (a province that doesn't include Mississippi) → **Southwest Appalachian Mountains** (Wikipedia infobox).
+- ✅ Gap filled: the summit description now lists the gravel circle, bench, register, NGS triangulation disk, three radio towers, and the observation tower removed in 1998 (Wikipedia).
+- ⏭ "Renamed in 1878" and the easement/gate regulations are unverified; left as is.
+- No change: elevation 806, rank 47.
+
+### MT — Granite Peak (complete)
+- ✅ Elevation 12,799 → **12,807** (Wikipedia, NAVD88), frontmatter + intro. Rank 10 holds. Note: the Forest Service Beartooth district page still says 12,799.
+- ✅ `official_info` (Shoshone NF, a Wyoming forest) → **Custer Gallatin NF Beartooth Ranger District** page (live; names Granite Peak).
+- ✅ Location "Custer & Gallatan National Forests" → **Custer Gallatin National Forest** (fixes the misspelling and the post-2014 merged name).
+- ✅ Range "Greater Yellowstone Rockies" → **Beartooth Mountains** (Wikipedia).
+- ✅ AllTrails link text "Lady of the Lake Trail" → the trail is still named in the prose, and the link now reads **"Granite Peak via the Southwest Ramp Route"** to match AllTrails' actual name.
+- ✅ **Re-checked the inconclusive campground item, and it was wrong:** "East Rosebud … three campgrounds with 34 sites, water, $9/night" → **East Rosebud Campground $15/night + $5 per extra vehicle, fees Memorial Day–Labor Day** (Forest Service campground page). The site count and water claims couldn't be confirmed and were dropped.
+- No change: distance 27.0 mi / 5,780 ft, rank 10, first-ascent history.
+
+### NC — Mount Mitchell (complete)
+- ✅ Location "Pisgah National Forest" → **Mount Mitchell State Park** (matches the body; the summit is inside the state park).
+- ✅ "~35 miles northeast of Asheville" → **30 miles** (NC State Parks: "Located in Yancey County 30 miles northeast of Asheville").
+- ✅ Dead `official_info` → ncparks.gov/state-parks/mount-mitchell-state-park/trails (live).
+- ✅ **Not in the audit, current closure added:** NPS road status shows the Blue Ridge Parkway **closed from NC 80 to Mount Mitchell State Park (MP 344.2–355.3)** for Helene damage, with "recreation of any kind" prohibited. **Both of the guide's routes use that section.** A current-closure note was added above the directions: approach from Asheville via the Parkway to MP 355 / NC-128, with construction traffic, 35 mph, and no gas between Asheville and the park (NC Parks + NPS). The original routes were kept for when it reopens (NPS target: end of 2026).
+- ✅ Range "Blue Ridge Mountains" → **Black Mountains** (Wikipedia: "in the Black Mountain subrange of the Appalachians").
+- No change: elevation 6,684, 0.4 mi / 91 ft, rank 16.
+
+### ND — White Butte (complete)
+- ✅ **Cross-state contamination removed:** "Dakota Hogback Formation … over 60 million years ago" (a Colorado/Wyoming feature) → White River Group sedimentary rocks, **more than 30 million years old (late Eocene–Oligocene)**, with the Chadron Formation's South Heart Member reaching its **state-maximum thickness at White Butte** (North Dakota Geological Survey paper on the White River Group).
+- ✅ Range → **Chalky Buttes** (NDGS: "the Chalky Buttes, including the White Butte locality").
+- ✅ "approximately 1.7 miles round trip" → **"1.7 miles one way (about 3.4 miles round trip)"**, matching frontmatter 3.4.
+- ✅ `wikipedia` (disambiguation page) → **White_Butte_(North_Dakota)**.
+- ✅ Elevation 3,506 → **3,508** (Wikipedia infobox, NAVD88) in frontmatter + intro. Rank 30 holds. Note that Wikipedia's own prose says 3,506.
+- ⏭ The relocated trailhead / new trail since 2023 could not be confirmed (no current source found); the route description is unchanged. Not in the audit: the Highpointers Foundation reports a 2018 permanent public-access easement. Location stays "Private Property".
+
+### NE — Panorama Point (complete)
+- ✅ Elevation: frontmatter 5,424 vs body 5,429 → **5,429** in both (Wikipedia infobox, NAVD88). The body now notes that the summit marker reads 5,424 (Kimball's visitor page also uses 5,424).
+- ✅ "officially recognized … in 1971" → **1971 is when the Kimball-Banner Chamber of Commerce installed the marker; federal verification and state/map recognition came later** (visitkimball.com).
+- ✅ Dead `official_info` → **visitkimball.com/places/panorama-point/** (live; confirms the 1951 discovery, the 33 miles from Kimball, and the register at the marker).
+- ✅ Range "Great Plains" → **High Plains** (Wikipedia: "a low rise on the High Plains").
+- ⏭ Current owners (Klawonn) and the $3 donation are unconfirmed either way; left as is.
+- No change: rank 20, coordinates, directions.
+
+### NH — Mount Washington (complete)
+- ✅ Wind record "highest wind speed ever recorded" → **231 mph gust was the world record from 1934 until 1996; it remains the highest non-cyclonic wind ever recorded and the highest in the Northern and Western Hemispheres** (Wikipedia; current official record 254 mph, Barrow Island, 1996). `keywords` updated to match.
+- ✅ Cog Railway "Mt. Clinton Road from Bretton Woods" → **Base Station Road, 6 miles from Route 302 near the Omni Mount Washington Hotel** (the Cog's own directions page).
+- ✅ "stretching 30 miles" → **main ridge about 19 miles** (Wikipedia: Presidential Traverse "19 mi of the Presidential ridge").
+- ✅ Links: `official_info` → Forest Service **Pinkham Notch Trailhead** page ("access point for … the summit of Mount Washington"); `webcam` → **mountwashington.org/webcams/** (live); `sar` → NH Fish & Game **Hiking Safety / Hike Safe** page on wildlife.nh.gov.
+- ✅ Range "Northern U.S. Appalachians" → **Presidential Range** (Wikipedia).
+- ⏭ The `alltrails` field (Lion Head Trail) vs drive-up stats (0.1 mi / 20 ft): the body presents Lion Head explicitly as an optional "longer hike", and the `alltrails` field isn't displayed on the site, so it was left as is. Lakes of the Clouds Hut dates and Harvard Cabin details were not re-verified.
+- No change: elevation 6,288 (Wikipedia 6,288.3), rank 18.
+
+### NJ — High Point (complete)
+- ✅ "modeled after the Washington Monument" → **an obelisk modeled after the Bunker Hill Monument in Massachusetts** (Wikipedia; NJ DEP per the audit).
+- ✅ Fees "up to $10/vehicle" (Regulations + FAQ) → **free Labor Day–Memorial Day weekend; in season, NJ residents $5 weekday / $10 weekend & holidays, non-residents $10 / $20; oversized vehicles pay double** (NJ DEP park page, loaded live).
+- ✅ `official_info` (chained redirects) → **dep.nj.gov/parksandforests/state-park/high-point-state-park/** (the final URL).
+- ✅ Elevation 1,803 → **1,804** under the Wikipedia rule (infobox, NAVD88). Rank 40 holds.
+- ✅ Range "Appalachian Ridges" → **Kittatinny Mountains** (Wikipedia).
+- No change: 1923 founding, 16,000+ acres (agency figure), Monument Trail, 0.2 mi / 40 ft stats.
+
+### NV — Boundary Peak (complete)
+- ✅ Elevation: frontmatter 13,140 vs body 13,147 → **13,147** (Wikipedia, NAVD88). Rank 9 holds. ⚠️ Inyo NF's own pages still say 13,140.
+- ✅ Distance: frontmatter 7.0 vs body 7.4 → **8.5 mi** in both (Inyo NF Trail Canyon page: "approximately 8.5 miles round trip"; the guide's main approach is the Trail Canyon road). The body now notes that only the first 1.7 mi is system trail and the rest is informal use trail. Gain 4,215 ft unchanged (no agency figure).
+- ✅ "Montgomery Peak … 298 feet higher" → **about 300 feet** (Montgomery 13,447 vs Boundary 13,147, both Wikipedia).
+- ✅ `official_info` → Inyo NF **Trail Canyon** trail page (live; specific to Boundary Peak).
+- ✅ Range "Great Basin Ranges" → **White Mountains** (Wikipedia).
+- ⏭ "Legally settled in 1980" is unconfirmed; left as is.
+
+### NY — Mount Marcy (complete)
+- ✅ Parking "$15" → **$25/day non-member, $15 after 1 p.m., $10 member** (ADK "2026 Hiker Parking Prices", July 2026), plus ADK's note that lots fill before 6 a.m. on summer weekends.
+- ✅ Camping "restricted to designated areas below 4,000 feet" → **no camping on summits or above 3,500 ft except at lean-tos; overnight groups max 8** (DEC High Peaks Wilderness Complex page). Note: DEC's *general* state-land rules page says 4,000 ft for the Adirondacks, but the High Peaks–specific page says 3,500, and that one was used.
+- ✅ "summit wardens" → **Summit Stewardship Program / summit stewards**.
+- ✅ "Adirondack Loj" (×3) → **Adirondak Loj**.
+- ✅ `official_info` and `sar` → **dec.ny.gov/places/high-peaks-wilderness-complex** (lists "Search, rescue … 911 or 1-833-NYS-RANGERS"); the emergency number was also added to Regulations.
+- ✅ Range "Canadian Shield" (a geologic province) → **Adirondack Mountains** (Wikipedia).
+- ✅ Elevation 5,344 → **5,343** under the Wikipedia rule (infobox), frontmatter + body. Rank 21 holds.
+- No change: Van Hoevenberg Trail stats.
