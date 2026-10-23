@@ -41,10 +41,18 @@ const StartPage = () => {
       </div>
 
       <div className={start.startSection}>
-        <h2>#5 Download Maps</h2>
-        <p>Once you know where you’re going, get “offline ready.” Many highpoints are in remote locations and do not have reliable phone service. To get ready for a dead zone:</p>
+        <h2 id="get-offline-ready">#5 Get Offline Ready</h2>
+        <p>Once you know where you’re going, prepare for a dead zone. Many highpoints are in remote locations and do not have reliable phone service. Before you lose signal:</p>
         <ul>
-          <li>Download an <a href="https://www.tomsguide.com/how-to/how-to-download-offline-google-maps" target="_blank" rel="noreferrer">offline version of Google Maps</a>. before you go. Include not only the highpoint but some nearby towns in the snapshot. This map will help you navigate back to civilization after a hike. </li>
+          <li>Save Highpoint Guide to your phone so the guides work without service:
+            <ol>
+              <li>While you have service, open highpoint.guide.</li>
+              <li>Add it to your home screen. On an iPhone, tap Share, then Add to Home Screen. On Android, open Chrome’s menu (⋮) and tap Add to Home screen or Install app. On a computer, use the install icon in Chrome’s or Edge’s address bar.</li>
+              <li>Open Highpoint Guide once from the new icon while you’re still online, and visit the guide for your destination so its photos are saved too.</li>
+            </ol>
+            The guides’ text will then work offline. Embedded maps and links to other websites still need a connection, so download those maps as well.
+          </li>
+          <li>Download an <a href="https://www.tomsguide.com/how-to/how-to-download-offline-google-maps" target="_blank" rel="noreferrer">offline version of Google Maps</a> before you go. Include not only the highpoint but some nearby towns in the snapshot. This map will help you navigate back to civilization after a hike. </li>
           <li>Download an offline version of the <a href="https://support.alltrails.com/hc/en-us/articles/360018931632-How-do-I-use-my-downloaded-maps-for-navigation-" target="_blank" rel="noreferrer">AllTrails route</a>. While most highpoints have well-marked trails, having a GPS-ready map to ensure you’re on the right path is excellent for your peace of mind.</li>
           <li>Bring a portable phone charger (and make sure it’s charged before you go).</li>
         </ul>

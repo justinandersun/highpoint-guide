@@ -19,6 +19,8 @@
   padding: 0.1em 0;
   border-bottom: solid 3px var(--charcoal);
   display: block;
+  /* Keeps anchor links (e.g. /start/#get-offline-ready) clear of the fixed header. */
+  scroll-margin-top: 100px;
 }
 
 .start-section p {
