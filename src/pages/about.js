@@ -104,7 +104,7 @@ const AboutPage = ({ data }) => {
     <Layout pageTitle="About">
       <PageHeader
         title="About"
-        subtitle="The guy behind this guide"
+        subtitle="The person behind the guide"
         description="Meet the person behind U.S. Highpoint Guide and see photos from 49 of the 50 state highpoints."
         keywords="who made Highpoint Guide, US highpointer, 50 state highpoints photos"
         canonical="https://highpoint.guide/about/"

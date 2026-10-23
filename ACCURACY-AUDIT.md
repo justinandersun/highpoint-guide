@@ -878,3 +878,66 @@ Each state's audit items, what was done, and the source checked at the time of t
 - ✅ Location "Private Property" → **"Hawkeye Point, Osceola County"** (per your decision; the county page confirms county ownership since 2008).
 - ✅ Range "Great Plains" → **Coteau des Prairies** (⚑ Wikipedia: the plateau extends into northwestern Iowa; it doesn't name Hawkeye Point specifically).
 - ⏭ Acreage history (guide: 1.6 acres donated + 5 purchased in 2007; county: "acquired seven acres" in 2008) is minor and was marked inconclusive; left as is.
+
+### ID — Borah Peak (complete)
+- ✅ "state senator" → **U.S. Senator**; "ran in the presidential election in 1936" → "sought the Republican presidential nomination in 1936" (minor simplification fixed).
+- ✅ 1983 earthquake "summit rose seven feet" → **summit rose about a foot; the Lost River Valley dropped about eight feet** (Wikipedia).
+- ✅ "Challis National Forest" (location + Regulations) → **Salmon-Challis National Forest**.
+- ✅ Chickenout Ridge "third-class" vs frontmatter Class IV: Wikipedia supports both (infobox "Class 3 Scramble"; route text "Class 4 arête"). The body now says "mostly Class 3 with a short Class 4 arête"; frontmatter stays **Class IV** (hardest move).
+- ✅ Dead links: `official_info` → Salmon-Challis "Borah Peak" epic-adventures page; `sar` → custercountyidaho.org/departments/sheriff/; `webcam` (dead domain) → Idaho 511 **US-93 Willow Creek Summit** camera image (the nearest highway cam to the trailhead).
+- ✅ "Idado" typo → Idaho.
+- ✅ Elevation 12,662 → **12,666** (Wikipedia, 2021 LiDAR resurvey), frontmatter + intro. Rank 11 is unaffected. Note: the Forest Service page still says 12,662.
+- ✅ Distance/gain 8.2 mi / 5,301 ft → **7.0 mi / 5,262 ft** (Forest Service: "Total Distance (one-way): 3.5 miles", "Total Elevation Gain: 5,262 feet").
+- ✅ Trailhead campground elevation "7,200 feet" → **7,400** (Forest Service jumpoff elevation). The $5 fee and few sites are confirmed (5 sites, May 20–Sep 30).
+- ✅ Range "Idaho-Bitterroot Rocky Mountains" → **Lost River Range** (Wikipedia).
+
+### IL — Charles Mound (complete)
+- ✅ `official_info` (generic /events/ page) → **highpointers.org/charles-mound-2025-access-dates-announced/** (live; it's the newest Charles Mound post and confirms the guide's rules: daylight only, no pets, no private lane). There is no permanent per-state Highpointers page, and the date automation is unchanged.
+- ✅ Range "Midwest-Great Lakes Area" → **Driftless Area** (Wikipedia: "It is within the Driftless Area").
+- No other changes: elevation 1,235 (matches Wikipedia, NAVD88), rank 45, location "Private Property" (still privately owned).
+
+### IN — Hoosier Hill (complete)
+- ✅ Marshall "first to ascend all 50" → **first to climb all 48 contiguous highpoints, finishing at Hoosier Hill in 1936**; added that **Vin Hoeman first completed all 50 in 1966** (Wikipedia: Hoosier Hill, Highpointing).
+- ✅ "marked by a sign in the woods" → **engraved stone**, which replaced the repeatedly stolen wooden sign in 2016 (Wikipedia).
+- ✅ Dead `official_info` → **visitrichmond.org/listing/highest-point-in-indiana-hoosier-hill/** (the page moved to a new slug; it confirms dawn-to-dusk hours, free admission, and the rock marker).
+- ✅ AllTrails URL "/us/ohio/": checked. AllTrails itself files the trail under Ohio (Hollansburg, OH), so the URL is correct and was kept.
+- ✅ Distance/gain 0.1 mi / 0 ft → **0.6 mi / 13 ft** (embedded AllTrails route; no agency figure exists). The audit noted sources vary from 50 ft to 0.3 mi one way.
+- ✅ Range "Midwest-Great Lakes Area" → **Tipton Till Plain** (Wikipedia).
+- No change: elevation 1,257 (Wikipedia), rank 44.
+
+### KY — Black Mountain (complete)
+- ✅ Dead `official_info` (2010 coal-company waiver PDF) → **Highpointers Foundation's Black Mountain page** (archive.highpointersfoundation.org/27_KY_Black.shtml, live; covers the waiver history, state ownership, and directions). There is no official Kentucky or Harlan County page.
+- ✅ Ownership: Wikipedia confirms "the Commonwealth of Kentucky owns the land and no waiver is required". Location "Private Property" → **"Commonwealth of Kentucky"** (per your naming rule). The unsourced "acquisition … in 2018" date was removed.
+- ✅ "High-voltage tower" (unsupported) → **FAA radar dome, radio towers, and transmitter buildings** (Wikipedia's summit inventory).
+- ✅ `view` "None" → **"Okay"**. Wikipedia: trees cleared by the radar dome open views, and the Smokies are visible on clear days. (`view` isn't displayed on the site.)
+- ✅ Range "Appalachian Plateaus" → **Cumberland Mountains** (Wikipedia).
+- ⏭ "Plans for a new lookout tower" is unverified and wasn't in the audit; left as is.
+- No change: elevation 4,145 (Wikipedia; the Highpointers Foundation uses 4,139), rank 27.
+
+### LA — Driskill Mountain (complete)
+- ✅ Range "Ozark Highlands" (cross-state contamination) → **Piney Woods** (⚑ Wikipedia gives no range; this matches the guide's own body, "the densely forested Piney Woods of East Texas and Louisiana").
+- ✅ "one of three" below-sea-level states → **"one of only two (with California)"** (Badwater Basin and New Orleans, per Wikipedia's state elevation list).
+- ✅ Lake Claiborne State Park "~20 miles northeast" (Lodging + FAQ) → **north**. Computed from Wikipedia coordinates: 20.7 mi at a bearing of 356°.
+- No change: elevation 535, 1.8 mi / 167 ft, rank 48, location "Private Property" (still privately owned).
+
+### ME — Katahdin (complete)
+- ✅ Entrance fee "$14" → **$20 per visit / $50 season for non-Maine vehicles; Maine-plated vehicles free** (Baxter reservation site, Non-Resident Fees). Added: register at the Togue Pond or Matagamon gatehouse (Baxter hiking page).
+- ✅ **Not in the audit, added:** the **Katahdin Trailhead Pass** (formerly Day Use Parking Reservations). It's needed to guarantee parking at Roaring Brook, Abol, or Katahdin Stream unless you camped in the park the night before; opens April 1; one per vehicle (Baxter hiking page). Replaces the vaguer "arrive early" advice.
+- ✅ Helon Taylor "4.3 miles to summit, leading directly to Pamola Peak" → **3.2 mi to Pamola Peak + 1.1 mi Knife Edge to Baxter Peak (≈4.3 mi one way)**.
+- ✅ "Chimney Pond Hut" → **Chimney Pond Ranger Station**, only on routes through Chimney Pond; the guide now notes that Helon Taylor branches off after 0.1 mi (Baxter: "The Helon Taylor trail leaves the Chimney Pond Trail after the first 0.1 mile").
+- ✅ Directions "exit Millinocket-Mattawamkeag, ~50 miles north of Bangor" → **Exit 244 (Medway/Millinocket), Route 157 to Millinocket, ~70 miles from Bangor** (Wikipedia I-95 exit list; ~72 road miles by routing).
+- ✅ Webcam → **neoc.com/webcams/**, which is now NEOC's "Katahdin Live Webcam & Night Sky" page (the old specific-cam URL redirects there).
+- ✅ Elevation 5,268 → **5,267** (Wikipedia infobox, NGS NAVD88). Rank 22 is unaffected.
+- ✅ Range "Northern U.S. Appalachians" → **Appalachian Mountains** (Wikipedia infobox; Katahdin is described as an isolated monadnock, and no source ties it to the Longfellow Mountains, so the plan's guess was dropped).
+- ⏭ The "previously full gear, now just a flashlight" claim is unconfirmed; left as is. Distance/gain 10.4 mi / 4,200 ft unchanged (no agency total for the loop).
+
+### MI — Mount Arvon (complete, one ❓)
+- ✅ Dead `official_info` → **visitbaragacounty.com/activities/mt-arvon/** (live).
+- ✅ "Paper companies own the surrounding land" → **Weyerhaeuser** (county page: "Thanks to Weyerhaeuser (the landowner)").
+- ✅ Lake Superior "~10 miles to the north" → **about 8 miles** (Wikipedia: Arvon "rises about eight miles south of Lake Superior").
+- ✅ **Curwood/Tilden note (per your decision):** the intro now says 2025 surveys found Curwood ~0.4 ft higher and a 2018 NOAA report found the Tilden Mine waste pile higher than either, and that Arvon remains the conventionally recognized highpoint. A new FAQ, "Is Mount Arvon really the highest point in Michigan?", covers the same points (all from Wikipedia).
+- ✅ **Not in the audit, fixed:** the FAQ said the road is "accessible by most vehicles". The county says the roads "become muddy and are often unfit for passenger cars" in the rainy season, and AllTrails recommends 4WD, so the FAQ now says high-clearance/4WD is recommended.
+- ✅ Gain 10 → **9 ft** (embedded AllTrails route: 0.1 mi, 9 ft). **The audit's "AllTrails says 11.2 mi / 1,007 ft" is no longer true**; that page now shows 0.1 mi from a small lot at the end of the 4WD road.
+- ❓ **Distance conflict, needs you:** AllTrails (and the frontmatter) say **0.1 mi** from the top lot, but the body's driving log ends "At 7.2 miles, park in the lot and walk approximately a half mile", up a trail that "was once a rough road accessible by 4-wheel drive vehicles". These may be two different parking spots (walk-up from a lower lot vs. drive to the top). The frontmatter stays 0.1 per the AllTrails rule and the body is unchanged until you confirm.
+- ✅ Range "Midwest-Great Lakes Area" → **Huron Mountains** (Wikipedia).
+- No change: elevation 1,979 (Wikipedia), rank 38, location "Private Property" (Weyerhaeuser).
